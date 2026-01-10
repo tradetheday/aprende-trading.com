@@ -14,7 +14,7 @@ With instant communication, an event on the other side of the world can quickly 
 
 Therefore, one of the best kept secrets of daily transactions is [Financial Juice](https://www.financialjuice.com/) . Once you have registered for a free user account, you can listen to the news live and direct. You should keep up to date with events that can affect your market directly and effortlessly. All this makes knowledge one of the best daily trading secrets to keep in mind.
 
-![7 secrets to a successful daily trading](https://www.financialjuice.com/assets/images/news-uni.png)
+![7 secrets to a successful daily trading](https://www.financialjuice.com/assets/images/2019/01/Trade-The-News-700x270.jpg)
 
 On the other hand, if you are looking for additional comments and opinions, you may want to consider other options currently available:
 

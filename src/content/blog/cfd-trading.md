@@ -10,7 +10,7 @@ Daily exchange with CFD is a popular strategy. From pattern trading in the US, t
 
 A CFD is a contract between two parties. They agree to pay the difference between the opening price and the closing price of a particular market or asset. Therefore, it is a way of speculating on the movement of the price, without owning the real asset.
 
-![CFD Trading 2018: Strategy, Tips and the best list of Brokers](https://www.binaryoptionsexpert.net/images/cfd-trading-img.png)
+![CFD Trading 2018: Strategy, Tips and the best list of Brokers](https://www.binaryoptionsexpert.net/images/2018/10/cfd-trading-700x361.jpg)
 
 The performance of the CFD reflects the underlying asset. Profit and loss are established when the value of the underlying asset shifts relative to the position of the opening price. When trading with CFDs with a broker, you do not own the asset with which you are operating. You are speculating on the price movement, up or down.
 

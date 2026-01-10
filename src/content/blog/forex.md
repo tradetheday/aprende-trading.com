@@ -145,7 +145,7 @@ La precisión en Forex proviene del broker, pero la liquidez también es importa
 La volatilidad es el tamaño de los movimientos de los mercados. Entonces, la volatilidad firme para un broker reducirá la selección de instrumentos a los pares de divisas, dependiendo de las sesiones. Como la volatilidad depende de la sesión, nos lleva a un componente importante que se detalla a continuación: cuándo operar.
 ### Gráficos
 
-![Operaciones Forex](https://d31dn7nfpuwjnm.cloudfront.net/images/valoraciones/0026/7359/tipos-graficos-forex-velas.png?1490786107)
+![Operaciones Forex](https://d31dn7nfpuwjnm.cloudfront.net/images/2019/03/Grafico-de-Velas.png)
 
 Esta no sería una revisión exacta de Forex en vivo sin hablar de gráficos. Esto se debe a que los gráficos jugarán un papel esencial en su análisis técnico. Por ende, deberá encontrar un marco de tiempo que le permita identificar fácilmente las oportunidades.
 
