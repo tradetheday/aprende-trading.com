@@ -11,76 +11,243 @@ type Props = CollectionEntry<'blog'>['data'];
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="es">
 	<head>
 		<BaseHead title={title} description={description} />
-		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
-			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-		</style>
 	</head>
 
 	<body>
 		<Header />
 		<main>
 			<article>
-				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
-				</div>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
+				<!-- Article Header -->
+				<header class="article-header">
+					<div class="article-meta">
+						<span class="article-date">
 							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
+						</span>
+						{updatedDate && (
+							<span class="article-updated">
+								Actualizado: <FormattedDate date={updatedDate} />
+							</span>
+						)}
 					</div>
+					<h1>{title}</h1>
+					{description && <p class="article-description">{description}</p>}
+				</header>
+
+				<!-- Hero Image -->
+				{heroImage && (
+					<div class="hero-image">
+						<Image width={1200} height={600} src={heroImage} alt={title} />
+					</div>
+				)}
+
+				<!-- Article Content -->
+				<div class="article-content prose">
 					<slot />
+				</div>
+
+				<!-- Back to Blog -->
+				<div class="article-footer">
+					<a href="/blog" class="back-link">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<line x1="19" y1="12" x2="5" y2="12"></line>
+							<polyline points="12 19 5 12 12 5"></polyline>
+						</svg>
+						Volver a Articulos
+					</a>
 				</div>
 			</article>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	main {
+		padding-top: 2rem;
+	}
+
+	article {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 0 1.5rem;
+	}
+
+	/* Article Header */
+	.article-header {
+		text-align: center;
+		padding: 2rem 0 3rem;
+	}
+
+	.article-meta {
+		display: flex;
+		justify-content: center;
+		gap: 1.5rem;
+		margin-bottom: 1.5rem;
+		flex-wrap: wrap;
+	}
+
+	.article-date {
+		color: var(--primary);
+		font-weight: 500;
+		font-size: 0.95rem;
+	}
+
+	.article-updated {
+		color: var(--text-muted);
+		font-size: 0.9rem;
+		font-style: italic;
+	}
+
+	.article-header h1 {
+		font-size: clamp(2rem, 5vw, 3rem);
+		line-height: 1.2;
+		margin-bottom: 1rem;
+		background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.article-description {
+		font-size: 1.2rem;
+		color: var(--text-secondary);
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	/* Hero Image */
+	.hero-image {
+		margin-bottom: 3rem;
+	}
+
+	.hero-image img {
+		width: 100%;
+		height: auto;
+		border-radius: var(--radius);
+		box-shadow: var(--shadow-glass);
+	}
+
+	/* Article Content */
+	.article-content {
+		padding-bottom: 3rem;
+	}
+
+	.article-content :global(h2) {
+		font-size: 1.75rem;
+		margin-top: 3rem;
+		margin-bottom: 1rem;
+		padding-bottom: 0.5rem;
+		border-bottom: 1px solid var(--border-glass);
+	}
+
+	.article-content :global(h3) {
+		font-size: 1.4rem;
+		margin-top: 2rem;
+		margin-bottom: 0.75rem;
+	}
+
+	.article-content :global(h4) {
+		font-size: 1.2rem;
+		margin-top: 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.article-content :global(p) {
+		line-height: 1.8;
+		margin-bottom: 1.5rem;
+	}
+
+	.article-content :global(img) {
+		margin: 2rem 0;
+		border-radius: var(--radius);
+	}
+
+	.article-content :global(ul),
+	.article-content :global(ol) {
+		margin: 1.5rem 0 1.5rem 1.5rem;
+	}
+
+	.article-content :global(li) {
+		margin-bottom: 0.75rem;
+		line-height: 1.7;
+	}
+
+	.article-content :global(blockquote) {
+		margin: 2rem 0;
+		padding: 1.5rem;
+		background: var(--bg-glass);
+		border-left: 4px solid var(--primary);
+		border-radius: 0 var(--radius) var(--radius) 0;
+	}
+
+	.article-content :global(blockquote p) {
+		margin: 0;
+	}
+
+	.article-content :global(a) {
+		color: var(--primary);
+		text-decoration: underline;
+		text-decoration-color: rgba(0, 212, 170, 0.3);
+		text-underline-offset: 3px;
+		transition: all 0.3s ease;
+	}
+
+	.article-content :global(a:hover) {
+		text-decoration-color: var(--primary);
+	}
+
+	.article-content :global(strong) {
+		color: var(--text-primary);
+	}
+
+	/* Article Footer */
+	.article-footer {
+		padding: 2rem 0 4rem;
+		border-top: 1px solid var(--border-glass);
+	}
+
+	.back-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		color: var(--text-muted);
+		font-weight: 500;
+		transition: all 0.3s ease;
+	}
+
+	.back-link:hover {
+		color: var(--primary);
+		gap: 0.75rem;
+		text-shadow: none;
+	}
+
+	/* Responsive */
+	@media (max-width: 768px) {
+		article {
+			padding: 0 1rem;
+		}
+
+		.article-header {
+			padding: 1rem 0 2rem;
+		}
+
+		.article-header h1 {
+			font-size: 1.75rem;
+		}
+
+		.article-description {
+			font-size: 1.1rem;
+		}
+
+		.article-content :global(h2) {
+			font-size: 1.5rem;
+		}
+
+		.article-content :global(h3) {
+			font-size: 1.25rem;
+		}
+	}
+</style>

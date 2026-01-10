@@ -1,21 +1,51 @@
 /*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
+  Aprende Trading - Modern Glassy Design
+  A sleek, contemporary trading education website
+*/
 
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
-	--black: 15, 18, 25;
-	--gray: 96, 115, 159;
-	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
-	--box-shadow:
-		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%), 0 16px 32px
-		rgba(var(--gray), 33%);
+	/* Primary Colors */
+	--primary: #00d4aa;
+	--primary-dark: #00a88a;
+	--primary-light: #00ffcc;
+
+	/* Accent Colors */
+	--accent: #6366f1;
+	--accent-light: #818cf8;
+	--gold: #f59e0b;
+
+	/* Background Colors */
+	--bg-dark: #0a0f1a;
+	--bg-card: rgba(255, 255, 255, 0.03);
+	--bg-glass: rgba(255, 255, 255, 0.05);
+	--bg-glass-hover: rgba(255, 255, 255, 0.08);
+
+	/* Text Colors */
+	--text-primary: #ffffff;
+	--text-secondary: rgba(255, 255, 255, 0.7);
+	--text-muted: rgba(255, 255, 255, 0.5);
+
+	/* Borders */
+	--border-glass: rgba(255, 255, 255, 0.1);
+	--border-glow: rgba(0, 212, 170, 0.3);
+
+	/* Shadows */
+	--shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.3);
+	--shadow-glow: 0 0 40px rgba(0, 212, 170, 0.15);
+
+	/* Gradients */
+	--gradient-hero: linear-gradient(135deg, #0a0f1a 0%, #1a1f3a 50%, #0f1628 100%);
+	--gradient-card: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.02) 100%);
+	--gradient-text: linear-gradient(135deg, #00d4aa 0%, #6366f1 100%);
+
+	/* Sizing */
+	--max-width: 1200px;
+	--header-height: 80px;
+	--radius: 16px;
+	--radius-sm: 8px;
 }
+
+/* Fonts */
 @font-face {
 	font-family: "Atkinson";
 	src: url("/fonts/atkinson-regular.woff") format("woff");
@@ -30,112 +60,276 @@
 	font-style: normal;
 	font-display: swap;
 }
+
+/* Reset & Base */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	font-family: "Atkinson", sans-serif;
+	font-family: "Atkinson", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 	margin: 0;
 	padding: 0;
-	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
-	background-size: 100% 600px;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
-	font-size: 20px;
+	background: var(--bg-dark);
+	background-image:
+		radial-gradient(ellipse at 20% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+		radial-gradient(ellipse at 80% 100%, rgba(0, 212, 170, 0.1) 0%, transparent 50%);
+	background-attachment: fixed;
+	color: var(--text-primary);
+	font-size: 18px;
 	line-height: 1.7;
+	min-height: 100vh;
 }
+
+/* Main Container */
 main {
-	width: 720px;
-	max-width: calc(100% - 2em);
-	margin: auto;
-	padding: 3em 1em;
+	width: 100%;
+	max-width: var(--max-width);
+	margin: 0 auto;
+	padding: 2rem 1.5rem 4rem;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 0.75rem 0;
+	color: var(--text-primary);
 	line-height: 1.2;
-}
-h1 {
-	font-size: 3.052em;
-}
-h2 {
-	font-size: 2.441em;
-}
-h3 {
-	font-size: 1.953em;
-}
-h4 {
-	font-size: 1.563em;
-}
-h5 {
-	font-size: 1.25em;
-}
-strong,
-b {
 	font-weight: 700;
 }
-a {
-	color: var(--accent);
+
+h1 {
+	font-size: clamp(2.5rem, 5vw, 3.5rem);
+	background: var(--gradient-text);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
 }
-a:hover {
-	color: var(--accent);
+
+h2 {
+	font-size: clamp(1.8rem, 4vw, 2.5rem);
 }
+
+h3 {
+	font-size: clamp(1.4rem, 3vw, 1.8rem);
+}
+
+h4 {
+	font-size: 1.4rem;
+}
+
+h5 {
+	font-size: 1.2rem;
+}
+
+strong, b {
+	font-weight: 700;
+}
+
 p {
-	margin-bottom: 1em;
+	margin-bottom: 1.25em;
+	color: var(--text-secondary);
 }
+
 .prose p {
-	margin-bottom: 2em;
+	margin-bottom: 1.75em;
 }
-textarea {
-	width: 100%;
-	font-size: 16px;
+
+/* Links */
+a {
+	color: var(--primary);
+	text-decoration: none;
+	transition: all 0.3s ease;
 }
-input {
-	font-size: 16px;
+
+a:hover {
+	color: var(--primary-light);
+	text-shadow: 0 0 20px rgba(0, 212, 170, 0.5);
 }
-table {
-	width: 100%;
+
+/* Glass Card Base */
+.glass {
+	background: var(--bg-glass);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border: 1px solid var(--border-glass);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow-glass);
+	transition: all 0.3s ease;
 }
+
+.glass:hover {
+	background: var(--bg-glass-hover);
+	border-color: var(--border-glow);
+	box-shadow: var(--shadow-glass), var(--shadow-glow);
+	transform: translateY(-2px);
+}
+
+/* Buttons */
+.btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.75rem 1.5rem;
+	background: var(--gradient-text);
+	color: var(--bg-dark);
+	font-weight: 700;
+	font-size: 0.95rem;
+	border: none;
+	border-radius: var(--radius-sm);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 30px rgba(0, 212, 170, 0.3);
+	color: var(--bg-dark);
+}
+
+.btn-outline {
+	background: transparent;
+	border: 2px solid var(--primary);
+	color: var(--primary);
+}
+
+.btn-outline:hover {
+	background: var(--primary);
+	color: var(--bg-dark);
+}
+
+/* Images */
 img {
 	max-width: 100%;
 	height: auto;
-	border-radius: 8px;
-}
-code {
-	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
-	border-radius: 2px;
-}
-pre {
-	padding: 1.5em;
-	border-radius: 8px;
-}
-pre > code {
-	all: unset;
-}
-blockquote {
-	border-left: 4px solid var(--accent);
-	padding: 0 0 0 20px;
-	margin: 0;
-	font-size: 1.333em;
-}
-hr {
-	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
-}
-@media (max-width: 720px) {
-	body {
-		font-size: 18px;
-	}
-	main {
-		padding: 1em;
-	}
+	border-radius: var(--radius);
 }
 
+/* Code */
+code {
+	padding: 0.2em 0.5em;
+	background: var(--bg-glass);
+	border: 1px solid var(--border-glass);
+	border-radius: var(--radius-sm);
+	font-size: 0.9em;
+	color: var(--primary);
+}
+
+pre {
+	padding: 1.5em;
+	background: var(--bg-glass);
+	border: 1px solid var(--border-glass);
+	border-radius: var(--radius);
+	overflow-x: auto;
+}
+
+pre > code {
+	all: unset;
+	color: var(--text-secondary);
+}
+
+/* Blockquote */
+blockquote {
+	border-left: 4px solid var(--primary);
+	padding: 1rem 0 1rem 1.5rem;
+	margin: 2rem 0;
+	background: var(--bg-glass);
+	border-radius: 0 var(--radius) var(--radius) 0;
+	font-size: 1.1em;
+	font-style: italic;
+	color: var(--text-secondary);
+}
+
+/* Lists */
+ul, ol {
+	margin: 0 0 1.5em 1.5em;
+	color: var(--text-secondary);
+}
+
+li {
+	margin-bottom: 0.5em;
+}
+
+/* Tables */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 2rem 0;
+	background: var(--bg-glass);
+	border-radius: var(--radius);
+	overflow: hidden;
+}
+
+th, td {
+	padding: 1rem;
+	text-align: left;
+	border-bottom: 1px solid var(--border-glass);
+}
+
+th {
+	background: rgba(0, 212, 170, 0.1);
+	color: var(--primary);
+	font-weight: 700;
+}
+
+tr:hover {
+	background: var(--bg-glass-hover);
+}
+
+/* Horizontal Rule */
+hr {
+	border: none;
+	height: 1px;
+	background: var(--border-glass);
+	margin: 3rem 0;
+}
+
+/* Form Elements */
+input, textarea {
+	width: 100%;
+	padding: 0.875rem 1rem;
+	background: var(--bg-glass);
+	border: 1px solid var(--border-glass);
+	border-radius: var(--radius-sm);
+	color: var(--text-primary);
+	font-size: 1rem;
+	font-family: inherit;
+	transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+	border-color: var(--primary);
+	box-shadow: 0 0 0 3px rgba(0, 212, 170, 0.1);
+}
+
+/* Utility Classes */
+.text-gradient {
+	background: var(--gradient-text);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-muted {
+	color: var(--text-muted);
+}
+
+.container {
+	width: 100%;
+	max-width: var(--max-width);
+	margin: 0 auto;
+	padding: 0 1.5rem;
+}
+
+/* Screen Reader Only */
 .sr-only {
 	border: 0;
 	padding: 0;
@@ -144,12 +338,75 @@ hr {
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
-	/* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
-	clip: rect(1px 1px 1px 1px);
-	/* maybe deprecated but we need to support legacy browsers */
 	clip: rect(1px, 1px, 1px, 1px);
-	/* modern browsers, clip-path works inwards from each corner */
 	clip-path: inset(50%);
-	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes glow {
+	0%, 100% {
+		box-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+	}
+	50% {
+		box-shadow: 0 0 40px rgba(0, 212, 170, 0.5);
+	}
+}
+
+.animate-fadeInUp {
+	animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	body {
+		font-size: 16px;
+	}
+
+	main {
+		padding: 1.5rem 1rem 3rem;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1.6rem;
+	}
+}
+
+/* Selection */
+::selection {
+	background: rgba(0, 212, 170, 0.3);
+	color: var(--text-primary);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--border-glass);
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--primary);
 }
