@@ -3,152 +3,119 @@ const today = new Date();
 ---
 
 <footer>
-	<div class="footer-content container">
-		<div class="footer-brand">
-			<a href="/" class="footer-logo">
-				<span class="logo-icon">AT</span>
-				<span class="logo-text">Aprende Trading</span>
-			</a>
-			<p class="footer-tagline">La guia del Trading Diario para America Latina</p>
-		</div>
-
-		<div class="footer-links">
-			<div class="footer-section">
-				<h4>Recursos</h4>
-				<a href="/blog">Articulos</a>
-				<a href="/blog/estrategia">Estrategias</a>
-				<a href="/blog/brokers">Brokers</a>
-				<a href="/blog/glosario">Glosario</a>
-			</div>
-			<div class="footer-section">
-				<h4>Mercados</h4>
-				<a href="/blog/forex">Forex</a>
-				<a href="/blog/criptomonedas">Criptomonedas</a>
-				<a href="/blog/futuros">Futuros</a>
-				<a href="/blog/opciones">Opciones</a>
+	<div class="footer-main">
+		<div class="container">
+			<div class="footer-grid">
+				<div class="footer-about">
+					<h4>Aprende Trading</h4>
+					<p>La guia internacional mas completa del Trading Diario. Recursos educativos para traders de todos los niveles.</p>
+				</div>
+				<div class="footer-links">
+					<h4>Recursos</h4>
+					<ul>
+						<li><a href="/blog">Articulos</a></li>
+						<li><a href="/blog/estrategia">Estrategias</a></li>
+						<li><a href="/blog/brokers">Brokers</a></li>
+						<li><a href="/blog/glosario">Glosario</a></li>
+					</ul>
+				</div>
+				<div class="footer-links">
+					<h4>Mercados</h4>
+					<ul>
+						<li><a href="/blog/forex">Forex</a></li>
+						<li><a href="/blog/criptomonedas">Criptomonedas</a></li>
+						<li><a href="/blog/futuros">Futuros</a></li>
+						<li><a href="/blog/opciones">Opciones</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
-
-	<div class="footer-bottom container">
-		<p>&copy; {today.getFullYear()} Aprende Trading. Todos los derechos reservados.</p>
+	<div class="footer-bottom">
+		<div class="container">
+			<p>&copy; {today.getFullYear()} Aprende Trading. Todos los derechos reservados.</p>
+		</div>
 	</div>
 </footer>
 
 <style>
 	footer {
-		margin-top: 4rem;
-		background: rgba(255, 255, 255, 0.02);
-		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		background: var(--gray-dark);
+		color: var(--white);
+		margin-top: 0;
 	}
 
-	.footer-content {
-		display: grid;
-		grid-template-columns: 1fr auto;
-		gap: 4rem;
-		padding: 4rem 1.5rem 3rem;
-		max-width: var(--max-width, 1200px);
+	.container {
+		max-width: var(--max-width);
 		margin: 0 auto;
+		padding: 0 20px;
 	}
 
-	.footer-brand {
-		max-width: 300px;
+	.footer-main {
+		padding: 40px 0;
 	}
 
-	.footer-logo {
-		display: flex;
-		align-items: center;
-		gap: 0.75rem;
-		text-decoration: none;
-		color: var(--text-primary);
-		margin-bottom: 1rem;
+	.footer-grid {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		gap: 40px;
 	}
 
-	.footer-logo:hover {
-		text-shadow: none;
-	}
-
-	.logo-icon {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 40px;
-		height: 40px;
-		background: linear-gradient(135deg, #00d4aa 0%, #6366f1 100%);
-		border-radius: 10px;
-		font-weight: 700;
+	.footer-about p {
+		color: var(--gray-light);
 		font-size: 0.9rem;
-		color: #0a0f1a;
-	}
-
-	.logo-text {
-		font-weight: 700;
-		font-size: 1.1rem;
-		color: var(--text-primary);
-	}
-
-	.footer-tagline {
-		color: var(--text-muted);
-		font-size: 0.9rem;
+		line-height: 1.6;
 		margin: 0;
 	}
 
-	.footer-links {
-		display: flex;
-		gap: 4rem;
-	}
-
-	.footer-section h4 {
-		color: var(--text-primary);
-		font-size: 0.85rem;
+	h4 {
+		color: var(--white);
+		font-size: 1rem;
+		margin-bottom: 15px;
 		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		margin-bottom: 1rem;
+		letter-spacing: 0.5px;
 	}
 
-	.footer-section a {
-		display: block;
-		color: var(--text-muted);
-		font-size: 0.95rem;
-		padding: 0.4rem 0;
-		transition: color 0.3s ease;
+	.footer-links ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
 	}
 
-	.footer-section a:hover {
+	.footer-links li {
+		margin-bottom: 8px;
+	}
+
+	.footer-links a {
+		color: var(--gray-light);
+		font-size: 0.9rem;
+		transition: color 0.2s ease;
+	}
+
+	.footer-links a:hover {
 		color: var(--primary);
-		text-shadow: none;
 	}
 
 	.footer-bottom {
-		padding: 1.5rem;
-		border-top: 1px solid rgba(255, 255, 255, 0.05);
+		background: rgba(0, 0, 0, 0.2);
+		padding: 15px 0;
 		text-align: center;
 	}
 
 	.footer-bottom p {
-		color: var(--text-muted);
-		font-size: 0.85rem;
 		margin: 0;
+		font-size: 0.85rem;
+		color: var(--gray-light);
 	}
 
 	@media (max-width: 768px) {
-		.footer-content {
+		.footer-grid {
 			grid-template-columns: 1fr;
-			gap: 2rem;
-			padding: 2rem 1rem;
+			gap: 30px;
 		}
 
-		.footer-links {
-			gap: 2rem;
-		}
-
-		.footer-brand {
-			text-align: center;
-			max-width: none;
-		}
-
-		.footer-logo {
-			justify-content: center;
+		.footer-main {
+			padding: 30px 0;
 		}
 	}
 </style>

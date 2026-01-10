@@ -44,19 +44,13 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				)}
 
 				<!-- Article Content -->
-				<div class="article-content prose">
+				<div class="article-content">
 					<slot />
 				</div>
 
 				<!-- Back to Blog -->
 				<div class="article-footer">
-					<a href="/blog" class="back-link">
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-							<line x1="19" y1="12" x2="5" y2="12"></line>
-							<polyline points="12 19 5 12 12 5"></polyline>
-						</svg>
-						Volver a Articulos
-					</a>
+					<a href="/blog" class="back-link">&larr; Volver a Articulos</a>
 				</div>
 			</article>
 		</main>
@@ -65,189 +59,188 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 </html>
 
 <style>
-	main {
-		padding-top: 2rem;
-	}
-
 	article {
 		max-width: 800px;
 		margin: 0 auto;
-		padding: 0 1.5rem;
 	}
 
 	/* Article Header */
 	.article-header {
-		text-align: center;
-		padding: 2rem 0 3rem;
+		padding-bottom: 25px;
+		margin-bottom: 25px;
+		border-bottom: 1px solid var(--gray-lighter);
 	}
 
 	.article-meta {
 		display: flex;
-		justify-content: center;
-		gap: 1.5rem;
-		margin-bottom: 1.5rem;
+		gap: 20px;
+		margin-bottom: 15px;
 		flex-wrap: wrap;
 	}
 
 	.article-date {
 		color: var(--primary);
-		font-weight: 500;
-		font-size: 0.95rem;
+		font-weight: 600;
+		font-size: 0.9rem;
 	}
 
 	.article-updated {
-		color: var(--text-muted);
-		font-size: 0.9rem;
+		color: var(--gray-light);
+		font-size: 0.85rem;
 		font-style: italic;
 	}
 
 	.article-header h1 {
-		font-size: clamp(2rem, 5vw, 3rem);
-		line-height: 1.2;
-		margin-bottom: 1rem;
-		background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
+		font-size: 2rem;
+		line-height: 1.3;
+		margin-bottom: 15px;
+		color: var(--black);
 	}
 
 	.article-description {
-		font-size: 1.2rem;
-		color: var(--text-secondary);
-		max-width: 600px;
-		margin: 0 auto;
+		font-size: 1.1rem;
+		color: var(--gray);
+		line-height: 1.6;
+		margin: 0;
 	}
 
 	/* Hero Image */
 	.hero-image {
-		margin-bottom: 3rem;
+		margin-bottom: 30px;
 	}
 
 	.hero-image img {
 		width: 100%;
 		height: auto;
-		border-radius: var(--radius);
-		box-shadow: var(--shadow-glass);
 	}
 
 	/* Article Content */
 	.article-content {
-		padding-bottom: 3rem;
+		padding-bottom: 30px;
 	}
 
 	.article-content :global(h2) {
-		font-size: 1.75rem;
-		margin-top: 3rem;
-		margin-bottom: 1rem;
-		padding-bottom: 0.5rem;
-		border-bottom: 1px solid var(--border-glass);
+		font-size: 1.5rem;
+		margin-top: 35px;
+		margin-bottom: 15px;
+		padding-bottom: 10px;
+		border-bottom: 2px solid var(--primary);
+		color: var(--black);
 	}
 
 	.article-content :global(h3) {
-		font-size: 1.4rem;
-		margin-top: 2rem;
-		margin-bottom: 0.75rem;
+		font-size: 1.25rem;
+		margin-top: 25px;
+		margin-bottom: 12px;
+		color: var(--black);
 	}
 
 	.article-content :global(h4) {
-		font-size: 1.2rem;
-		margin-top: 1.5rem;
-		margin-bottom: 0.5rem;
+		font-size: 1.1rem;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		color: var(--black);
 	}
 
 	.article-content :global(p) {
 		line-height: 1.8;
-		margin-bottom: 1.5rem;
+		margin-bottom: 1.25rem;
+		color: var(--gray-dark);
 	}
 
 	.article-content :global(img) {
-		margin: 2rem 0;
-		border-radius: var(--radius);
+		margin: 25px 0;
 	}
 
 	.article-content :global(ul),
 	.article-content :global(ol) {
-		margin: 1.5rem 0 1.5rem 1.5rem;
+		margin: 1.25rem 0 1.25rem 1.5rem;
 	}
 
 	.article-content :global(li) {
-		margin-bottom: 0.75rem;
+		margin-bottom: 0.5rem;
 		line-height: 1.7;
 	}
 
 	.article-content :global(blockquote) {
-		margin: 2rem 0;
-		padding: 1.5rem;
-		background: var(--bg-glass);
+		margin: 25px 0;
+		padding: 20px 25px;
+		background: var(--gray-bg);
 		border-left: 4px solid var(--primary);
-		border-radius: 0 var(--radius) var(--radius) 0;
 	}
 
 	.article-content :global(blockquote p) {
 		margin: 0;
+		font-style: italic;
+		color: var(--gray);
 	}
 
 	.article-content :global(a) {
 		color: var(--primary);
 		text-decoration: underline;
-		text-decoration-color: rgba(0, 212, 170, 0.3);
-		text-underline-offset: 3px;
-		transition: all 0.3s ease;
 	}
 
 	.article-content :global(a:hover) {
-		text-decoration-color: var(--primary);
+		color: var(--primary-dark);
 	}
 
 	.article-content :global(strong) {
-		color: var(--text-primary);
+		color: var(--black);
+		font-weight: 700;
+	}
+
+	.article-content :global(table) {
+		width: 100%;
+		margin: 25px 0;
+		border-collapse: collapse;
+	}
+
+	.article-content :global(th),
+	.article-content :global(td) {
+		padding: 12px 15px;
+		text-align: left;
+		border-bottom: 1px solid var(--gray-lighter);
+	}
+
+	.article-content :global(th) {
+		background: var(--gray-bg);
+		font-weight: 700;
+		color: var(--black);
 	}
 
 	/* Article Footer */
 	.article-footer {
-		padding: 2rem 0 4rem;
-		border-top: 1px solid var(--border-glass);
+		padding: 25px 0;
+		border-top: 1px solid var(--gray-lighter);
 	}
 
 	.back-link {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.5rem;
-		color: var(--text-muted);
-		font-weight: 500;
-		transition: all 0.3s ease;
+		display: inline-block;
+		font-weight: 600;
+		font-size: 0.9rem;
+		color: var(--primary);
 	}
 
 	.back-link:hover {
-		color: var(--primary);
-		gap: 0.75rem;
-		text-shadow: none;
+		text-decoration: underline;
 	}
 
 	/* Responsive */
 	@media (max-width: 768px) {
-		article {
-			padding: 0 1rem;
-		}
-
-		.article-header {
-			padding: 1rem 0 2rem;
-		}
-
 		.article-header h1 {
-			font-size: 1.75rem;
-		}
-
-		.article-description {
-			font-size: 1.1rem;
-		}
-
-		.article-content :global(h2) {
 			font-size: 1.5rem;
 		}
 
+		.article-description {
+			font-size: 1rem;
+		}
+
+		.article-content :global(h2) {
+			font-size: 1.3rem;
+		}
+
 		.article-content :global(h3) {
-			font-size: 1.25rem;
+			font-size: 1.15rem;
 		}
 	}
 </style>

@@ -8,16 +8,11 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-).slice(0, 6);
+);
 
-const categories = [
-	{ name: 'Forex', slug: 'forex', icon: '💱' },
-	{ name: 'Criptomonedas', slug: 'criptomonedas', icon: '₿' },
-	{ name: 'Estrategias', slug: 'estrategia', icon: '📊' },
-	{ name: 'Brokers', slug: 'brokers', icon: '🏦' },
-	{ name: 'Analisis Tecnico', slug: 'analisis-tecnico', icon: '📈' },
-	{ name: 'Glosario', slug: 'glosario', icon: '📖' },
-];
+const featuredPost = posts[0];
+const recentPosts = posts.slice(1, 7);
+const morePosts = posts.slice(7, 13);
 ---
 
 <!doctype html>
@@ -28,333 +23,277 @@ const categories = [
 	<body>
 		<Header />
 		<main>
-			<!-- Hero Section -->
-			<section class="hero">
-				<div class="hero-content">
-					<span class="hero-badge">Trading Education</span>
-					<h1>Domina el Arte del<br/><span class="text-gradient">Trading Diario</span></h1>
-					<p class="hero-description">
-						La guia mas completa de trading en espanol. Aprende estrategias, analisis tecnico,
-						y todo lo que necesitas para comenzar tu carrera como trader.
-					</p>
-					<div class="hero-buttons">
-						<a href="/blog" class="btn">Explorar Articulos</a>
-						<a href="/blog/estrategia" class="btn btn-outline">Ver Estrategias</a>
-					</div>
-				</div>
-				<div class="hero-visual">
-					<div class="hero-chart glass">
-						<div class="chart-line"></div>
-						<div class="chart-dots">
-							<span></span><span></span><span></span><span></span><span></span>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- Categories Section -->
-			<section class="categories">
-				<h2>Explora por Categoria</h2>
-				<div class="categories-grid">
-					{categories.map((cat) => (
-						<a href={`/blog/${cat.slug}`} class="category-card glass">
-							<span class="category-icon">{cat.icon}</span>
-							<span class="category-name">{cat.name}</span>
-						</a>
-					))}
-				</div>
-			</section>
-
-			<!-- Latest Posts Section -->
-			<section class="latest-posts">
-				<div class="section-header">
-					<h2>Articulos Recientes</h2>
-					<a href="/blog" class="view-all">
-						Ver todos
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-							<line x1="5" y1="12" x2="19" y2="12"></line>
-							<polyline points="12 5 19 12 12 19"></polyline>
-						</svg>
+			<!-- Featured Post -->
+			{featuredPost && (
+				<section class="featured">
+					<a href={`/blog/${featuredPost.id}/`} class="featured-link">
+						<span class="featured-label">Destacado</span>
+						<h1>{featuredPost.data.title}</h1>
+						<p class="featured-date">
+							<FormattedDate date={featuredPost.data.pubDate} />
+						</p>
+						{featuredPost.data.description && (
+							<p class="featured-excerpt">{featuredPost.data.description}</p>
+						)}
 					</a>
-				</div>
-				<div class="posts-grid">
-					{posts.map((post) => (
-						<article class="post-card glass">
-							<a href={`/blog/${post.id}/`}>
-								<span class="post-date">
-									<FormattedDate date={post.data.pubDate} />
-								</span>
-								<h3 class="post-title">{post.data.title}</h3>
-								{post.data.description && (
-									<p class="post-excerpt">{post.data.description}</p>
-								)}
-							</a>
-						</article>
-					))}
-				</div>
-			</section>
+				</section>
+			)}
 
-			<!-- CTA Section -->
-			<section class="cta glass">
-				<h2>Comienza tu Viaje en Trading</h2>
-				<p>Desde principiantes hasta expertos, tenemos recursos para cada nivel.</p>
-				<a href="/blog/por-que-aprender-trading" class="btn">Por que Aprender Trading</a>
-			</section>
+			<!-- Main Content Grid -->
+			<div class="content-grid">
+				<!-- Recent Posts -->
+				<section class="posts-section">
+					<h2 class="section-title">Articulos Recientes</h2>
+					<div class="posts-list">
+						{recentPosts.map((post) => (
+							<article class="post-item">
+								<a href={`/blog/${post.id}/`}>
+									<h3>{post.data.title}</h3>
+									<span class="post-date">
+										<FormattedDate date={post.data.pubDate} />
+									</span>
+								</a>
+							</article>
+						))}
+					</div>
+					<a href="/blog" class="view-all">Ver todos los articulos &rarr;</a>
+				</section>
+
+				<!-- Sidebar -->
+				<aside class="sidebar">
+					<!-- Categories -->
+					<div class="widget">
+						<h3 class="widget-title">Categorias</h3>
+						<ul class="category-list">
+							<li><a href="/blog/forex">Forex</a></li>
+							<li><a href="/blog/criptomonedas">Criptomonedas</a></li>
+							<li><a href="/blog/estrategia">Estrategias</a></li>
+							<li><a href="/blog/brokers">Brokers</a></li>
+							<li><a href="/blog/analisis-tecnico">Analisis Tecnico</a></li>
+							<li><a href="/blog/futuros">Futuros</a></li>
+							<li><a href="/blog/opciones">Opciones</a></li>
+						</ul>
+					</div>
+
+					<!-- More Posts Widget -->
+					{morePosts.length > 0 && (
+						<div class="widget">
+							<h3 class="widget-title">Mas Articulos</h3>
+							<ul class="more-posts">
+								{morePosts.map((post) => (
+									<li>
+										<a href={`/blog/${post.id}/`}>{post.data.title}</a>
+									</li>
+								))}
+							</ul>
+						</div>
+					)}
+				</aside>
+			</div>
 		</main>
 		<Footer />
 	</body>
 </html>
 
 <style>
-	/* Hero Section */
-	.hero {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 4rem;
-		align-items: center;
-		padding: 4rem 0 6rem;
-		min-height: 70vh;
+	/* Featured Section */
+	.featured {
+		background: var(--gray-bg);
+		padding: 30px;
+		margin-bottom: 30px;
+		border-left: 4px solid var(--primary);
 	}
 
-	.hero-badge {
-		display: inline-block;
-		padding: 0.5rem 1rem;
-		background: rgba(0, 212, 170, 0.1);
-		border: 1px solid rgba(0, 212, 170, 0.3);
-		border-radius: 50px;
-		font-size: 0.85rem;
-		font-weight: 600;
-		color: var(--primary);
-		margin-bottom: 1.5rem;
-	}
-
-	.hero h1 {
-		font-size: clamp(2.5rem, 5vw, 4rem);
-		line-height: 1.1;
-		margin-bottom: 1.5rem;
-	}
-
-	.hero-description {
-		font-size: 1.2rem;
-		color: var(--text-secondary);
-		margin-bottom: 2rem;
-		max-width: 500px;
-	}
-
-	.hero-buttons {
-		display: flex;
-		gap: 1rem;
-		flex-wrap: wrap;
-	}
-
-	.hero-visual {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.hero-chart {
-		width: 100%;
-		max-width: 400px;
-		aspect-ratio: 16/10;
-		padding: 2rem;
-		position: relative;
-		overflow: hidden;
-	}
-
-	.chart-line {
-		position: absolute;
-		bottom: 30%;
-		left: 10%;
-		right: 10%;
-		height: 3px;
-		background: linear-gradient(90deg, var(--primary), var(--accent));
-		border-radius: 2px;
-		clip-path: polygon(0 100%, 5% 60%, 20% 80%, 35% 30%, 50% 50%, 65% 20%, 80% 40%, 95% 0%, 100% 0%, 100% 100%);
-	}
-
-	.chart-dots {
-		position: absolute;
-		bottom: 20%;
-		left: 10%;
-		right: 10%;
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.chart-dots span {
-		width: 8px;
-		height: 8px;
-		background: var(--primary);
-		border-radius: 50%;
-		opacity: 0.5;
-	}
-
-	.chart-dots span:nth-child(3) {
-		opacity: 1;
-		box-shadow: 0 0 20px var(--primary);
-	}
-
-	/* Categories */
-	.categories {
-		padding: 4rem 0;
-	}
-
-	.categories h2 {
-		text-align: center;
-		margin-bottom: 2rem;
-	}
-
-	.categories-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-		gap: 1rem;
-	}
-
-	.category-card {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 0.75rem;
-		padding: 1.5rem;
+	.featured-link {
+		display: block;
 		text-decoration: none;
-		text-align: center;
 	}
 
-	.category-icon {
-		font-size: 2rem;
+	.featured-label {
+		display: inline-block;
+		background: var(--primary);
+		color: var(--white);
+		font-size: 0.75rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 4px 10px;
+		margin-bottom: 15px;
 	}
 
-	.category-name {
-		font-weight: 600;
-		font-size: 0.95rem;
-		color: var(--text-primary);
+	.featured h1 {
+		font-size: 1.75rem;
+		margin-bottom: 10px;
+		color: var(--black);
 	}
 
-	.category-card:hover .category-name {
+	.featured-link:hover h1 {
 		color: var(--primary);
 	}
 
-	/* Latest Posts */
-	.latest-posts {
-		padding: 4rem 0;
+	.featured-date {
+		font-size: 0.85rem;
+		color: var(--gray);
+		margin-bottom: 10px;
 	}
 
-	.section-header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 2rem;
-	}
-
-	.section-header h2 {
+	.featured-excerpt {
+		color: var(--gray);
+		font-size: 0.95rem;
 		margin: 0;
 	}
 
-	.view-all {
-		display: flex;
-		align-items: center;
-		gap: 0.5rem;
-		font-weight: 600;
-		font-size: 0.95rem;
-	}
-
-	.posts-grid {
+	/* Content Grid */
+	.content-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-		gap: 1.5rem;
+		grid-template-columns: 1fr 300px;
+		gap: 30px;
 	}
 
-	.post-card {
-		padding: 0;
+	/* Posts Section */
+	.posts-section {
+		min-width: 0;
 	}
 
-	.post-card a {
+	.section-title {
+		font-size: 1rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: var(--white);
+		background: var(--primary);
+		padding: 8px 15px;
+		margin-bottom: 20px;
+		display: inline-block;
+	}
+
+	.posts-list {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.post-item {
+		padding: 20px 0;
+		border-bottom: 1px solid var(--gray-lighter);
+	}
+
+	.post-item:first-child {
+		padding-top: 0;
+	}
+
+	.post-item a {
 		display: block;
-		padding: 1.75rem;
 		text-decoration: none;
-		color: inherit;
+	}
+
+	.post-item h3 {
+		font-size: 1.1rem;
+		margin-bottom: 5px;
+		color: var(--black);
+		transition: color 0.2s ease;
+	}
+
+	.post-item a:hover h3 {
+		color: var(--primary);
 	}
 
 	.post-date {
-		font-size: 0.85rem;
-		color: var(--primary);
-		font-weight: 500;
+		font-size: 0.8rem;
+		color: var(--gray-light);
 	}
 
-	.post-title {
-		font-size: 1.25rem;
-		color: var(--text-primary);
-		margin: 0.5rem 0;
-		line-height: 1.3;
-	}
-
-	.post-excerpt {
+	.view-all {
+		display: inline-block;
+		margin-top: 20px;
+		font-weight: 600;
 		font-size: 0.9rem;
-		color: var(--text-muted);
-		margin: 0;
-		display: -webkit-box;
-		-webkit-line-clamp: 2;
-		-webkit-box-orient: vertical;
-		overflow: hidden;
-	}
-
-	.post-card:hover .post-title {
 		color: var(--primary);
 	}
 
-	/* CTA Section */
-	.cta {
-		text-align: center;
-		padding: 4rem 2rem;
-		margin: 4rem 0;
+	.view-all:hover {
+		text-decoration: underline;
 	}
 
-	.cta h2 {
-		margin-bottom: 1rem;
+	/* Sidebar */
+	.sidebar {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
 	}
 
-	.cta p {
-		font-size: 1.1rem;
-		margin-bottom: 2rem;
+	.widget {
+		background: var(--gray-bg);
+		padding: 20px;
+	}
+
+	.widget-title {
+		font-size: 0.9rem;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+		padding-bottom: 10px;
+		border-bottom: 2px solid var(--primary);
+	}
+
+	.category-list,
+	.more-posts {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.category-list li,
+	.more-posts li {
+		padding: 8px 0;
+		border-bottom: 1px solid var(--gray-lighter);
+	}
+
+	.category-list li:last-child,
+	.more-posts li:last-child {
+		border-bottom: none;
+	}
+
+	.category-list a,
+	.more-posts a {
+		font-size: 0.9rem;
+		color: var(--gray-dark);
+	}
+
+	.category-list a:hover,
+	.more-posts a:hover {
+		color: var(--primary);
 	}
 
 	/* Responsive */
 	@media (max-width: 900px) {
-		.hero {
+		.content-grid {
 			grid-template-columns: 1fr;
-			text-align: center;
-			padding: 2rem 0 4rem;
-			min-height: auto;
 		}
 
-		.hero-description {
-			margin-left: auto;
-			margin-right: auto;
+		.sidebar {
+			flex-direction: row;
+			flex-wrap: wrap;
 		}
 
-		.hero-buttons {
-			justify-content: center;
-		}
-
-		.hero-visual {
-			display: none;
+		.widget {
+			flex: 1;
+			min-width: 250px;
 		}
 	}
 
 	@media (max-width: 600px) {
-		.section-header {
+		.featured {
+			padding: 20px;
+		}
+
+		.featured h1 {
+			font-size: 1.4rem;
+		}
+
+		.sidebar {
 			flex-direction: column;
-			gap: 1rem;
-			text-align: center;
 		}
 
-		.posts-grid {
-			grid-template-columns: 1fr;
-		}
-
-		.categories-grid {
-			grid-template-columns: repeat(2, 1fr);
+		.widget {
+			min-width: 100%;
 		}
 	}
 </style>
