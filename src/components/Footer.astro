@@ -40,7 +40,7 @@ const today = new Date();
 
 <style>
 	footer {
-		background: var(--gray-dark);
+		background: var(--header-bg);
 		color: var(--white);
 		margin-top: 0;
 	}
@@ -52,7 +52,7 @@ const today = new Date();
 	}
 
 	.footer-main {
-		padding: 40px 0;
+		padding: 35px 0;
 	}
 
 	.footer-grid {
@@ -69,9 +69,9 @@ const today = new Date();
 	}
 
 	h4 {
-		color: var(--white);
-		font-size: 1rem;
-		margin-bottom: 15px;
+		color: var(--primary);
+		font-size: 0.9rem;
+		margin-bottom: 12px;
 		text-transform: uppercase;
 		letter-spacing: 0.5px;
 	}
@@ -83,7 +83,7 @@ const today = new Date();
 	}
 
 	.footer-links li {
-		margin-bottom: 8px;
+		margin-bottom: 6px;
 	}
 
 	.footer-links a {
@@ -97,25 +97,25 @@ const today = new Date();
 	}
 
 	.footer-bottom {
-		background: rgba(0, 0, 0, 0.2);
-		padding: 15px 0;
+		background: var(--header-dark);
+		padding: 12px 0;
 		text-align: center;
 	}
 
 	.footer-bottom p {
 		margin: 0;
-		font-size: 0.85rem;
+		font-size: 0.8rem;
 		color: var(--gray-light);
 	}
 
 	@media (max-width: 768px) {
 		.footer-grid {
 			grid-template-columns: 1fr;
-			gap: 30px;
+			gap: 25px;
 		}
 
 		.footer-main {
-			padding: 30px 0;
+			padding: 25px 0;
 		}
 	}
 </style>

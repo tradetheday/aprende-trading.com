@@ -11,8 +11,8 @@ const posts = (await getCollection('blog')).sort(
 );
 
 const featuredPost = posts[0];
-const recentPosts = posts.slice(1, 7);
-const morePosts = posts.slice(7, 13);
+const recentPosts = posts.slice(1, 8);
+const morePosts = posts.slice(8, 14);
 ---
 
 <!doctype html>
@@ -23,45 +23,11 @@ const morePosts = posts.slice(7, 13);
 	<body>
 		<Header />
 		<main>
-			<!-- Featured Post -->
-			{featuredPost && (
-				<section class="featured">
-					<a href={`/blog/${featuredPost.id}/`} class="featured-link">
-						<span class="featured-label">Destacado</span>
-						<h1>{featuredPost.data.title}</h1>
-						<p class="featured-date">
-							<FormattedDate date={featuredPost.data.pubDate} />
-						</p>
-						{featuredPost.data.description && (
-							<p class="featured-excerpt">{featuredPost.data.description}</p>
-						)}
-					</a>
-				</section>
-			)}
-
-			<!-- Main Content Grid -->
+			<!-- Main Content Grid - Sidebar LEFT -->
 			<div class="content-grid">
-				<!-- Recent Posts -->
-				<section class="posts-section">
-					<h2 class="section-title">Articulos Recientes</h2>
-					<div class="posts-list">
-						{recentPosts.map((post) => (
-							<article class="post-item">
-								<a href={`/blog/${post.id}/`}>
-									<h3>{post.data.title}</h3>
-									<span class="post-date">
-										<FormattedDate date={post.data.pubDate} />
-									</span>
-								</a>
-							</article>
-						))}
-					</div>
-					<a href="/blog" class="view-all">Ver todos los articulos &rarr;</a>
-				</section>
-
 				<!-- Sidebar -->
 				<aside class="sidebar">
-					<!-- Categories -->
+					<!-- Categories Widget -->
 					<div class="widget">
 						<h3 class="widget-title">Categorias</h3>
 						<ul class="category-list">
@@ -89,6 +55,43 @@ const morePosts = posts.slice(7, 13);
 						</div>
 					)}
 				</aside>
+
+				<!-- Main Content -->
+				<div class="main-content">
+					<!-- Featured Post -->
+					{featuredPost && (
+						<section class="featured">
+							<a href={`/blog/${featuredPost.id}/`} class="featured-link">
+								<span class="featured-label">Destacado</span>
+								<h1>{featuredPost.data.title}</h1>
+								<p class="featured-date">
+									<FormattedDate date={featuredPost.data.pubDate} />
+								</p>
+								{featuredPost.data.description && (
+									<p class="featured-excerpt">{featuredPost.data.description}</p>
+								)}
+							</a>
+						</section>
+					)}
+
+					<!-- Recent Posts -->
+					<section class="posts-section">
+						<h2 class="section-title">Articulos Recientes</h2>
+						<div class="posts-list">
+							{recentPosts.map((post) => (
+								<article class="post-item">
+									<a href={`/blog/${post.id}/`}>
+										<h3>{post.data.title}</h3>
+										<span class="post-date">
+											<FormattedDate date={post.data.pubDate} />
+										</span>
+									</a>
+								</article>
+							))}
+						</div>
+						<a href="/blog" class="view-all">Ver todos los articulos &rarr;</a>
+					</section>
+				</div>
 			</div>
 		</main>
 		<Footer />
@@ -96,140 +99,32 @@ const morePosts = posts.slice(7, 13);
 </html>
 
 <style>
-	/* Featured Section */
-	.featured {
-		background: var(--gray-bg);
-		padding: 30px;
-		margin-bottom: 30px;
-		border-left: 4px solid var(--primary);
-	}
-
-	.featured-link {
-		display: block;
-		text-decoration: none;
-	}
-
-	.featured-label {
-		display: inline-block;
-		background: var(--primary);
-		color: var(--white);
-		font-size: 0.75rem;
-		font-weight: 700;
-		text-transform: uppercase;
-		padding: 4px 10px;
-		margin-bottom: 15px;
-	}
-
-	.featured h1 {
-		font-size: 1.75rem;
-		margin-bottom: 10px;
-		color: var(--black);
-	}
-
-	.featured-link:hover h1 {
-		color: var(--primary);
-	}
-
-	.featured-date {
-		font-size: 0.85rem;
-		color: var(--gray);
-		margin-bottom: 10px;
-	}
-
-	.featured-excerpt {
-		color: var(--gray);
-		font-size: 0.95rem;
-		margin: 0;
-	}
-
-	/* Content Grid */
+	/* Content Grid - Sidebar on LEFT */
 	.content-grid {
 		display: grid;
-		grid-template-columns: 1fr 300px;
+		grid-template-columns: 280px 1fr;
 		gap: 30px;
-	}
-
-	/* Posts Section */
-	.posts-section {
-		min-width: 0;
-	}
-
-	.section-title {
-		font-size: 1rem;
-		font-weight: 700;
-		text-transform: uppercase;
-		color: var(--white);
-		background: var(--primary);
-		padding: 8px 15px;
-		margin-bottom: 20px;
-		display: inline-block;
-	}
-
-	.posts-list {
-		display: flex;
-		flex-direction: column;
-		gap: 0;
-	}
-
-	.post-item {
-		padding: 20px 0;
-		border-bottom: 1px solid var(--gray-lighter);
-	}
-
-	.post-item:first-child {
-		padding-top: 0;
-	}
-
-	.post-item a {
-		display: block;
-		text-decoration: none;
-	}
-
-	.post-item h3 {
-		font-size: 1.1rem;
-		margin-bottom: 5px;
-		color: var(--black);
-		transition: color 0.2s ease;
-	}
-
-	.post-item a:hover h3 {
-		color: var(--primary);
-	}
-
-	.post-date {
-		font-size: 0.8rem;
-		color: var(--gray-light);
-	}
-
-	.view-all {
-		display: inline-block;
-		margin-top: 20px;
-		font-weight: 600;
-		font-size: 0.9rem;
-		color: var(--primary);
-	}
-
-	.view-all:hover {
-		text-decoration: underline;
 	}
 
 	/* Sidebar */
 	.sidebar {
 		display: flex;
 		flex-direction: column;
-		gap: 25px;
+		gap: 20px;
 	}
 
 	.widget {
 		background: var(--gray-bg);
-		padding: 20px;
+		padding: 18px;
 	}
 
 	.widget-title {
-		font-size: 0.9rem;
+		font-size: 0.85rem;
+		font-weight: 700;
 		text-transform: uppercase;
-		margin-bottom: 15px;
-		padding-bottom: 10px;
+		color: var(--black);
+		padding-bottom: 8px;
+		margin-bottom: 12px;
 		border-bottom: 2px solid var(--primary);
 	}
 
@@ -242,7 +137,7 @@ const morePosts = posts.slice(7, 13);
 
 	.category-list li,
 	.more-posts li {
-		padding: 8px 0;
+		padding: 6px 0;
 		border-bottom: 1px solid var(--gray-lighter);
 	}
 
@@ -262,6 +157,122 @@ const morePosts = posts.slice(7, 13);
 		color: var(--primary);
 	}
 
+	/* Main Content */
+	.main-content {
+		min-width: 0;
+	}
+
+	/* Featured Section */
+	.featured {
+		background: var(--gray-bg);
+		padding: 25px;
+		margin-bottom: 25px;
+		border-left: 4px solid var(--primary);
+	}
+
+	.featured-link {
+		display: block;
+		text-decoration: none;
+	}
+
+	.featured-label {
+		display: inline-block;
+		background: var(--primary);
+		color: var(--white);
+		font-size: 0.7rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 3px 8px;
+		margin-bottom: 12px;
+	}
+
+	.featured h1 {
+		font-size: 1.5rem;
+		margin-bottom: 8px;
+		color: var(--black);
+	}
+
+	.featured-link:hover h1 {
+		color: var(--primary);
+	}
+
+	.featured-date {
+		font-size: 0.85rem;
+		color: var(--gray);
+		margin-bottom: 8px;
+	}
+
+	.featured-excerpt {
+		color: var(--gray);
+		font-size: 0.95rem;
+		margin: 0;
+		line-height: 1.6;
+	}
+
+	/* Posts Section */
+	.posts-section {
+		min-width: 0;
+	}
+
+	.section-title {
+		font-size: 0.9rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: var(--white);
+		background: var(--primary);
+		padding: 6px 12px;
+		margin-bottom: 15px;
+		display: inline-block;
+	}
+
+	.posts-list {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.post-item {
+		padding: 15px 0;
+		border-bottom: 1px solid var(--gray-lighter);
+	}
+
+	.post-item:first-child {
+		padding-top: 0;
+	}
+
+	.post-item a {
+		display: block;
+		text-decoration: none;
+	}
+
+	.post-item h3 {
+		font-size: 1rem;
+		margin-bottom: 4px;
+		color: var(--black);
+		transition: color 0.2s ease;
+	}
+
+	.post-item a:hover h3 {
+		color: var(--primary);
+	}
+
+	.post-date {
+		font-size: 0.8rem;
+		color: var(--gray-light);
+	}
+
+	.view-all {
+		display: inline-block;
+		margin-top: 15px;
+		font-weight: 600;
+		font-size: 0.9rem;
+		color: var(--primary);
+	}
+
+	.view-all:hover {
+		text-decoration: underline;
+	}
+
 	/* Responsive */
 	@media (max-width: 900px) {
 		.content-grid {
@@ -269,23 +280,28 @@ const morePosts = posts.slice(7, 13);
 		}
 
 		.sidebar {
+			order: 2;
 			flex-direction: row;
 			flex-wrap: wrap;
 		}
 
 		.widget {
 			flex: 1;
-			min-width: 250px;
+			min-width: 200px;
+		}
+
+		.main-content {
+			order: 1;
 		}
 	}
 
 	@media (max-width: 600px) {
 		.featured {
-			padding: 20px;
+			padding: 18px;
 		}
 
 		.featured h1 {
-			font-size: 1.4rem;
+			font-size: 1.25rem;
 		}
 
 		.sidebar {
