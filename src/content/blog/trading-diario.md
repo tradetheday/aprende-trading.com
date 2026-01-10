@@ -186,4 +186,4 @@ Un factor primordial en tu lista de pros y contras es probablemente la promesa d
 
 La pregunta real del trading diario sería: ¿realmente funciona? Si estás dispuesto a invertir el tiempo y la energía, entonces el Trading Diario te puede funcionar. 
 
-![Trading Diario En Línea - Todo lo que necesitas saber para empezar Como ser Exitoso](/images/2019/02/AdobeStock_92246077-1024x764-700x522.jpeg)
+![Trading Diario En Línea - Todo lo que necesitas saber para empezar Como ser Exitoso](/images/2019/02/trading-chart-1024x764-700x522.jpeg)

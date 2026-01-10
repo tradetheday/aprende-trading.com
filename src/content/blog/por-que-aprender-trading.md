@@ -41,4 +41,4 @@ Puede tomar por lo menos dos años concretos de trabajo de tiempo completo para 
 
 Finalmente, hay una analogía divertida sobre el trading en relación con la cirugía cerebral. Imagínese recoger un libro sobre cirugía cerebral una noche, leerlo y luego decidir entrar a un quirófano mañana. El trading  de divisas es una de las pocas empresas profesionales que puede comenzar a medida que aprende. Cometer errores es una de las mejores maneras de aprender a medida que avanza. Usted puede recoger un libro sobre el trading de FX y comenzar hoy. 
 
-![¿Por qué aprender Trading?](/images/2019/02/AdobeStock_92246077-1024x764-700x522.jpeg)
+![¿Por qué aprender Trading?](/images/2019/02/trading-chart-1024x764-700x522.jpeg)

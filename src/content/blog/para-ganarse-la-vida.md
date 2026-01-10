@@ -141,4 +141,4 @@ Mantener sus emociones controladas requerirá práctica, muchos errores y más e
 
 El número de personas que optan por vivir del trading diario desde 2014 ha aumentado. Aunque ¿es realista? La respuesta es, depende completamente de su ambición y compromiso. No será un viaje fácil. Pero, si se adapta a su estilo de trabajo, elige el mercado correcto y utiliza los consejos mencionados, entonces podría ser uno de los pocos que triunfan.
 
-![Trading Diario En Línea - Todo lo que necesitas saber para empezar Como ser Exitoso](/images/2019/02/AdobeStock_92246077-1024x764-700x522.jpeg)
+![Trading Diario En Línea - Todo lo que necesitas saber para empezar Como ser Exitoso](/images/2019/02/trading-chart-1024x764-700x522.jpeg)

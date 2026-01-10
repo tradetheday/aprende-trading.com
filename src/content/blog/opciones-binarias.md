@@ -318,4 +318,4 @@ Para información más detallada, vea nuestra [página de impuestos](http://apre
 
 Si bien es emocionante y dinámico, para ganarte la vida con opciones binarias, necesitarás usar esta página y otras fuentes como guías. ¿*El trading  de opciones binarias puede hacerlo rico entonces? *Hecho correctamente, sí puede. No hay duda de que el potencial de las opciones binarias sea rentable, esto es evidenciado por numerosos millonarios. Para llegar allí, sin embargo, necesitará el intermediario adecuado, una estrategia eficaz, y deberá invertir en su educación sobre trading, utilizando los recursos descritos anteriormente.
 
-![](/images/2019/02/AdobeStock_92246077-1024x764-700x522.jpeg)
+![](/images/2019/02/trading-chart-1024x764-700x522.jpeg)
