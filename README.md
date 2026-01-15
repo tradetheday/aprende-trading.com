@@ -66,3 +66,4 @@ site/
 - RSS feed en `/rss.xml`
 - Redirecciones 301 para URLs antiguas de WordPress
 - Meta tags optimizados para redes sociales
+
