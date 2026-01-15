@@ -11,7 +11,7 @@ Los consejos de trading diario pueden venir en una variedad de formas. Cada trad
 
 2. Gestionar el riesgo: Es vital que te sientes y desarrolles una estrategia de gestión de riesgos. Esto asegurará que solo pierdas lo que puedes pagar. Sin uno de estos, tu tiempo como trader diario podría ser extremadamente breve.
 
-3. Aprovechar la Tecnología: Con miles de otros traders, necesitas utilizar todos los recursos a tu alrededor para mantenerte a la vanguardia. Dicho esto, las [plataformas de trading](http://aprende-trading.com/software-programas-de-trading/) ofrecen una gran cantidad de formas de analizar los mercados. También puedes realizar una prueba retrospectiva de tu estrategia con datos históricos para completar cualquier grieta. Las aplicaciones móviles también asegurarán que tenga acceso instantáneo al mercado, casi en cualquier lugar. Combina eso con una conexión a Internet rápida y ¡listo!, ya podrás tomar decisiones rápidas, informadas y precisas.
+3. Aprovechar la Tecnología: Con miles de otros traders, necesitas utilizar todos los recursos a tu alrededor para mantenerte a la vanguardia. Dicho esto, las [plataformas de trading](/blog/software) ofrecen una gran cantidad de formas de analizar los mercados. También puedes realizar una prueba retrospectiva de tu estrategia con datos históricos para completar cualquier grieta. Las aplicaciones móviles también asegurarán que tenga acceso instantáneo al mercado, casi en cualquier lugar. Combina eso con una conexión a Internet rápida y ¡listo!, ya podrás tomar decisiones rápidas, informadas y precisas.
 
 4. Nunca dejes de aprender: El trader exitoso nunca se sienta en sus laureles, siempre está buscando operar de manera más inteligente. Hacer eso significa mantenerse al día con las noticias, utilizar libros de trading y estar atentos a las nuevas escuelas de pensamiento. Los mercados evolucionan y tú necesitas evolucionar junto con ellos.
 
@@ -21,7 +21,7 @@ Los consejos de trading diario pueden venir en una variedad de formas. Cada trad
 
 7. No te concentres en el dinero: Esto puede parecer contrario a la intuición, pero tiene sentido. Tener dinero al frente de tu mente podría hacer que hagas cosas imprudentes, como obtener pequeñas ganancias por temor a perder lo que ya ganaste, o saltar directamente para no perderte una operación. En tu lugar, enfócate en mantenerte en tu estrategia y deja que tu estrategia se enfoque en hacer dinero.
 
-8. Asumir la responsabilidad: Demasiados traders pierden y luego proclaman que el mercado estaba fuera de lugar. Al no asumir la responsabilidad no aprenderás de tus errores. Pase lo que pase, apunta el dedo hacia ti mismo, de manera constructiva. ¿Qué hiciste mal? ¿Cómo puedes evitar que vuelva a suceder? ¿Necesitas modificar tu [plan de trading](http://aprende-trading.com/desde-traders-principiantes-a-expertos-la-estrategia-es-la-clave/)?
+8. Asumir la responsabilidad: Demasiados traders pierden y luego proclaman que el mercado estaba fuera de lugar. Al no asumir la responsabilidad no aprenderás de tus errores. Pase lo que pase, apunta el dedo hacia ti mismo, de manera constructiva. ¿Qué hiciste mal? ¿Cómo puedes evitar que vuelva a suceder? ¿Necesitas modificar tu [plan de trading](/blog/estrategia)?
 
 9. Mantenga un diario de trading: Mantener un registro de las operaciones es un consejo invaluable. Los software ahora te permite almacenar rápida y fácilmente todo tu historial comercial, desde la entrada y la salida hasta el precio y el volumen. Puedes utilizar la información para identificar problemas y modificar tu estrategia, lo que te permite tomar decisiones inteligentes en el futuro. Nunca te encuentres con un trader que se arrepiente de mantener un diario de trading.
 
@@ -31,7 +31,7 @@ Los consejos de trading diario pueden venir en una variedad de formas. Cada trad
 
 ![Trading Diario: Consejos - Nuestros 10 Mejores Consejos para Traders Diarios](/images/2019/01/image-7-700x895.png)
 
-Ningún consejo funcionará si el [bróker](http://aprende-trading.com/brokers/) utilizado para el trading no ofrece una buena experiencia y no puede ejecutar operaciones de manera rápida y asequible.
+Ningún consejo funcionará si el [bróker](/blog/brokers) utilizado para el trading no ofrece una buena experiencia y no puede ejecutar operaciones de manera rápida y asequible.
 
 ## Consejos para principiantes
 
@@ -57,8 +57,8 @@ Antes de que puedas comenzar a comprar y vender acciones de Amazon y Google, deb
 
 - Una conexión a Internet confiable: Cada segundo cuenta cuando buscas capitalizar un alto número de operaciones diarias de bajo valor. No necesitas que tus operaciones se vean obstaculizadas por una conexión a Internet que se corte. Entonces, opta por al menos un paquete de internet de rango medio.
 - Una computadora: Uno de los mejores consejos para principiantes es tener acceso a dos monitores. Si tu computadora falla en un momento vital, podría perder toda su ganancia. Por lo tanto, ten al menos una computadora relativamente rápida y confiable, preferiblemente dos.
-- Una plataforma comercial: Pasará la mayor parte del día aquí, por lo que debes asegurarte de elegir una plataforma que se adapte a tu estilo y necesidades. Descarga algunas plataformas diferentes y pruébalas antes de que te decidas. Consulta nuestra página relacionada para obtener más información sobre el [software de trading](http://aprende-trading.com/software-programas-de-trading/).
-- Un Broker: Tu bróker será tu guardián del mercado. Facilitará tus operaciones a cambio de una comisión. Cuando realizas tantas operaciones cada día, un bróker costoso podría reducir seriamente tus ganancias a largo plazo. Has su tarea y encuentra un bróker que sea confiable y que ofrezca una estructura de tarifas directa y competitiva. Para comparar plataformas, visita nuestra [página de brókers](http://aprende-trading.com/brokers/). 
+- Una plataforma comercial: Pasará la mayor parte del día aquí, por lo que debes asegurarte de elegir una plataforma que se adapte a tu estilo y necesidades. Descarga algunas plataformas diferentes y pruébalas antes de que te decidas. Consulta nuestra página relacionada para obtener más información sobre el [software de trading](/blog/software).
+- Un Broker: Tu bróker será tu guardián del mercado. Facilitará tus operaciones a cambio de una comisión. Cuando realizas tantas operaciones cada día, un bróker costoso podría reducir seriamente tus ganancias a largo plazo. Has su tarea y encuentra un bróker que sea confiable y que ofrezca una estructura de tarifas directa y competitiva. Para comparar plataformas, visita nuestra [página de brókers](/blog/brokers). 
 
 ![Trading Diario: Consejos - Nuestros 10 Mejores Consejos para Traders Diarios](/images/2019/01/image-8-700x466.png)
 
@@ -78,7 +78,7 @@ Un consejo esencial para principiantes es practicar primero con una cuenta demo.
 
 ![](/images/2019/01/Trading-Psicologia.jpg)
 
-Puedes tener [la mejor estrategia](http://aprende-trading.com/desde-traders-principiantes-a-expertos-la-estrategia-es-la-clave/) del mundo, pero si no puedes ser disciplinado y mantener tus emociones bajo control, corres el riesgo de perder ganancias. Lo primero que debes tener en cuenta es que la naturaleza humana es mostrar y reaccionar con emoción, especialmente cuando hay dinero en la línea. El miedo, la codicia y la ambición son tres de las emociones más frecuentes y potencialmente peligrosas. Afortunadamente, hemos enumerado los mejores consejos psicológicos para ayudarlo a mantenerse al nivel. 
+Puedes tener [la mejor estrategia](/blog/estrategia) del mundo, pero si no puedes ser disciplinado y mantener tus emociones bajo control, corres el riesgo de perder ganancias. Lo primero que debes tener en cuenta es que la naturaleza humana es mostrar y reaccionar con emoción, especialmente cuando hay dinero en la línea. El miedo, la codicia y la ambición son tres de las emociones más frecuentes y potencialmente peligrosas. Afortunadamente, hemos enumerado los mejores consejos psicológicos para ayudarlo a mantenerse al nivel. 
 
 - Acepta las pérdidas: Cuando realizas tantas operaciones todos los días, estás obligado a perder algunas veces. Es cómo responde a esas pérdidas lo que define tu carrera como trader. El desencadenante de pérdida puede resultar rápidamente en operaciones de revancha, microgestiones y simplemente desbaratar decisiones malas. En su lugar, acepta pequeñas pérdidas y recuerda que está haciendo lo correcto, lo que se adhiere a la gestión de riesgos.
 - Control de la codicia: La codicia a menudo influye en los traders de la siguiente manera; si ingresas en una transacción a $80 con un objetivo de $95, pero luego llega a $ 95 y luego piensas que "solo esperaré un poco más y aumentaré las ganancias". Esto sólo termina haciéndote perder el tiempo. La solución; sigue con disciplina una estrategia. Piensa a largo plazo y no te desvíes de tu estrategia, simplemente no hay necesidad de apostar.

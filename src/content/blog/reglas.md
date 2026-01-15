@@ -13,7 +13,7 @@ Si bien las reglas varían en función de su ubicación y el volumen al que oper
 
 Margen - Reglas para Traders con Patrones Diarios
 
-Si reside en los EE. UU., Una de las reglas más importantes se refiere a si pertenece a la categoría de 'trader de patrón'. Estas reglas y estipulaciones nacen de la Autoridad de Regulación de la Industria Financiera (FINRA) y son aplicables a todos los traders diarios en los Estados Unidos que tienen una [cuenta de margen](http://aprende-trading.com/margen/). Estas reglas se centran en aquellos que operan con menos de $25.000, ya sea en el Nasdaq o en otros mercados.
+Si reside en los EE. UU., Una de las reglas más importantes se refiere a si pertenece a la categoría de 'trader de patrón'. Estas reglas y estipulaciones nacen de la Autoridad de Regulación de la Industria Financiera (FINRA) y son aplicables a todos los traders diarios en los Estados Unidos que tienen una [cuenta de margen](/blog/margen). Estas reglas se centran en aquellos que operan con menos de $25.000, ya sea en el Nasdaq o en otros mercados.
 
 Trader Diario de Patrones (Pattern Day Trader)
 
@@ -56,11 +56,11 @@ Sin embargo, vale la pena destacar que esto también aumentará las pérdidas. D
 
 Un título difícil de sacudir
 
-También vale la pena tener en cuenta que si el [bróker](http://aprende-trading.com/brokers/) le brindó capacitación sobre transacciones diarias antes de abrir su cuenta, es posible que se lo codifique automáticamente como un trader diario. Por lo tanto, incluso los principiantes deben estar preparados para depositar sumas significativas para comenzar.
+También vale la pena tener en cuenta que si el [bróker](/blog/brokers) le brindó capacitación sobre transacciones diarias antes de abrir su cuenta, es posible que se lo codifique automáticamente como un trader diario. Por lo tanto, incluso los principiantes deben estar preparados para depositar sumas significativas para comenzar.
 
 Además de eso, incluso si no realiza transacciones por un período de cinco días, es poco probable que su etiqueta como trader diario cambie. Su agente mantendrá una "creencia razonable" de que usted es un trader diario basado en sus actividades anteriores.
 
-Si cambia su [estrategia](http://aprende-trading.com/estrategia/) o reduce el comercio, debe comunicarse con su agente para ver si puede hacer que se levanten las reglas y se modifique su cuenta. 
+Si cambia su [estrategia](/blog/estrategia) o reduce el comercio, debe comunicarse con su agente para ver si puede hacer que se levanten las reglas y se modifique su cuenta. 
 
 ¿Es aplicable la regla a las cuentas en efectivo?
 
@@ -70,7 +70,7 @@ Si no paga un activo antes de venderlo en una cuenta de efectivo, viola la prohi
 
 ¿Es la regla aplicable a las opciones?
 
-Para responder a la pregunta a los traders de [opciones](http://aprende-trading.com/opciones/), la respuesta es sí, lo hacen. Desafortunadamente, aquellos que esperan un descanso en los requisitos mínimos no encontrarán refugio. Dicho esto, como muestra nuestra articulo de [opciones](http://aprende-trading.com/opciones/), hay otros beneficios que vienen con la exploración de opciones.
+Para responder a la pregunta a los traders de [opciones](/blog/opciones), la respuesta es sí, lo hacen. Desafortunadamente, aquellos que esperan un descanso en los requisitos mínimos no encontrarán refugio. Dicho esto, como muestra nuestra articulo de [opciones](/blog/opciones), hay otros beneficios que vienen con la exploración de opciones.
 
 Finalmente, no hay reglas de patrón de día para el Reino Unido, Canadá o cualquier otra nación. Estas reglas están establecidas por la FNRA de los EE. UU. Y, por lo tanto, se aplican solo en los EE. UU.
 
@@ -94,7 +94,7 @@ A continuación hay varias reglas a considerar antes de registrarse en un nuevo 
 - Límite Diario de Negociación: en general, los límites se utilizan para protegerse contra la volatilidad y la manipulación del mercado. Sin embargo, también pueden usarse para minimizar sus pérdidas, lo que le impide operar con demasiado capital. TradeStation y Scottrade pueden imponer mayores límites de operaciones diarias que Interactive Brokers y TD Ameritrade, por ejemplo.
 - Margen y Apalancamiento: optar por una cuenta en efectivo y las reglas le impedirán pedir prestado capital de su agente. Sin embargo, regístrese para obtener una cuenta de margen y se le permitirá tomar prestada una cierta cantidad para capitalizar las operaciones, lo que aumentará sus beneficios potenciales. Los brokers tendrán diferentes reglas sobre cuánto margen puede tener acceso. Las reglas de JB y ASX pueden variar de Etrade, por ejemplo.
 
-Para obtener más orientación, consulte nuestra [página de brokers](http://aprende-trading.com/brokers/).
+Para obtener más orientación, consulte nuestra [página de brokers](/blog/brokers).
 
 ## Reglas para Principiantes
 
@@ -114,7 +114,7 @@ En los primeros días en los que estás luchando por obtener capital, es fácil 
 
 4. Cuentas Demo
 
-No tiene nada que perder y mucho que ganar con la primera práctica con una [cuenta demo](http://aprende-trading.com/cuentas-demo/). Financiado con dinero simulado, puede perfeccionar su oficio, con espacio para prueba y error. Numerosos brokers ofrecen cuentas de práctica gratuitas y todas son la plataforma ideal para familiarizarse con los gráficos, patrones y estrategias, incluida la regla de negociación de 15 minutos.
+No tiene nada que perder y mucho que ganar con la primera práctica con una [cuenta demo](/blog/cuentas-demo). Financiado con dinero simulado, puede perfeccionar su oficio, con espacio para prueba y error. Numerosos brokers ofrecen cuentas de práctica gratuitas y todas son la plataforma ideal para familiarizarse con los gráficos, patrones y estrategias, incluida la regla de negociación de 15 minutos.
 
 5. Estar dispuesto a perder
 
@@ -128,7 +128,7 @@ Marty Schwartz dijo: “Un gran trader es como un gran atleta. Tienes que tener 
 
 Es fácil emocionarse cuando un conocido te da una sugerencia que te hace reflexionar. Sin embargo, los consejos no verificados de fuentes cuestionables a menudo conducen a pérdidas considerables. Como dijo una vez el comerciante Jesse Livermore: "Sé por experiencia que nadie puede darme un consejo o una serie de consejos que me harán ganar más dinero que mi propio juicio". Por lo tanto, asegúrese de revisar y volver a verificar todos los consejos e información. Eso puede influir en sus decisiones comerciales.
 
-Para una guía más general, vea nuestra [página de consejos](http://aprende-trading.com/consejos/).
+Para una guía más general, vea nuestra [página de consejos](/blog/consejos).
 
 ## Reglas de Gestión de Riesgos
 
@@ -176,7 +176,7 @@ Para asegurarse de cumplir con las reglas, debe averiguar qué tipo de impuesto 
 
 Si necesita más razones para investigar, puede encontrar reglas de transacciones diarias en torno a las cuentas de jubilación individuales (IRA), y otras cuentas similares podrían permitirle un generoso margen de maniobra. Por lo tanto, es de su interés hacer su tarea.
 
-Para más información, consulte nuestra [página de impuestos](http://aprende-trading.com/impuestos/).
+Para más información, consulte nuestra [página de impuestos](/blog/impuestos).
 
 ![](/images/2019/01/Impuestos-de-Trading-700x460.jpg)
 

@@ -52,7 +52,7 @@ Entonces, esta situación implica simplemente estar alerta a los peligros y sabe
 
 Opciones Binarias VS CFD Trading
 
-Aunque en algunos aspectos son similares, existen algunas diferencias cruciales entre las opciones binarias y los CFD. [Con los CFDs](http://aprende-trading.com/cfd-trading/), tiene un riesgo potencialmente ilimitado. Si el precio del activo aumenta, el vendedor debe pagar el cambio de valor. Alternativamente, si el valor disminuye, pagará al vendedor. Ahora, el valor podría ir rápidamente de 0 a 5,000, lo que lo afectará a un proyecto de ley bastante fuerte.
+Aunque en algunos aspectos son similares, existen algunas diferencias cruciales entre las opciones binarias y los CFD. [Con los CFDs](/blog/cfd-trading), tiene un riesgo potencialmente ilimitado. Si el precio del activo aumenta, el vendedor debe pagar el cambio de valor. Alternativamente, si el valor disminuye, pagará al vendedor. Ahora, el valor podría ir rápidamente de 0 a 5,000, lo que lo afectará a un proyecto de ley bastante fuerte.
 
 Mientras que las opciones binarias funcionan de manera ligeramente diferente. Si bien sigue invirtiendo sin poseer el activo en cuestión, la tasa de ganancia y pérdida es fija. Con una opción de llamada, no importa si el precio se dirige a la luna y regresa, retiene el mismo porcentaje como si aumentara solo un par de pips.
 
@@ -138,7 +138,7 @@ Para los principiantes, familiarizarse con una cuenta de demostración primero e
 
 No existe un mejor broker universal, realmente depende de sus necesidades individuales. Algunos agentes ofrecen transacciones mínimas de solo un par de libras, mientras que otros requieren cientos o incluso miles. La solución - haga su tarea primero.
 
-Para obtener más orientación sobre cómo tomar la decisión correcta, consulte nuestra [página de brokers.](http://aprende-trading.com/brokers/).
+Para obtener más orientación sobre cómo tomar la decisión correcta, consulte nuestra [página de brokers.](/blog/brokers).
 
 Paso 2: elija un instrumento / mercado
 
@@ -251,7 +251,7 @@ El trading de opciones binarias con éxito se basa en encontrar una estrategia q
 
 Si está probando una nueva valla, brecha, cobertura o cualquier otra estrategia binaria por primera vez, *¿por qué no lo prueba primero en una cuenta de práctica? *Esto le permitirá abordar cualquier problema antes de invertir su propio dinero.
 
-Para una guía más detallada, vea nuestra [página de estrategias](http://aprende-trading.com/desde-traders-principiantes-a-expertos-la-estrategia-es-la-clave/).
+Para una guía más detallada, vea nuestra [página de estrategias](/blog/estrategia).
 
 ## Educación
 
@@ -312,7 +312,7 @@ Dicho esto, si los binarios diarios son su única forma de ingresos y usted se c
 
 Fuera del Reino Unido, la regulación fiscal difiere enormemente. Las opciones binarias en Japón y Alemania vienen con obligaciones fiscales muy diferentes, por ejemplo. Por lo tanto, antes de comenzar a operar, busque consejos para determinar si estará exento de impuestos. De no ser así, ¿p*agará el impuesto sobre la renta, el impuesto sobre las ganancias de capital, el impuesto comercial y / o cualquier otra forma de impuesto*?
 
-Para información más detallada, vea nuestra [página de impuestos](http://aprende-trading.com/trading-diario-impuestos-como-se-declaran-las-ganancias/).
+Para información más detallada, vea nuestra [página de impuestos](/blog/impuestos).
 
 ## ¿El Trading de Opciones Binarias Puede Hacerlo Rico?
 

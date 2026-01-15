@@ -80,8 +80,8 @@ Configuración
 La pregunta que muchos aspirantes a traders se hacen es, ¿*cómo empezar a operar día a día*? La respuesta es que necesitan sólo algunas bases. Haga bien esas bases y estará en una  posición fuerte para ganar un sueldo generoso.
 
 - Hardware: necesita al menos un ordenador de gama media y conexión a Internet. Cualquier fallo de hardware o internet podría costarle muy caro. Muchos sugieren tener dos monitores en funcionamiento, en caso de emergencias.
-- Broker: asegúrese de [elegir un broker](http://aprende-trading.com/brokers/) que se adapte a sus necesidades. Deben ofrecer precios competitivos, asistencia al cliente confiable y una plataforma fácil de navegar.
-- Estrategia: necesita [una estrategia](http://aprende-trading.com/desde-traders-principiantes-a-expertos-la-estrategia-es-la-clave/) que se adapte a su estilo operacional. Necesita confiar en gráficos, patrones e indicadores técnicos. Debe permitirle obtener ganancias frecuentes en operaciones de alto volumen y bajo valor. 
+- Broker: asegúrese de [elegir un broker](/blog/brokers) que se adapte a sus necesidades. Deben ofrecer precios competitivos, asistencia al cliente confiable y una plataforma fácil de navegar.
+- Estrategia: necesita [una estrategia](/blog/estrategia) que se adapte a su estilo operacional. Necesita confiar en gráficos, patrones e indicadores técnicos. Debe permitirle obtener ganancias frecuentes en operaciones de alto volumen y bajo valor. 
 
 ## Capital
 

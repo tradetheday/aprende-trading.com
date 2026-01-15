@@ -1,18 +1,62 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
-import FormattedDate from '../components/FormattedDate.astro';
+import TradingViewWidget from '../components/TradingViewWidget.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+// Helper to extract first image from markdown content
+function getFirstImage(body: string): string | null {
+	// Match markdown image: ![alt](/images/path) - local images first
+	const localMdMatch = body.match(/!\[.*?\]\((\/images\/[^)]+)\)/);
+	if (localMdMatch) return localMdMatch[1];
+
+	// Match markdown image: ![alt](https://...) - external images
+	const externalMdMatch = body.match(/!\[.*?\]\((https?:\/\/[^)]+)\)/);
+	if (externalMdMatch) return externalMdMatch[1];
+
+	// Match HTML img: <img src="/images/..." /> - local
+	const localHtmlMatch = body.match(/<img[^>]+src=["'](\/images\/[^"']+)["']/);
+	if (localHtmlMatch) return localHtmlMatch[1];
+
+	// Match HTML img: <img src="https://..." /> - external
+	const externalHtmlMatch = body.match(/<img[^>]+src=["'](https?:\/\/[^"']+)["']/);
+	if (externalHtmlMatch) return externalHtmlMatch[1];
+
+	return null;
+}
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
-const featuredPost = posts[0];
-const recentPosts = posts.slice(1, 8);
-const morePosts = posts.slice(8, 14);
+// Add extracted images to posts
+const postsWithImages = posts.map(post => ({
+	...post,
+	extractedImage: getFirstImage(post.body || '')
+}));
+
+// Get the main article (trading-diario) - this is the homepage content
+const mainPost = postsWithImages.find(p => p.id === 'trading-diario') || postsWithImages[0];
+const otherPosts = postsWithImages.filter(p => p.id !== mainPost.id).slice(0, 10);
+
+// Render the main post content
+const { Content } = await render(mainPost);
+
+// Categories for sidebar
+const categories = [
+	{ name: "Forex", url: "/blog/forex" },
+	{ name: "Criptomonedas", url: "/blog/criptomonedas" },
+	{ name: "Estrategias", url: "/blog/estrategia" },
+	{ name: "Brokers", url: "/blog/brokers" },
+	{ name: "Análisis Técnico", url: "/blog/analisis-tecnico" },
+	{ name: "Day Trading", url: "/blog/day-trading" },
+	{ name: "CFD Trading", url: "/blog/cfd-trading" },
+	{ name: "Futuros", url: "/blog/futuros" },
+	{ name: "Opciones", url: "/blog/opciones" },
+	{ name: "Glosario", url: "/blog/glosario" },
+];
 ---
 
 <!doctype html>
@@ -22,294 +66,673 @@ const morePosts = posts.slice(8, 14);
 	</head>
 	<body>
 		<Header />
-		<main>
-			<!-- Main Content Grid - Sidebar LEFT -->
-			<div class="content-grid">
-				<!-- Sidebar -->
-				<aside class="sidebar">
-					<!-- Categories Widget -->
+
+		<div class="site-container">
+			<main class="site-main">
+				<!-- LEFT Sidebar -->
+				<aside class="sidebar sidebar-left">
+					<!-- CTA Buttons -->
+					<div class="widget widget-cta">
+						<a href="/blog/brokers" class="cta-primary">Empieza Ahora</a>
+						<a href="/blog/cuentas-demo" class="cta-secondary">Cuenta Demo Gratuita</a>
+					</div>
+
+					<!-- Recent Articles Widget -->
 					<div class="widget">
-						<h3 class="widget-title">Categorias</h3>
-						<ul class="category-list">
-							<li><a href="/blog/forex">Forex</a></li>
-							<li><a href="/blog/criptomonedas">Criptomonedas</a></li>
-							<li><a href="/blog/estrategia">Estrategias</a></li>
-							<li><a href="/blog/brokers">Brokers</a></li>
-							<li><a href="/blog/analisis-tecnico">Analisis Tecnico</a></li>
-							<li><a href="/blog/futuros">Futuros</a></li>
-							<li><a href="/blog/opciones">Opciones</a></li>
+						<h3 class="widget-title">ÚLTIMOS ARTÍCULOS</h3>
+						<ul class="articles-list">
+							{otherPosts.slice(0, 5).map(post => (
+								<li>
+									<a href={`/blog/${post.id}/`}>{post.data.title}</a>
+									<span class="article-date">{post.data.pubDate.toLocaleDateString('es-ES', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
+								</li>
+							))}
 						</ul>
 					</div>
 
-					<!-- More Posts Widget -->
-					{morePosts.length > 0 && (
-						<div class="widget">
-							<h3 class="widget-title">Mas Articulos</h3>
-							<ul class="more-posts">
-								{morePosts.map((post) => (
-									<li>
-										<a href={`/blog/${post.id}/`}>{post.data.title}</a>
-									</li>
-								))}
-							</ul>
+					<!-- Broker Comparison Table -->
+					<div class="widget">
+						<table class="broker-table">
+							<thead>
+								<tr>
+									<th>Broker</th>
+									<th>Depósito Mínimo ($)</th>
+									<th>Reseña</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>XM</strong></td>
+									<td>$5 USD</td>
+									<td>
+										<a href="/blog/brokers" class="btn-review">Reseña</a>
+										<a href="/blog/brokers" class="btn-open">Abrir Cuenta</a>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>eToro</strong></td>
+									<td>$50 USD</td>
+									<td>
+										<a href="/blog/brokers" class="btn-review">Reseña</a>
+										<a href="/blog/brokers" class="btn-open">Abrir Cuenta</a>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>Avatrade</strong></td>
+									<td>$100 USD</td>
+									<td>
+										<a href="/blog/brokers" class="btn-review">Reseña</a>
+										<a href="/blog/brokers" class="btn-open">Abrir Cuenta</a>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>Pepperstone</strong></td>
+									<td>$200 USD</td>
+									<td>
+										<a href="/blog/brokers" class="btn-review">Reseña</a>
+										<a href="/blog/brokers" class="btn-open">Abrir Cuenta</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<a href="/blog/brokers" class="broker-list-btn">Lista de Brokers</a>
+					</div>
+
+					<!-- XM Banner -->
+					<div class="widget widget-banner">
+						<div class="xm-banner">
+							<div class="xm-content">
+								<span class="xm-label">Obtenga sus</span>
+								<span class="xm-amount">30$</span>
+								<span class="xm-desc">de bono de trading*</span>
+								<a href="/blog/brokers" class="xm-cta">Leer más</a>
+							</div>
 						</div>
-					)}
+					</div>
+
+					<!-- TradingView Market Overview Widget -->
+					<div class="widget">
+						<h3 class="widget-title">Mercado Forex</h3>
+						<TradingViewWidget
+							type="market-overview"
+							height={400}
+							symbols={['FX:EURUSD', 'FX:GBPUSD', 'FX:USDJPY', 'FX:USDCHF', 'FX:AUDUSD', 'FX:USDCAD']}
+						/>
+					</div>
+
+					<!-- Categories Widget -->
+					<div class="widget">
+						<h3 class="widget-title">Categorías</h3>
+						<ul class="category-list">
+							{categories.map(cat => (
+								<li><a href={cat.url}>{cat.name}</a></li>
+							))}
+						</ul>
+					</div>
+
+					<!-- Recent Posts Widget (hidden, keeping for compatibility) -->
+					<div class="widget" style="display:none">
+						<h3 class="widget-title">Artículos Recientes</h3>
+						<ul class="recent-posts">
+							{otherPosts.slice(0, 5).map(post => (
+								<li>
+									<a href={`/blog/${post.id}/`}>{post.data.title}</a>
+								</li>
+							))}
+						</ul>
+					</div>
 				</aside>
 
 				<!-- Main Content -->
-				<div class="main-content">
-					<!-- Featured Post -->
-					{featuredPost && (
-						<section class="featured">
-							<a href={`/blog/${featuredPost.id}/`} class="featured-link">
-								<span class="featured-label">Destacado</span>
-								<h1>{featuredPost.data.title}</h1>
-								<p class="featured-date">
-									<FormattedDate date={featuredPost.data.pubDate} />
-								</p>
-								{featuredPost.data.description && (
-									<p class="featured-excerpt">{featuredPost.data.description}</p>
-								)}
-							</a>
-						</section>
+				<div class="content-area">
+					{mainPost && (
+						<article class="main-article">
+							<header class="article-header">
+								<h1 class="article-title">{mainPost.data.title}</h1>
+								<div class="article-meta">
+									<span class="meta-date">
+										{mainPost.data.pubDate.toLocaleDateString('es-ES', {
+											year: 'numeric',
+											month: 'long',
+											day: 'numeric'
+										})}
+									</span>
+								</div>
+							</header>
+
+							<!-- Featured Image -->
+							{(mainPost.data.heroImage || mainPost.extractedImage) && (
+								<div class="article-featured-image">
+									<img
+										src={mainPost.data.heroImage?.src || mainPost.extractedImage}
+										alt={mainPost.data.title}
+									/>
+								</div>
+							)}
+
+							<!-- Full Article Content -->
+							<div class="entry-content">
+								<Content />
+							</div>
+						</article>
 					)}
 
-					<!-- Recent Posts -->
-					<section class="posts-section">
-						<h2 class="section-title">Articulos Recientes</h2>
-						<div class="posts-list">
-							{recentPosts.map((post) => (
-								<article class="post-item">
-									<a href={`/blog/${post.id}/`}>
-										<h3>{post.data.title}</h3>
-										<span class="post-date">
-											<FormattedDate date={post.data.pubDate} />
+					<!-- Related Articles Section -->
+					<section class="more-articles">
+						<h2 class="section-title">Más Artículos</h2>
+						<div class="articles-grid">
+							{otherPosts.slice(0, 6).map(post => (
+								<article class="article-card">
+									{(post.data.heroImage || post.extractedImage) && (
+										<a href={`/blog/${post.id}/`} class="card-image">
+											<img src={post.data.heroImage?.src || post.extractedImage} alt={post.data.title} loading="lazy" />
+										</a>
+									)}
+									<div class="card-content">
+										<h3><a href={`/blog/${post.id}/`}>{post.data.title}</a></h3>
+										<span class="card-date">
+											{post.data.pubDate.toLocaleDateString('es-ES', {
+												month: 'short',
+												day: 'numeric',
+												year: 'numeric'
+											})}
 										</span>
-									</a>
+									</div>
 								</article>
 							))}
 						</div>
-						<a href="/blog" class="view-all">Ver todos los articulos &rarr;</a>
+						<a href="/blog" class="view-all-btn">Ver todos los artículos →</a>
 					</section>
 				</div>
-			</div>
-		</main>
+			</main>
+		</div>
+
 		<Footer />
 	</body>
 </html>
 
 <style>
-	/* Content Grid - Sidebar on LEFT */
-	.content-grid {
-		display: grid;
-		grid-template-columns: 280px 1fr;
-		gap: 30px;
+	/* MH Magazine Style Container */
+	.site-container {
+		max-width: 1080px;
+		margin: 25px auto;
+		box-shadow: 0 0 10px rgba(50, 50, 50, 0.17);
 	}
 
-	/* Sidebar */
-	.sidebar {
+	.site-main {
 		display: flex;
-		flex-direction: column;
-		gap: 20px;
+		background: #fff;
+		padding: 25px;
 	}
 
+	/* LEFT Sidebar - MH Magazine 31.66% */
+	.sidebar-left {
+		width: 31.66%;
+		flex-shrink: 0;
+		order: -1;
+		margin-right: 2.5%;
+	}
+
+	/* Content Area - MH Magazine 65.83% */
+	.content-area {
+		width: 65.83%;
+		min-width: 0;
+	}
+
+	/* Widgets - MH Magazine Style */
 	.widget {
-		background: var(--gray-bg);
-		padding: 18px;
+		margin-bottom: 25px;
+		overflow: hidden;
 	}
 
+	/* Widget Title - Layout 1 (bottom border) */
 	.widget-title {
-		font-size: 0.85rem;
+		font-size: 16px;
 		font-weight: 700;
 		text-transform: uppercase;
-		color: var(--black);
-		padding-bottom: 8px;
-		margin-bottom: 12px;
-		border-bottom: 2px solid var(--primary);
+		color: #000;
+		padding-bottom: 5px;
+		margin: 0 0 20px 0;
+		border-bottom: 3px solid var(--primary);
 	}
 
-	.category-list,
-	.more-posts {
+	.widget-text {
+		font-size: 13px;
+		color: #666;
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	/* CTA Buttons */
+	.widget-cta {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.cta-primary {
+		display: block;
+		background: var(--primary);
+		color: #fff;
+		font-size: 16px;
+		font-weight: 700;
+		padding: 15px 20px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 4px;
+		transition: 0.25s ease;
+	}
+
+	.cta-primary:hover {
+		background: var(--primary-dark);
+		color: #fff;
+	}
+
+	.cta-secondary {
+		display: block;
+		background: #fff;
+		color: var(--primary);
+		font-size: 16px;
+		font-weight: 700;
+		padding: 15px 20px;
+		text-align: center;
+		text-decoration: none;
+		border: 2px solid var(--primary);
+		border-radius: 4px;
+		transition: 0.25s ease;
+	}
+
+	.cta-secondary:hover {
+		background: var(--primary);
+		color: #fff;
+	}
+
+	/* Articles List */
+	.articles-list {
 		list-style: none;
 		margin: 0;
 		padding: 0;
 	}
 
-	.category-list li,
-	.more-posts li {
-		padding: 6px 0;
-		border-bottom: 1px solid var(--gray-lighter);
+	.articles-list li {
+		padding: 12px 0;
+		border-bottom: 1px solid #eee;
 	}
 
-	.category-list li:last-child,
-	.more-posts li:last-child {
+	.articles-list li:last-child {
 		border-bottom: none;
 	}
 
-	.category-list a,
-	.more-posts a {
-		font-size: 0.9rem;
-		color: var(--gray-dark);
+	.articles-list a {
+		display: block;
+		color: #333;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 1.4;
+		margin-bottom: 5px;
 	}
 
-	.category-list a:hover,
-	.more-posts a:hover {
+	.articles-list a:hover {
 		color: var(--primary);
 	}
 
-	/* Main Content */
-	.main-content {
-		min-width: 0;
-	}
-
-	/* Featured Section */
-	.featured {
-		background: var(--gray-bg);
-		padding: 25px;
-		margin-bottom: 25px;
-		border-left: 4px solid var(--primary);
-	}
-
-	.featured-link {
+	.article-date {
 		display: block;
+		font-size: 12px;
+		color: #999;
+	}
+
+	/* Broker Table */
+	.broker-table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: 12px;
+		margin-bottom: 15px;
+	}
+
+	.broker-table th {
+		background: #3d4f5f;
+		color: #fff;
+		padding: 10px 8px;
+		text-align: left;
+		font-weight: 600;
+	}
+
+	.broker-table td {
+		padding: 10px 8px;
+		border-bottom: 1px solid #eee;
+		vertical-align: middle;
+	}
+
+	.broker-table tr:hover {
+		background: #f9f9f9;
+	}
+
+	.btn-review, .btn-open {
+		display: block;
+		padding: 5px 10px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 3px;
+		font-size: 11px;
+		font-weight: 600;
+		margin-bottom: 4px;
+	}
+
+	.btn-review {
+		background: var(--primary);
+		color: #fff;
+	}
+
+	.btn-open {
+		background: #28a745;
+		color: #fff;
+	}
+
+	.broker-list-btn {
+		display: block;
+		background: var(--primary);
+		color: #fff;
+		padding: 12px;
+		text-align: center;
+		text-decoration: none;
+		font-weight: 700;
+		border-radius: 4px;
+	}
+
+	.broker-list-btn:hover {
+		background: var(--primary-dark);
+		color: #fff;
+	}
+
+	/* XM Banner */
+	.xm-banner {
+		background: linear-gradient(135deg, #1a5c1a 0%, #2d8a2d 100%);
+		padding: 25px;
+		text-align: center;
+		border-radius: 4px;
+	}
+
+	.xm-content {
+		color: #fff;
+	}
+
+	.xm-label {
+		display: block;
+		font-size: 14px;
+	}
+
+	.xm-amount {
+		display: block;
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 1;
+		margin: 5px 0;
+	}
+
+	.xm-desc {
+		display: block;
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+
+	.xm-cta {
+		display: inline-block;
+		background: #c41e1e;
+		color: #fff;
+		padding: 10px 30px;
+		border-radius: 4px;
+		font-weight: 700;
 		text-decoration: none;
 	}
 
-	.featured-label {
-		display: inline-block;
-		background: var(--primary);
-		color: var(--white);
-		font-size: 0.7rem;
-		font-weight: 700;
-		text-transform: uppercase;
-		padding: 3px 8px;
-		margin-bottom: 12px;
+	.xm-cta:hover {
+		background: #a01818;
+		color: #fff;
 	}
 
-	.featured h1 {
-		font-size: 1.5rem;
-		margin-bottom: 8px;
-		color: var(--black);
+	/* Category List - MH Magazine style */
+	.category-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
 	}
 
-	.featured-link:hover h1 {
+	.category-list li {
+		border-bottom: 1px dotted #ebebeb;
+	}
+
+	.category-list li:last-child {
+		border-bottom: none;
+	}
+
+	.category-list a {
+		display: block;
+		padding: 8px 0;
+		color: #000;
+		font-size: 13px;
+		transition: 0.25s ease-out;
+	}
+
+	.category-list a:hover {
 		color: var(--primary);
 	}
 
-	.featured-date {
-		font-size: 0.85rem;
-		color: var(--gray);
-		margin-bottom: 8px;
-	}
-
-	.featured-excerpt {
-		color: var(--gray);
-		font-size: 0.95rem;
+	/* Recent Posts - MH Magazine style */
+	.recent-posts {
+		list-style: none;
 		margin: 0;
-		line-height: 1.6;
+		padding: 0;
 	}
 
-	/* Posts Section */
-	.posts-section {
-		min-width: 0;
+	.recent-posts li {
+		padding: 8px 0;
+		border-bottom: 1px dotted #ebebeb;
 	}
 
-	.section-title {
-		font-size: 0.9rem;
-		font-weight: 700;
-		text-transform: uppercase;
-		color: var(--white);
-		background: var(--primary);
-		padding: 6px 12px;
-		margin-bottom: 15px;
-		display: inline-block;
-	}
-
-	.posts-list {
-		display: flex;
-		flex-direction: column;
-		gap: 0;
-	}
-
-	.post-item {
-		padding: 15px 0;
-		border-bottom: 1px solid var(--gray-lighter);
-	}
-
-	.post-item:first-child {
+	.recent-posts li:first-child {
 		padding-top: 0;
 	}
 
-	.post-item a {
+	.recent-posts li:last-child {
+		border-bottom: none;
+	}
+
+	.recent-posts a {
+		font-size: 13px;
+		font-weight: 700;
+		color: #000;
+		line-height: 1.3;
+		transition: 0.25s ease-out;
+	}
+
+	.recent-posts a:hover {
+		color: var(--primary);
+	}
+
+	/* Main Article - MH Magazine style */
+	.main-article {
+		margin-bottom: 25px;
+		padding-bottom: 25px;
+		border-bottom: 1px dotted #ebebeb;
+	}
+
+	.article-header {
+		margin-bottom: 20px;
+	}
+
+	.article-title {
+		font-size: 28px;
+		line-height: 1.3;
+		margin: 0;
+		padding-bottom: 10px;
+		color: #000;
+	}
+
+	.article-meta {
+		font-size: 13px;
+		color: #979797;
+		padding: 5px 10px;
+		border-top: 1px dotted #ebebeb;
+		border-bottom: 1px dotted #ebebeb;
+	}
+
+	.article-featured-image {
+		margin: 20px 0;
+	}
+
+	.article-featured-image img {
+		width: 100%;
+		height: auto;
 		display: block;
-		text-decoration: none;
 	}
 
-	.post-item h3 {
-		font-size: 1rem;
-		margin-bottom: 4px;
-		color: var(--black);
-		transition: color 0.2s ease;
+	.article-image {
+		margin-bottom: 20px;
 	}
 
-	.post-item a:hover h3 {
-		color: var(--primary);
+	.article-image img {
+		width: 100%;
+		height: auto;
 	}
 
-	.post-date {
-		font-size: 0.8rem;
-		color: var(--gray-light);
+	.article-excerpt p {
+		font-size: 14px;
+		line-height: 1.6;
+		color: #000;
+		margin-bottom: 20px;
 	}
 
-	.view-all {
+	.read-more {
 		display: inline-block;
-		margin-top: 15px;
-		font-weight: 600;
-		font-size: 0.9rem;
+		font-size: 12px;
+		font-weight: 700;
+		color: #fff;
+		background: var(--primary);
+		padding: 10px 15px;
+		text-transform: uppercase;
+		text-decoration: none;
+		transition: 0.25s ease-out;
+	}
+
+	.read-more:hover {
+		background: var(--gray-dark, #2a2a2a);
+		color: #fff;
+	}
+
+	/* More Articles Section - MH Magazine style */
+	.more-articles {
+		margin-top: 25px;
+	}
+
+	.section-title {
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #000;
+		padding-bottom: 5px;
+		margin: 0 0 20px 0;
+		border-bottom: 3px solid var(--primary);
+	}
+
+	.articles-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+		margin-bottom: 20px;
+	}
+
+	.article-card {
+		padding-bottom: 20px;
+		border-bottom: 1px dotted #ebebeb;
+	}
+
+	.card-image {
+		display: block;
+		position: relative;
+		margin-bottom: 10px;
+		overflow: hidden;
+	}
+
+	.card-image img {
+		width: 100%;
+		height: 150px;
+		object-fit: cover;
+	}
+
+	.card-content h3 {
+		font-size: 16px;
+		line-height: 1.3;
+		margin: 0 0 5px 0;
+	}
+
+	.card-content h3 a {
+		color: #000;
+		transition: 0.25s ease-out;
+	}
+
+	.card-content h3 a:hover {
 		color: var(--primary);
 	}
 
-	.view-all:hover {
-		text-decoration: underline;
+	.card-date {
+		font-size: 13px;
+		color: #979797;
 	}
 
-	/* Responsive */
+	.view-all-btn {
+		display: inline-block;
+		padding: 10px 15px;
+		background: var(--primary);
+		color: #fff;
+		font-size: 12px;
+		font-weight: 700;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: 0.25s ease-out;
+	}
+
+	.view-all-btn:hover {
+		background: var(--gray-dark, #2a2a2a);
+		color: #fff;
+	}
+
+	/* Responsive - MH Magazine breakpoints */
 	@media (max-width: 900px) {
-		.content-grid {
-			grid-template-columns: 1fr;
+		.site-container {
+			margin: 0;
+			box-shadow: none;
 		}
 
-		.sidebar {
-			order: 2;
-			flex-direction: row;
-			flex-wrap: wrap;
+		.site-main {
+			flex-direction: column;
+			padding: 15px;
 		}
 
-		.widget {
-			flex: 1;
-			min-width: 200px;
-		}
-
-		.main-content {
+		.sidebar-left {
+			width: 100%;
 			order: 1;
+			margin-right: 0;
+			margin-top: 25px;
+		}
+
+		.content-area {
+			width: 100%;
+			order: 0;
 		}
 	}
 
-	@media (max-width: 600px) {
-		.featured {
-			padding: 18px;
+	@media (max-width: 768px) {
+		.site-main {
+			padding: 15px;
 		}
 
-		.featured h1 {
-			font-size: 1.25rem;
+		.article-title {
+			font-size: 1.5rem;
 		}
 
-		.sidebar {
-			flex-direction: column;
-		}
-
-		.widget {
-			min-width: 100%;
+		.articles-grid {
+			grid-template-columns: 1fr;
 		}
 	}
 </style>

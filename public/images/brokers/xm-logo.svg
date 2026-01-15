@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40">
+  <rect width="120" height="40" fill="#1a1a1a"/>
+  <rect x="10" y="8" width="24" height="24" fill="#d32f2f"/>
+  <text x="22" y="26" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">XM</text>
+  <text x="75" y="26" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#d32f2f">XM</text>
+</svg>

@@ -15,7 +15,7 @@ El software de trading en línea se puede dividir en cuatro categorías:
 
 - Data: Antes de comenzar a operar el día, debes conocer los precios de las acciones, futuros y / o monedas que deseas negociar. Para las acciones y futuros, esos precios generalmente provendrán de la bolsa donde se negocian. Forex, por ejemplo, no tiene un intercambio central.
 - Creación de gráficos: Los traders inteligentes generalmente registrarán los precios de creación de gráficos. Muchos proveedores también ofrecen feeds de datos. Estos paquetes de gráficos suelen ofrecer indicadores de análisis técnico básico. Opta por un paquete más avanzado y podrás beneficiarte de más indicadores y la capacidad de probar sus estrategias.
-- Ejecución comercial: Con tus datos a la mano y luego de analizarlos en un gráfico, en algún momento querrás ingresar a una operación. Para eso, necesitarás algún tipo de software de ejecución comercial, una [plataforma de trading electrónica](http://aprende-trading.com/). Hoy en día, una gran cantidad de programas también te permitirán desarrollar tus propias estrategias comerciales con una interfaz de programación de aplicaciones (API). También pueden ofrecerte capacidades de trading automatizadas específicamente para operaciones diarias.
+- Ejecución comercial: Con tus datos a la mano y luego de analizarlos en un gráfico, en algún momento querrás ingresar a una operación. Para eso, necesitarás algún tipo de software de ejecución comercial, una [plataforma de trading electrónica](/). Hoy en día, una gran cantidad de programas también te permitirán desarrollar tus propias estrategias comerciales con una interfaz de programación de aplicaciones (API). También pueden ofrecerte capacidades de trading automatizadas específicamente para operaciones diarias.
 - Bróker vs proveedor independiente: Muchos brókers ofrecerán un software directamente vinculado a tus sistemas internos, pero también puedes utilizar aplicaciones de terceros a través de proveedores de software independientes. El beneficio de las soluciones de terceros es que a menudo, tienen características más avanzadas y te permiten negociar con diferentes brokers con una sola interfaz.
 
 ## Herramientas
@@ -26,7 +26,7 @@ Al elegir tu software, necesitas algo que funcione perfectamente con tu computad
 
 MetaTrader4, por ejemplo, es la plataforma comercial más popular del mundo. Es fácil de usar, por lo que combinado con una Mac fácil de navegar, es ideal tanto para principiantes como para veteranos. Pero si estás buscando el mejor software de trading para Mac o Windows, verifica las reviews para asegurarte de que las herramientas técnicas, las fuentes de datos, los rastreadores de cartera, las capacidades de backtesting y cualquier otra característica que requiera no tengan problemas de compatibilidad. Además, asegúrate de que la descarga inicial del software comercial sea gratuita. Los brokers de confianza no deben cobrarte por el privilegio de instalación.
 
-![Trading Diario: Software - Compara Los Mejores Software de Trading Apple Windows](https://blog.vodien.com/wp-content/uploads/2015/07/mac-vs-windows-competition.png)
+![Trading Diario: Software - Compara Los Mejores Software de Trading Apple Windows](/images/2019/03/apple-vs-android-700x438.png)
 
 Software de Trading Diario para Móviles
 
@@ -34,7 +34,7 @@ También puedes obtener un software de trading móvil extremadamente útil, norm
 
 Asegúrate de que al elegir tu software, la aplicación móvil sea gratuita. Una buena aplicación proporcionará actualizaciones del mercado sucintas, tendencias y los tickers habituales del precio de las acciones. Si la aplicación te sobrecarga con información que te empuja hacia decisiones impulsivas, mantente claro.
 
-![Trading Diario: Software - Compara Los Mejores Software de Trading](https://www.fxtradingrevolution.com/uploads/5/4/6/5/54651913/forex-mobile_orig.jpeg)
+![Trading Diario: Software - Compara Los Mejores Software de Trading](/images/2019/01/softwares-de-trading-1-700x349.png)
 
 ## ¿Qué buscar?
 
@@ -58,12 +58,12 @@ Tecnología
 
 A continuación se presentan algunos de los programas de intercambio de divisas más populares disponibles:
 
-- [Plataformas de trading](http://aprende-trading.com/brokers/): Te permiten administrar y ejecutar manualmente operaciones de divisas.
+- [Plataformas de trading](/blog/brokers): Te permiten administrar y ejecutar manualmente operaciones de divisas.
 - Generadores de señales de comercio: Estos te proporcionarán los niveles recomendados para ingresar y salir de las posiciones.
 - Aplicación de análisis técnico: Te ofrecerá gráficos de los tipos de cambio históricos, además de una amplia gama de indicadores técnicos.
 - Software automatizado de negociación de divisas: Una vez que hayas preprogramado tus reglas y estrategia, estos programas ejecutarán automáticamente operaciones a tu nombre. 
 
-![Trading Diario: Software - Compara Los Mejores Software de Trading](https://www.anee.it/wp-content/uploads/2018/07/forex.gif)
+![Trading Diario: Software - Compara Los Mejores Software de Trading](/images/2019/03/EUR-USD-700x461.png)
 
 ## Programa de Negociación de Acciones (stocks)
 
@@ -85,7 +85,7 @@ Además del software para los anteriores instrumentos, también puedes obtener l
 - Software para NSE: Puedes encontrar trading software gratuito para los mercados de la India, o puedes elegir entre opciones cada vez mayores.
 - Software para criptomonedas: Puedes elegir entre robot, software de predicción o puedes encontrar muchas opciones manuales. Ahora, también puedes obtener un software de administración de dinero virtual útil para mantener tu billetera en línea pesada. 
 
-![Trading Diario: Software - Compara Los Mejores Software de Trading](https://www.quantinsti.com/wp-content/uploads/2017/12/What-Are-The-Best-Cryptocurrency-Trading-Platforms_1.jpg)
+![Trading Diario: Software - Compara Los Mejores Software de Trading](/images/2019/01/apps-software-criptomonedas-700x393.jpg)
 
 ## Software Populares
 

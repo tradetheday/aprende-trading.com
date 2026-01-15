@@ -21,7 +21,7 @@ Como tal, solo hay tiempo limitado, recursos y personas que pueden dedicarse al 
 
 ![¿Por qué aprender Trading?](/images/2019/01/Trading-Alertas.jpg)
 
-En realidad, la pregunta es primero si [intercambiar ](http://aprende-trading.com/por-que-elegir-forex/)*[FX](http://aprende-trading.com/por-que-elegir-forex/)* o no y por qué cambiar *FX *en absoluto. Con agentes como *Pepperstone Australia,* puede aprovechar el saldo de su cuenta hasta 500 veces su valor. En otras palabras, al registrarse con* Pepperstone Australia,* puede ingresar en posiciones con un valor de hasta 500 veces su depósito.
+En realidad, la pregunta es primero si [intercambiar ](/blog/forex)*[FX](/blog/forex)* o no y por qué cambiar *FX *en absoluto. Con agentes como *Pepperstone Australia,* puede aprovechar el saldo de su cuenta hasta 500 veces su valor. En otras palabras, al registrarse con* Pepperstone Australia,* puede ingresar en posiciones con un valor de hasta 500 veces su depósito.
 
 Digamos que tiene un saldo de $ 1,000 y participa en una transacción por valor de $ 100,000 (en este caso sería un apalancamiento implícito de 100: 1, por cada $ 100 en posición que tenía $ 1 en depósito): un movimiento de precios razonable de 1% con respecto a su valor de posición equivale a $ 1,000. Puede efectivamente duplicar (o eliminar) su depósito completo con solo un movimiento del 1% en el valor del instrumento subyacente. Al operar con instrumentos apalancados, es posible ganar mucho más en un tiempo determinado que al operar con el instrumento subyacente.
 

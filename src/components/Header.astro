@@ -1,127 +1,467 @@
 ---
-import HeaderLink from './HeaderLink.astro';
+const today = new Date();
+const dateStr = today.toLocaleDateString('es-ES', {
+	weekday: 'long',
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric'
+});
 ---
 
-<header>
-	<div class="header-main">
-		<div class="container">
-			<a href="/" class="logo">
-				<span class="logo-text">APRENDE <span>TRADING</span></span>
-			</a>
-			<div class="header-tagline">La guia del Trading Diario</div>
+<header class="site-header">
+	<!-- Top Utility Bar -->
+	<div class="utility-bar">
+		<div class="header-container">
+			<div class="utility-links">
+				<a href="/blog/forex"><span class="utility-icon">📊</span> MERCADOS DE DIVISAS</a>
+				<a href="/blog/calendario-economico"><span class="utility-icon">📅</span> CALENDARIOS ECONÓMICOS</a>
+				<a href="/blog/software"><span class="utility-icon">🔧</span> HERRAMIENTAS</a>
+			</div>
+			<div class="utility-date">{dateStr.toUpperCase()}</div>
 		</div>
 	</div>
-	<nav class="nav-main">
-		<div class="container">
-			<div class="nav-links">
-				<HeaderLink href="/">Inicio</HeaderLink>
-				<HeaderLink href="/blog">Articulos</HeaderLink>
-				<HeaderLink href="/blog/estrategia">Estrategias</HeaderLink>
-				<HeaderLink href="/blog/brokers">Brokers</HeaderLink>
-				<HeaderLink href="/blog/glosario">Glosario</HeaderLink>
+
+	<!-- Logo + Banner Row -->
+	<div class="header-main">
+		<div class="header-container">
+			<div class="logo-section">
+				<a href="/" class="site-logo">
+					<span class="logo-text">APRENDE<span class="logo-accent">TRADING</span></span>
+				</a>
+				<span class="logo-tagline">FOREX | ACCIONES | CFD | ANÁLISIS</span>
+			</div>
+			<div class="header-banner">
+				<a href="/blog/brokers" class="banner-link">
+					<div class="banner-content">
+						<span class="banner-label">Obtenga sus</span>
+						<span class="banner-amount">30$</span>
+						<span class="banner-desc">de bono de trading*</span>
+					</div>
+					<span class="banner-cta">Leer más</span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Main Navigation -->
+	<nav class="main-nav">
+		<div class="header-container">
+			<button class="mobile-toggle" aria-label="Menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<ul class="nav-menu">
+				<li><a href="/">INICIO</a></li>
+				<li class="has-dropdown">
+					<a href="/blog/brokers">BROKERS ▾</a>
+					<ul class="dropdown">
+						<li><a href="/blog/brokers">XM</a></li>
+						<li><a href="/blog/brokers">AVATRADE</a></li>
+						<li><a href="/blog/brokers">ETORO</a></li>
+						<li><a href="/blog/brokers">EASYMARKETS</a></li>
+						<li><a href="/blog/pepperstone">PEPPERSTONE</a></li>
+					</ul>
+				</li>
+				<li><a href="/blog/cfd-trading">CFD</a></li>
+				<li class="has-dropdown">
+					<a href="/blog/forex">FOREX ▾</a>
+					<ul class="dropdown">
+						<li><a href="/blog/forex">EUR/USD</a></li>
+						<li><a href="/blog/forex">GBP/USD</a></li>
+						<li><a href="/blog/forex">USD/JPY</a></li>
+						<li><a href="/blog/mercados-de-divisas">MERCADOS</a></li>
+					</ul>
+				</li>
+				<li><a href="/blog/mercados">ACCIONES</a></li>
+				<li class="has-dropdown">
+					<a href="/blog/futuros">ÍNDICES ▾</a>
+					<ul class="dropdown">
+						<li><a href="/blog/futuros">S&P 500</a></li>
+						<li><a href="/blog/futuros">DAX 30</a></li>
+						<li><a href="/blog/futuros">NASDAQ</a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown">
+					<a href="/blog/criptomonedas">CRIPTO ▾</a>
+					<ul class="dropdown">
+						<li><a href="/blog/criptomonedas">BITCOIN</a></li>
+						<li><a href="/blog/criptomonedas">ETHEREUM</a></li>
+						<li><a href="/blog/criptomonedas">RIPPLE</a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown">
+					<a href="/blog/day-trading">TRADING DIARIO ▾</a>
+					<ul class="dropdown">
+						<li><a href="/blog/day-trading">ESTRATEGIAS</a></li>
+						<li><a href="/blog/swing-trading">SWING TRADING</a></li>
+						<li><a href="/blog/analisis-tecnico">ANÁLISIS</a></li>
+						<li><a href="/blog/software">SOFTWARE</a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown">
+					<a href="/blog/glosario">GUÍAS ▾</a>
+					<ul class="dropdown">
+						<li><a href="/blog/glosario">GLOSARIO</a></li>
+						<li><a href="/blog/libros">LIBROS</a></li>
+						<li><a href="/blog/consejos">CONSEJOS</a></li>
+						<li><a href="/blog/cuentas-demo">CUENTAS DEMO</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="nav-search">
+				<input type="text" placeholder="Buscar ..." class="search-input" />
 			</div>
 		</div>
 	</nav>
+
+	<!-- News Ticker -->
+	<div class="news-ticker">
+		<div class="header-container">
+			<span class="ticker-label">TICKER DE NOTICIAS ▸</span>
+			<div class="ticker-content">
+				<span class="ticker-date">[{today.toLocaleDateString('es-ES', { month: 'long', day: 'numeric', year: 'numeric' })}]</span>
+				<a href="/blog">Últimas noticias de trading y mercados financieros</a>
+				<span class="ticker-cat">▸ TRADING</span>
+			</div>
+		</div>
+	</div>
 </header>
 
+<script>
+	const toggle = document.querySelector('.mobile-toggle');
+	const menu = document.querySelector('.nav-menu');
+	toggle?.addEventListener('click', () => {
+		menu?.classList.toggle('is-open');
+		toggle.classList.toggle('is-active');
+	});
+</script>
+
 <style>
-	header {
+	.site-header {
 		background: var(--header-bg);
 	}
 
-	.container {
-		max-width: var(--max-width);
+	.header-container {
+		max-width: 1080px;
 		margin: 0 auto;
-		padding: 0 20px;
+		padding: 0 15px;
 	}
 
-	/* Main header */
+	/* Utility Bar */
+	.utility-bar {
+		background: #3d4f5f;
+		padding: 8px 0;
+		font-size: 11px;
+	}
+
+	.utility-bar .header-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.utility-links {
+		display: flex;
+		gap: 20px;
+	}
+
+	.utility-links a {
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+
+	.utility-icon {
+		margin-right: 5px;
+	}
+
+	.utility-date {
+		color: #fff;
+		font-weight: 600;
+	}
+
+	/* Header Main - Logo + Banner */
 	.header-main {
+		background: #fff;
 		padding: 15px 0;
 	}
 
-	.header-main .container {
+	.header-main .header-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo-section {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.site-logo {
+		text-decoration: none;
+	}
+
+	.logo-text {
+		font-size: 36px;
+		font-weight: 700;
+		color: #333;
+		letter-spacing: -1px;
+	}
+
+	.logo-accent {
+		color: var(--primary);
+	}
+
+	.logo-tagline {
+		font-size: 12px;
+		color: #666;
+		margin-top: 2px;
+	}
+
+	/* Header Banner - XM Style */
+	.header-banner {
+		background: linear-gradient(135deg, #1a5c1a 0%, #2d8a2d 100%);
+		padding: 12px 25px;
+		border-radius: 4px;
+	}
+
+	.banner-link {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.banner-content {
+		text-align: center;
+	}
+
+	.banner-label {
+		display: block;
+		font-size: 12px;
+	}
+
+	.banner-amount {
+		display: block;
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 1;
+	}
+
+	.banner-desc {
+		display: block;
+		font-size: 14px;
+	}
+
+	.banner-cta {
+		background: #c41e1e;
+		color: #fff;
+		padding: 8px 20px;
+		border-radius: 4px;
+		font-weight: 600;
+		font-size: 13px;
+	}
+
+	/* Main Navigation */
+	.main-nav {
+		background: var(--primary);
+	}
+
+	.main-nav .header-container {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
 
-	.logo {
-		display: inline-block;
+	.nav-menu {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+	}
+
+	.nav-menu li {
+		position: relative;
+		font-size: 13px;
+		font-weight: 700;
+	}
+
+	.nav-menu li:hover {
+		background: rgba(0,0,0,0.2);
+	}
+
+	.nav-menu li a {
+		display: block;
+		padding: 12px 15px;
+		color: #fff;
 		text-decoration: none;
 	}
 
-	.logo-text {
-		font-size: 1.5rem;
-		font-weight: 700;
-		color: var(--white);
-		letter-spacing: 1px;
+	/* Dropdown Menus */
+	.has-dropdown {
+		position: relative;
 	}
 
-	.logo-text span {
-		color: var(--primary);
+	.dropdown {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background: #fff;
+		min-width: 180px;
+		box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+		z-index: 1000;
+		list-style: none;
+		margin: 0;
+		padding: 0;
 	}
 
-	.header-tagline {
-		color: var(--gray-light);
-		font-size: 0.85rem;
-	}
-
-	/* Navigation */
-	.nav-main {
-		background: var(--nav-bg);
-		border-top: 1px solid rgba(255, 255, 255, 0.1);
-	}
-
-	.nav-links {
-		display: flex;
-		gap: 0;
-	}
-
-	.nav-links :global(a) {
+	.has-dropdown:hover .dropdown {
 		display: block;
-		padding: 12px 16px;
-		color: var(--white);
+	}
+
+	.dropdown li {
+		border-bottom: 1px solid #eee;
+	}
+
+	.dropdown li:last-child {
+		border-bottom: none;
+	}
+
+	.dropdown li a {
+		display: block;
+		padding: 10px 15px;
+		color: #333;
+		font-size: 12px;
 		font-weight: 600;
-		font-size: 0.85rem;
-		text-transform: uppercase;
-		transition: all 0.2s ease;
-		border-bottom: 3px solid transparent;
 	}
 
-	.nav-links :global(a:hover),
-	.nav-links :global(a.active) {
+	.dropdown li:hover {
+		background: var(--primary);
+	}
+
+	.dropdown li:hover a {
+		color: #fff;
+	}
+
+	.nav-search {
+		display: flex;
+		align-items: center;
+	}
+
+	.search-input {
+		padding: 6px 12px;
+		border: 1px solid rgba(255,255,255,0.3);
+		background: rgba(255,255,255,0.1);
+		color: #fff;
+		font-size: 12px;
+		border-radius: 3px;
+		width: 120px;
+	}
+
+	.search-input::placeholder {
+		color: rgba(255,255,255,0.7);
+	}
+
+	/* News Ticker */
+	.news-ticker {
+		background: #f5f5f5;
+		border-bottom: 1px solid #ddd;
+		padding: 8px 0;
+		font-size: 12px;
+	}
+
+	.news-ticker .header-container {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+	}
+
+	.ticker-label {
+		background: var(--primary);
+		color: #fff;
+		padding: 5px 12px;
+		font-weight: 700;
+		white-space: nowrap;
+	}
+
+	.ticker-content {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		color: #333;
+	}
+
+	.ticker-date {
+		color: #666;
+	}
+
+	.ticker-content a {
+		color: #333;
+	}
+
+	.ticker-cat {
 		color: var(--primary);
-		background: rgba(0, 168, 168, 0.1);
-		border-bottom-color: var(--primary);
+		font-weight: 600;
 	}
 
-	@media (max-width: 768px) {
-		.header-main {
-			padding: 12px 0;
+	/* Mobile Toggle */
+	.mobile-toggle {
+		display: none;
+		background: transparent;
+		border: none;
+		padding: 10px;
+		cursor: pointer;
+	}
+
+	.mobile-toggle span {
+		display: block;
+		width: 22px;
+		height: 2px;
+		background: #fff;
+		margin: 5px 0;
+	}
+
+	/* Responsive */
+	@media (max-width: 900px) {
+		.utility-bar, .news-ticker {
+			display: none;
 		}
 
-		.header-main .container {
+		.mobile-toggle {
+			display: block;
+		}
+
+		.nav-menu {
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
 			flex-direction: column;
-			gap: 5px;
+			background: var(--primary);
+			z-index: 1000;
 		}
 
+		.nav-menu.is-open {
+			display: flex;
+		}
+
+		.nav-search {
+			display: none;
+		}
+
+		.header-banner {
+			display: none;
+		}
+	}
+
+	@media (max-width: 600px) {
 		.logo-text {
-			font-size: 1.25rem;
-		}
-
-		.header-tagline {
-			font-size: 0.75rem;
-		}
-
-		.nav-links {
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-
-		.nav-links :global(a) {
-			padding: 10px 12px;
-			font-size: 0.75rem;
+			font-size: 24px;
 		}
 	}
 </style>

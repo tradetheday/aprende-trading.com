@@ -46,7 +46,7 @@ El Trading de Digital 100s apela en parte porque puede especular sobre algunos d
 - Divisas (EUR / USD, GBP/USD, USD / JPY y más)
 - Oro, Plata y Petróleo crudo del oeste de Texas 
 
-Habiendo dicho eso, los mercados en los que puedas operar van a depender del [broker](http://aprende-trading.com/brokers/) al que vaya. Sin embargo, a medida que aumenta la popularidad del Digital 100, también lo hará la elección de los mercados. 
+Habiendo dicho eso, los mercados en los que puedas operar van a depender del [broker](/blog/brokers) al que vaya. Sin embargo, a medida que aumenta la popularidad del Digital 100, también lo hará la elección de los mercados. 
 
 ## ¿Como operar Digital 100s?
 
@@ -107,7 +107,7 @@ Aunque el Trading con Digital 100s pueda parecer sencillo por que solo se trata 
 
 Gestión de riesgos
 
-A diferencia de las propagación de apuestas y los [CFD](http://aprende-trading.com/cfd-trading/), no es necesario que aplique las pérdidas periódicas, finales o garantizadas en su plan de negociación de digital 100s. Sin embargo, usted necesita algún tipo de sistema de gestión de dinero.
+A diferencia de las propagación de apuestas y los [CFD](/blog/cfd-trading), no es necesario que aplique las pérdidas periódicas, finales o garantizadas en su plan de negociación de digital 100s. Sin embargo, usted necesita algún tipo de sistema de gestión de dinero.
 
 Una sugerencia es no operar más de un pequeño porcentaje del saldo de su cuenta en una sola operación. Esto evitará que pierda demasiado capital en un corto espacio de tiempo. Luego, cuando su estrategia comienza a producir resultados consistentes, puede aumentar sus parámetros de riesgo.
 

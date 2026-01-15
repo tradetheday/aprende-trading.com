@@ -1,0 +1,68 @@
+---
+import Widget from './Widget.astro';
+
+interface Props {
+	title?: string;
+}
+
+const { title = "Categorías" } = Astro.props;
+
+// Define main categories with their URLs
+const categories = [
+	{ name: "Forex", url: "/blog/forex", icon: "💱" },
+	{ name: "Criptomonedas", url: "/blog/criptomonedas", icon: "₿" },
+	{ name: "Estrategias", url: "/blog/estrategia", icon: "📊" },
+	{ name: "Brokers", url: "/blog/brokers", icon: "🏦" },
+	{ name: "Análisis Técnico", url: "/blog/analisis-tecnico", icon: "📈" },
+	{ name: "Day Trading", url: "/blog/day-trading", icon: "⏱️" },
+	{ name: "Futuros", url: "/blog/futuros", icon: "📅" },
+	{ name: "Opciones", url: "/blog/opciones", icon: "🎯" },
+];
+---
+
+<Widget title={title}>
+	<ul class="mh-category-list">
+		{categories.map((cat) => (
+			<li>
+				<a href={cat.url}>
+					<span class="cat-name">{cat.name}</span>
+				</a>
+			</li>
+		))}
+	</ul>
+</Widget>
+
+<style>
+	.mh-category-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.mh-category-list li {
+		margin-bottom: 0;
+	}
+
+	.mh-category-list a {
+		display: block;
+		padding: 10px 0;
+		color: var(--black);
+		font-size: 13px;
+		font-weight: 600;
+		border-bottom: 1px solid var(--gray-lighter);
+		transition: 0.25s ease-out;
+	}
+
+	.mh-category-list li:last-child a {
+		border-bottom: none;
+	}
+
+	.mh-category-list a:hover {
+		color: var(--primary);
+		padding-left: 5px;
+	}
+
+	.cat-name {
+		text-transform: uppercase;
+	}
+</style>

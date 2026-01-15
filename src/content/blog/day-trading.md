@@ -10,14 +10,14 @@ Acciones son esencialmente el capital recaudado por una empresa a través de la 
 Esta página le aconsejará qué acciones debe buscar cuando apunte a posiciones a corto plazo. También le ofrecerá algunas reglas invaluables para que las acciones de transacciones diarias sigan. Aprenderá cómo elegir acciones y cuándo operar, así como algunas estrategias inteligentes que podrían ayudarlo a obtener ganancias.
 ### ¿Por qué Day trade Stocks?
 
-![Stocks Day Trading 2018: ¿Cómo Encontrar las Mejores Acciones y Diarios de Trading?](https://www.cronista.com/__export/1534326131744/sites/diarioelcronista/img/2017/05/24/fondosdeinversion.jpg_258117318.jpg)
+![Stocks Day Trading 2018: ¿Cómo Encontrar las Mejores Acciones y Diarios de Trading?](/images/2019/02/dinero-en-efectivo-700x393.jpg)
 
 Las acciones de transacciones diarias son dinámicas y estimulantes. Además de eso, son fáciles de comprar y vender. Con el mundo de la tecnología, el mercado es fácilmente accesible. La liquidez en los mercados denota que la especulación con los precios que suben o bajan en el corto plazo es absolutamente viable.
 
 Por otra parte, las acciones son relativamente sencillas de entender y seguir. Si bien el intercambio diario en el complejo mundo técnico de las criptomonedas o las divisas puede hacer que dude si puede enfrentarse a los triunfos y las posibles dificultades de Google y Facebook fácilmente. Esto significa que identificar las acciones para trading intradía con suerte no será tan desafiante como lo es en otros mercados.
 ### Day Trading vs Invirtiendo Acciones
 
-![Stocks Day Trading 2018: ¿Cómo Encontrar las Mejores Acciones y Diarios de Trading?](https://www.nerdwallet.com/assets/blog/wp-content/uploads/2017/10/stock-trading-vs-investing-whats-the-difference-631x250.jpg)
+![Stocks Day Trading 2018: ¿Cómo Encontrar las Mejores Acciones y Diarios de Trading?](/images/2019/03/Swing-Trading-700x530.jpg)
 
 Antes de comenzar con las acciones del día, debe considerar si definitivamente se adapta sus circunstancias. Por ejemplo, el trading intradiario generalmente requiere al menos un par de horas cada día. Una de esas horas a menudo tendrá que ser temprano en la mañana cuando se abra el mercado. Sin embargo, la inversión en acciones a largo plazo normalmente toma menos tiempo. Esto se debe a que tiene más flexibilidad cuando realiza su investigación y análisis.
 
@@ -25,12 +25,12 @@ Los rendimientos del trading intradiario pueden exceder los de las inversiones a
 
 Se podría argumentar que el trading a corto plazo es más difícil a menos que se centre en el día de transacción de una sola acción. Esto se debe a que la interpretación del indicador de cotización y la detección de brechas a largo plazo son mucho más fáciles. Tampoco tienes que apresurarte a tomar decisiones. Lo cual significa que el trading intradiario puede proporcionar un entorno más emocionante para trabajar.
 
-Una de las principales [ventajas de los CFD](http://aprende-trading.com/cfd-trading/) y la propagación de las apuestas sobre la inversión de capital tradicional es la capacidad de "ir corto". No hay una manera fácil de ganar dinero en un mercado en caída utilizando los métodos tradicionales. Los traders diurnos, por su parte, pueden operar sin importar si creen que el valor aumentará o disminuirá.
+Una de las principales [ventajas de los CFD](/blog/cfd-trading) y la propagación de las apuestas sobre la inversión de capital tradicional es la capacidad de "ir corto". No hay una manera fácil de ganar dinero en un mercado en caída utilizando los métodos tradicionales. Los traders diurnos, por su parte, pueden operar sin importar si creen que el valor aumentará o disminuirá.
 
 No hay una respuesta correcta en términos de transacciones diarias frente a las acciones a largo plazo. Detectar tendencias y acciones de crecimiento en algunos aspectos puede ser más sencillo cuando se invierte a largo plazo. Dicho esto, el trading intradiario puede traerle mayores retornos.
 ### ¿Cómo Operar con Acciones?
 
-![Stocks Day Trading 2018: ¿Cómo Encontrar las Mejores Acciones y Diarios de Trading?](https://fxmedia.s3.amazonaws.com/articles/indicateurs_economiques_trading.jpg)
+![Stocks Day Trading 2018: ¿Cómo Encontrar las Mejores Acciones y Diarios de Trading?](/images/2018/10/trading-chart-1024x764-700x522.jpeg)
 
 El mejor día para comprar acciones le brindará oportunidades a través de movimientos de precios y una gran cantidad de acciones para operar. Le permitirá entrar y salir de esas oportunidades rápidamente. Dichos factores se conocen como volatilidad y volumen. Puede estar pensando 'He oído hablar de las transacciones y el volumen volátiles diarios antes, pero ¿qué significa esto realmente?'
 ### Volumen
@@ -64,7 +64,7 @@ Una acción con un valor beta de 1.2 ha movido aproximadamente 120% por cada 100
 La forma en que utilice estos factores afectará su beneficio potencial y dependerá de sus estrategias para las acciones de transacciones diarias.
 ### Día Popular Para Las Acciones de Comercio
 
-![Stocks Day Trading 2018: ¿Cómo Encontrar las Mejores Acciones y Diarios de Trading?](http://i.routestofinance.com/img/day-trading-2017/most-popular-stocks-and-etfs-for-day-trading.jpg)
+![Stocks Day Trading 2018: ¿Cómo Encontrar las Mejores Acciones y Diarios de Trading?](/images/2019/02/Trading-Setup-700x467.jpg)
 
 Ahora tiene una idea de qué buscar en una acción y dónde encontrarla. A continuación se muestra un desglose de algunas de las selecciones de acciones más populares del día. El fondo cotizado en bolsa (ETF) más popular es el [S&P 500](https://es.investing.com/indices/us-spx-500) (SPY). Con un trading regular de más de 100 millones de acciones al día, el enorme volumen le permite operar tanto en posiciones pequeñas como grandes, dependiendo de la volatilidad.
 #### Alternativas
@@ -72,7 +72,7 @@ Ahora tiene una idea de qué buscar en una acción y dónde encontrarla. A conti
 Aparte de las opciones populares mencionadas anteriormente, hay una serie de otras bolsas populares que vale la pena considerar; incluyendo la Bolsa de Valores de Toronto, la Bolsa de Valores de Karachi, la Bolsa de Valores de Filipinas, la Bolsa de Valores de Tokio y la Bolsa de Valores de Londres.
 De este modo, puede comenzar a cotizar en el día acciones australianas, acciones chinas, acciones japonesas, acciones canadienses, acciones indias, además de una variedad de acciones europeas.
 
-![Stocks Day Trading 2018: ¿Cómo Encontrar las Mejores Acciones y Diarios de Trading?](https://www.altonivel.com.mx/wp-content/uploads/2018/04/guia-para-salir-en-la-bolsa.jpg)
+![Stocks Day Trading 2018: ¿Cómo Encontrar las Mejores Acciones y Diarios de Trading?](/images/2019/02/mercado-de-valores-700x394.jpg)
 
 Por consiguiente, existe una serie de índices bursátiles diarios y clases que puede explorar. Se puede encontrar de todo; desde acciones extranjeras baratas hasta selecciones caras. Todas las estrategias y consejos a continuación se pueden utilizar sin importar de dónde elija las acciones de transacciones diarias.
 ### ¿Cuando Daytrade Stocks?
@@ -81,12 +81,12 @@ El tiempo lo es todo en el juego de trading del día. Si no conoce cuales son lo
 
 Comience temprano: si desea comenzar su operación después de una mentira generosa, no se sorprenda cuando tenga dificultades para obtener una ganancia. El aumento en el volumen de operaciones está haciendo que el mercado solo se acelere. Necesitas levantarte a las 8 am, preparándote para el día siguiente. Esto le dará tiempo para investigar y configurar sus monitores con las acciones que realizará un seguimiento activo ese día.
 
-![Stocks Day Trading 2018: ¿Cómo Encontrar las Mejores Acciones y Diarios de Trading?](http://www.tezet.net/wp-content/uploads/2018/08/Bitcoin-Trader-..jpg)
+![Stocks Day Trading 2018: ¿Cómo Encontrar las Mejores Acciones y Diarios de Trading?](/images/2019/01/trading-diario-2-2-700x393.jpg)
 
 Sea breve: mientras que usted gana más dinero operando todo el día, los traders de día ven los mejores retornos cuando operan por solo 1-3 horas. Puede ganar £ 750 en 2 horas y £ 1000 cuando opera por 5 horas. Es decir, si está buscando un día en el mercado de valores para ganarse la vida, es posible que obtenga el mejor rendimiento por hora si opera en ráfagas cortas.
 ### Patrones de Banderín
 
-![Day Trading: Patrones de Banderín](https://efxto.com/wp-content/uploads/2010/08/https:__www.efxto.com_userfiles_77_images_indicadores_bandera.png)
+![Day Trading: Patrones de Banderín](/images/2019/03/Grafico-Trading-700x287.png)
 
 A menudo lo primero que ve cuando abre un pdf de patrones de gráficos es el banderín. Se crea simplemente por el movimiento de stock significativo y luego la consolidación. Las líneas convergentes dan vida a la forma del banderín. Debería ver un movimiento de ruptura a lo largo del gran cambio de existencias.
 
@@ -94,15 +94,15 @@ A continuación, verá un volumen sustancial cuando la acción comienza a movers
 
 Triángulo Ascendente: Normalmente, verá que el triángulo aparece durante una tendencia ascendente y se considera un patrón de continuación. Menos a menudo se crea en respuesta a una reversión al final de una tendencia a la baja. Cuándo ocurren, los triángulos ascendentes son patrones alcistas.
 
-![Triángulo Ascendente](http://1.bp.blogspot.com/_xqXvWY5IUqc/SxAXWERifBI/AAAAAAAAARo/azGohafYfIs/s1600/504.gif)Triángulo Descendente: A pesar de que a menudo es visto como un patrón bajista, el triángulo descendente es una continuación de una tendencia bajista. Menos frecuentemente puede observarse como una reversión durante una tendencia alcista.
+![Triángulo Ascendente](/images/2019/03/Grafico-Trading-700x287.png)Triángulo Descendente: A pesar de que a menudo es visto como un patrón bajista, el triángulo descendente es una continuación de una tendencia bajista. Menos frecuentemente puede observarse como una reversión durante una tendencia alcista.
 
-![Day Trading: Triangulo Descendente](http://4.bp.blogspot.com/_xqXvWY5IUqc/SxAbDOW5F-I/AAAAAAAAAR4/rDZuFSrCnvs/s1600/506.gif)Taza y Manija: Solo con un vistazo rápido a la tabla, puede evaluar cómo este patrón obtuvo su nombre. La copa tiene una bonita forma curva en "U" y el mango se inclina ligeramente hacia abajo. Por lo general, el lado derecho del gráfico muestra un bajo volumen de operaciones que puede durar un tiempo significativo.
+![Day Trading: Triangulo Descendente](/images/2019/03/Grafico-de-Velas.png)Taza y Manija: Solo con un vistazo rápido a la tabla, puede evaluar cómo este patrón obtuvo su nombre. La copa tiene una bonita forma curva en "U" y el mango se inclina ligeramente hacia abajo. Por lo general, el lado derecho del gráfico muestra un bajo volumen de operaciones que puede durar un tiempo significativo.
 
-![Day Trading: Taza y Manija](http://www.opcionesbinariaspro.com/sites/default/files/u97/taza-asa_0.png)
+![Day Trading: Taza y Manija](/images/2019/03/Grafico-Trading-700x287.png)
 
 Head & Shoulders Top: Visiblemente, la forma cobra vida a medida que ambas líneas de tendencia convergen. Se juntan en los picos y canales. Las líneas crean una clara barrera. Si el precio se rompe, sabrá anticipar un movimiento repentino de precios.
 
-![](http://www.muchapasta.com/imagenes%20forex/manuales/hombro%20cabeza%20hombro.JPG)
+![Head & Shoulders Pattern](/images/2019/03/Grafico-de-Velas.png)
 
 Encontrará diferentes patrones de stock para el día en cada pdf que abra. En lugar de utilizar a todos los que encuentre, consiga alguno de los mejores.
 ### Estrategia
@@ -112,7 +112,7 @@ Los patrones anteriores y las estrategias a continuación se pueden aplicar a to
 Heikin-Ashi
 Si le gustan las estrategias de triángulo, le gustará este giro. Un gráfico de velas le indica cuatro números, abierto, cercano, alto y bajo. Pero utiliza la información de las velas anteriores para crear su gráfico Heikin-Ashi.
 
-![Day Trading: Heikin-Ashi](https://i.investopedia.com/image/png/1520836511175/heikinashi_example.png)
+![Day Trading: Heikin-Ashi](/images/2019/02/Gráfico-Heiken-Ashi-700x217.png)
 *Precio de cierre*: la vela Heikin-Ashi calcula un promedio del precio de apertura, cierre, bajo y alto.
 *Precio de apertura*: la vela será el promedio de apertura y cierre de la vela anterior.
 *Precio alto*: el precio alto que ve en su vela Heikin-Ashi se selecciona entre el valor más alto del precio alto, de apertura y cierre.
@@ -127,7 +127,7 @@ La estrategia también emplea el uso de indicadores de impulso. Un simple oscila
 *Filtros:*deben usarse otros filtros para evitar señales falsas y mejorar el rendimiento.
 Estos gráficos, patrones y estrategias pueden resultar útiles al comprar y vender acciones tradicionales. Aunque pueden ser útiles si está interesado en la forma menos conocida de operaciones de acciones que se describirá a continuación.
 
-Penny Stocks![Day Trading: Penny Stocks](https://d9lhxyivbnow1.cloudfront.net/wp-content/uploads/2016/04/27132538/gold-down.jpg)
+Penny Stocks![Day Trading: Penny Stocks](/images/2019/02/trading-chart-1024x764-700x522.jpeg)
 Todos los días, miles de personas encienden sus computadoras con la esperanza de realizar transacciones diarias de centavos en línea. ¿Pero qué son exactamente? Las Comisiones de Valores y Cambio (SEC) definen las acciones de penny como aquellas acciones con un precio de $ 5 o menos. La mayoría de la comunidad trader está de acuerdo en que 'acciones de centavo' son acciones que se operan en boletines de venta libre (OTCBB) o en hojas de color rosa.
 
 Beneficios
@@ -177,7 +177,7 @@ Para hacerlo, considere lo siguiente:
 Además de eso, cuando se trata de existencias de penny para maniquíes, saber dónde mirar puede darle una ventaja. Por ejemplo, los sectores de metales y minería son bien conocidos por el alto número de empresas que operan con monedas.
 ### Comentarios Finales Sobre las Operaciones Diarias Penny Stocks
 
-![](https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F489287%2Fpenny-stock.jpg&w=700&op=resize)
+![Penny Stocks](/images/2019/02/Trading-Setup-700x467.jpg)
 En general, las acciones de penny posiblemente no sean adecuadas para los activos traders diarios, debido a que incluso las mejores acciones de transacciones diarias de menos de $ 5 pueden carecer del volumen, la regulación y la información precisa requerida para tomar decisiones de inversión informadas. Sin embargo, si está interesado en explorar más a fondo, hay una serie de libros y videos de entrenamiento disponibles.
 #### Consejos para Day Trading Stock
 
@@ -191,7 +191,7 @@ Ahora debería tener un plan de cuándo y qué operar. Aunque también sería pr
 
 #### Herramientas para la Educación
 
-![Stocks Day Trading 2018: ¿Cómo Encontrar las Mejores Acciones y Diarios de Trading?](https://thelazytrader.com/wp-content/uploads/2015/11/bigstock-business-money-and-office-con-58786124.jpg)
+![Stocks Day Trading 2018: ¿Cómo Encontrar las Mejores Acciones y Diarios de Trading?](/images/2019/03/libros-trading-700x298.jpg)
 
 Si quiere seguir para adelante, necesita conocer la variedad de recursos disponibles. Es especialmente importante para los principiantes utilizar las siguientes herramientas:
 
@@ -231,6 +231,6 @@ Debido a que practica con datos históricos reales, puede desarrollar estrategia
 Recuerde: si desea ganar $ 100 por día en acciones bursátiles, ya sea de Canadá, India, Singapur, Australia o Filipinas, deberá utilizar la mayor cantidad posible de los recursos mencionados anteriormente.
 #### Comentario Final
 
-![Stocks Day Trading 2018: ¿Cómo Encontrar las Mejores Acciones y Diarios de Trading?](https://axend.co/blog/wp-content/uploads/2018/02/issuing-bonds-700x330.jpg)
+![Stocks Day Trading 2018: ¿Cómo Encontrar las Mejores Acciones y Diarios de Trading?](/images/2019/02/mercado-de-valores-700x394.jpg)
 
 Cientos de millones de acciones son operadas cada día. Esto hace que el mercado de valores sea un lugar emocionante y lleno de acción. Cuando realice transacciones diarias, busque patrones de stock que indiquen un volumen alentador y una volatilidad oportunista. Hay varios evaluadores fáciles de usar para ver las acciones de transacciones diarias y para ayudarlo a identificar cuáles comprar. Los traders hábiles diarios de acciones deberán tener una estrategia clara, siguiendo sus propias reglas para maximizar las ganancias y reducir las pérdidas.

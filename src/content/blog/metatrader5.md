@@ -69,7 +69,7 @@ MetaTrader 5 (MT5) lleva al famoso paquete de gráficos y las posibilidades de t
 
 ### Trading con múltiples activos en MT5
 
-MT5 ofrece a los inversores online la opción de operar con múltiples clases de activos: [forex](http://aprende-trading.com/forex/) (trading de divisas), [contratos por diferencia](http://aprende-trading.com/cfd-trading/) (CFDs) [acciones individuales](http://aprende-trading.com/acciones/) (valores), índices bursátiles, metales preciosos, energías y materias primas.
+MT5 ofrece a los inversores online la opción de operar con múltiples clases de activos: [forex](/blog/forex) (trading de divisas), [contratos por diferencia](/blog/cfd-trading) (CFDs) [acciones individuales](/blog/mercados) (valores), índices bursátiles, metales preciosos, energías y materias primas.
 
 Ya sea para operadores online principiantes, más avanzados o profesionales, MT5 ha abierto nuevas perspectivas no solo para operar, sino también para obtener mayor visibilidad a lo largo de diversos mercados y diferentes clases de activos.
 

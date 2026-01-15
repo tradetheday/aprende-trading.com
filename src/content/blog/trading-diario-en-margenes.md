@@ -30,7 +30,7 @@ Los operadores de patrones diarios se clasifican como aquellos que ejecutan oper
 *b)* La persona se involucra en dos llamadas operacionales diarias no cubiertas dentro de los 90 días (es decir, supera la limitación del poder de compra más de una vez dentro de los 90 días).
 *c) *La firma de corretaje con la que usted opera, a su propia discreción, también puede designarlo como un traders diairo continuo si tiene motivos para creer que debe ser clasificado como uno. Esto puede suceder en casos en los que, por ejemplo, le brindaron capacitación sobre transacciones diarias antes de que se abriera una cuenta a su nombre.
 
-![](https://images.immedia.com.br//24/24674_2_EL.jpg?c=201709131740)
+![Trading en márgenes](/images/2019/03/Trader-Experto-700x433.jpg)
 
 Las preguntas más frecuentes sobre este asunto se pueden encontrar en el [sitio web oficial de FINRA](https://www.finra.org/).
 
@@ -43,7 +43,7 @@ Los operadores de patrones diarios deben alcanzar un mínimo de $ 25,000 o el 25
 
 Como se mencionó anteriormente, los traders de patrones diarios pueden comprar hasta 4 veces la cantidad en exceso del requisito de capital mínimo de $ 25,000. Por ejemplo, si uno tiene una cuenta con $ 40,000 depositados, esta cantidad es de $ 15,000 en exceso del requisito ($ 40,000 - $ 25,000). Aplicando la regla 4x, esto significa que la cuenta puede operar hasta $ 60,000 (es decir, $ 15,000 multiplicado por cuatro) en valores.
 
-![](https://image.slidesharecdn.com/margintrading-131007190443-phpapp02/95/margin-trading-1-638.jpg?cb=1381172989)
+![Margin Trading](/images/2019/03/apuestas-de-margen-700x394.jpg)
 
 El broker emitirá una llamada de margen si se excede esta cantidad, con cinco días hábiles para atender la llamada, es decir, reducir la cantidad de valores que posee a un nivel satisfactorio. A menudo, esto lo realiza automáticamente el agente, que liquidará las posiciones para recuperar la cuenta dentro de un nivel aceptable. De lo contrario, en el período intermedio, entre la emisión de la llamada y la reunión, el poder de compra diario del trader se limitará a dos veces el exceso del margen de mantenimiento. Si el operador no cumple con la llamada de margen durante los cinco días hábiles asignados, el trading será permitido solo en efectivo. Esto se puede revertirse una vez que se cumple la llamada de margen.
 
@@ -58,7 +58,7 @@ El margen puede permitirle operar con dinero que actualmente no tiene y ayudar c
 
 El trading no es una forma realista de enriquecerse rápidamente. Para ganarse la vida de esta manera debe tener una base de capital suficiente. Nadie podrá ganarse la vida operando con tan solo unos pocos miles de dólares. Para descontar cuánto de la base de capital necesitará para un día de trading, debe comenzar con la cantidad de ingresos que necesita de la operación y dividir eso por su porcentaje de rendimiento esperado cada año.
 
-![Resultado de imagen para buy sell trading](https://assets.entrepreneur.com/content/3x2/2000/20150723173225-buy-sell-stocks-ipo-market.jpeg?width=700&crop=2:1)
+![Resultado de imagen para buy sell trading](/images/2019/02/mercado-de-valores-700x394.jpg)
 
 Por ejemplo, se espera que el S&P 500 regrese alrededor del 7% por año en términos nominales en el futuro. La mayoría de los fondos de cobertura, que emplean inversores muy inteligentes y sofisticados, no logran alcanzar este rendimiento anualizado. Pero obtener esta marca puede ser un objetivo realista. Entonces, si uno necesitara $ 50,000 por año para alcanzar su meta de ingresos, esto requeriría una base de capital de poco más de $ 700,000 ($ 50,000 / 0.07). Y tenga en cuenta que los mercados no siempre le dan un X% de retorno por año. Habrá fluctuaciones, a veces salvajes, dependiendo de su estrategia y gestión de riesgos. No existe tal cosa como un rendimiento seguro del 7%, y si realiza transacciones diarias probablemente siga mercados volátiles, como acciones, productos básicos y / o divisas.
 

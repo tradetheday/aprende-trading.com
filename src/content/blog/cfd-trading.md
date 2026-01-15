@@ -10,7 +10,7 @@ Daily exchange with CFD is a popular strategy. From pattern trading in the US, t
 
 A CFD is a contract between two parties. They agree to pay the difference between the opening price and the closing price of a particular market or asset. Therefore, it is a way of speculating on the movement of the price, without owning the real asset.
 
-![CFD Trading 2018: Strategy, Tips and the best list of Brokers](https://www.binaryoptionsexpert.net/images/2018/10/cfd-trading-700x361.jpg)
+![CFD Trading 2018: Strategy, Tips and the best list of Brokers](/images/2018/10/cfd-trading-700x361.jpg)
 
 The performance of the CFD reflects the underlying asset. Profit and loss are established when the value of the underlying asset shifts relative to the position of the opening price. When trading with CFDs with a broker, you do not own the asset with which you are operating. You are speculating on the price movement, up or down.
 
@@ -24,13 +24,13 @@ When you enter your CFD, the position will show a loss equal to the size of the 
 Using the previous example: let's say that the price of the underlying shares continues to rise and reaches an offer price of $ 26. If you owned the shares, your participation now has a value of $ 2600. A good profit: ignore the costs of commission or operation that the trader made $ 100.
 
 With the underlying shares at $ 26, the CFD would show the same earnings of $ 100, but required less openness, only $ 125. So in terms of percentage, the CFD showed much higher profits. If the market had moved the other way, the losses in relation to our investment would also have been greater: both risk and reward increase.
-#### ![CFD Trading 2018: Strategy, Tips and the best list of Brokers](https://www.crecenegocios.com/wp-content/uploads/2016/02/donde-invertir-mi-dinero.jpg)
+#### ![CFD Trading 2018: Strategy, Tips and the best list of Brokers](/images/2019/02/dinero-en-efectivo-700x393.jpg)
 
 Of course, there are other benefits of owning an asset instead of speculating about the price. We also ignore commissions and differentials for clarity. But the above illustrates the relative differences in the two investment methods.
 #### Application
 
 Since you are making daily transactions, you probably will not hold any CFD positions overnight. Instead, you are likely to place a large number of CFD transactions in a single day. To maximize your returns, you'll want to focus on liquid volatile markets. CFD trading with oil, bitcoin and Forex are popular options, for example.
-#### ![CFD Trading 2018: Strategy, Tips and the best list of Brokers](https://topbrokers.es/files/2017.11/151052684973.png)
+#### ![CFD Trading 2018: Strategy, Tips and the best list of Brokers](/images/2019/03/apps-de-trading-700x356.png)
 
 #### CFD benefits
 
@@ -56,7 +56,7 @@ It is possible that you have already obtained a couple of advantages of the CFDs
 
 #### How to start trading with CFDs?
 
-![CFD Trading 2018: Strategy, Tips and the best list of Brokers](http://www.heheltd.com/wp-content/uploads/2016/11/cfd-trading.jpg)
+![CFD Trading 2018: Strategy, Tips and the best list of Brokers](/images/2018/10/cfd-trading.jpg)
 
 One of the points in favor of transactions with CFDs is that it is very easy to start it. You will have to follow only five simple steps:
 
@@ -97,7 +97,7 @@ Contrary Strategy
 You can follow exactly the same procedure if the price is rising. You can shorten an action that has increased in price when you believe that a sharp change is imminent. Both wave theory and a series of analytical tools will help you determine when these changes will occur.
 #### CFD Trading Tips
 
-![CFD Trading 2018: Strategy, Tips and the best list of Brokers](https://mercadosg.com/wp-content/uploads/2017/03/12-tips-para-hacer-trading.jpg)
+![CFD Trading 2018: Strategy, Tips and the best list of Brokers](/images/2019/03/reglas-de-trading-700x527.jpg)
 
 If you are really looking to increase your earnings, consider these tips from the best traders. Learn from your mistakes and hopefully, you will not fall into the same traps that are very expensive.
 
@@ -145,7 +145,7 @@ Education
 
 This is mainly due to taxes. Countries see CFDs differently. Some consider them a form of gaming activity and, therefore, are tax free. Other countries consider them taxable as any other form of income.
 
-![CFD Trading 2018: Strategy, Tips and the best list of Brokers](https://bitemycoin.com/wp-content/uploads/2018/02/Do-you-have-to-pay-bitcoin-taxes-1.jpeg)
+![CFD Trading 2018: Strategy, Tips and the best list of Brokers](/images/2019/02/dinero-en-efectivo-700x393.jpg)
 
 Tax implications in the United Kingdom, for example, will see that CFD trading falls under the capital gains tax requirements. While you get an annual exemption of £ 10,100, any earnings that exceed that will be taxed. This means that you must keep a detailed record of the transactions in order to perform accurate calculations at the end of the fiscal year.
 

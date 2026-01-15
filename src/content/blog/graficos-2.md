@@ -9,31 +9,7 @@ Los gráficos del trading diario son una de las herramientas más importantes de
 
 Esta página desplegará los mejores gráficos de trading para 2019, incluidos gráficos de barras, gráficos de velas y gráficos de líneas. Luego ofrecerá orientación sobre cómo configurar e interpretarlos. Finalmente, obtendrá los mejores consejos sobre dónde obtener el mejor software de gráficos gratuito y de pago.
 
-## Gráfico en Tiempo Real
-
- 
-
- [AAPL gráfico](https://es.tradingview.com/symbols/NASDAQ-AAPL/) por TradingView
-
- 
- 
- new TradingView.widget(
- {
- "width": 980,
- "height": 610,
- "symbol": "NASDAQ:AAPL",
- "interval": "D",
- "timezone": "Etc/UTC",
- "theme": "Light",
- "style": "1",
- "locale": "es",
- "toolbar_bg": "#f1f3f6",
- "enable_publishing": false,
- "allow_symbol_change": true,
- "container_id": "tradingview_01fbb"
-}
- );
- 
+Para ver gráficos en tiempo real, visite nuestra [página de gráficos Forex](/blog/graficos).
 
 ## Mejores Gráficos de Trading Diario
 
@@ -172,7 +148,7 @@ Todos los softwares de gráficos más populares que aparecen a continuación ofr
 - *TradeStation:* se beneficia de la flexibilidad y de los gráficos de datos múltiples. Además, tiene acceso a indicadores con alertas y una serie de herramientas de dibujo inteligentes.
 - 
 
-Si desea un software de gráficos totalmente gratuito, considere los ejemplos más que adecuados en [la siguiente página](http://aprende-trading.com/software-programas-de-trading/).
+Si desea un software de gráficos totalmente gratuito, considere los ejemplos más que adecuados en [la siguiente página](/blog/software).
 
 ## Gráficos Gratuitos
 

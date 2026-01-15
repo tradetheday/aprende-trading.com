@@ -2,120 +2,163 @@
 const today = new Date();
 ---
 
-<footer>
-	<div class="footer-main">
-		<div class="container">
+<footer class="site-footer">
+	<div class="footer-widgets">
+		<div class="footer-container">
 			<div class="footer-grid">
-				<div class="footer-about">
+				<div class="footer-widget">
 					<h4>Aprende Trading</h4>
-					<p>La guia internacional mas completa del Trading Diario. Recursos educativos para traders de todos los niveles.</p>
+					<p>Tu guía completa para aprender trading diario en español. Estrategias, brokers confiables y análisis técnico para traders de todos los niveles.</p>
 				</div>
-				<div class="footer-links">
+
+				<div class="footer-widget">
 					<h4>Recursos</h4>
 					<ul>
-						<li><a href="/blog">Articulos</a></li>
+						<li><a href="/blog">Artículos</a></li>
 						<li><a href="/blog/estrategia">Estrategias</a></li>
 						<li><a href="/blog/brokers">Brokers</a></li>
+						<li><a href="/blog/analisis-tecnico">Análisis Técnico</a></li>
 						<li><a href="/blog/glosario">Glosario</a></li>
 					</ul>
 				</div>
-				<div class="footer-links">
+
+				<div class="footer-widget">
 					<h4>Mercados</h4>
 					<ul>
 						<li><a href="/blog/forex">Forex</a></li>
 						<li><a href="/blog/criptomonedas">Criptomonedas</a></li>
+						<li><a href="/blog/cfd-trading">CFD Trading</a></li>
 						<li><a href="/blog/futuros">Futuros</a></li>
 						<li><a href="/blog/opciones">Opciones</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-widget">
+					<h4>Trading</h4>
+					<ul>
+						<li><a href="/blog/day-trading">Day Trading</a></li>
+						<li><a href="/blog/swing-trading">Swing Trading</a></li>
+						<li><a href="/blog/cuentas-demo">Cuentas Demo</a></li>
+						<li><a href="/blog/software">Software</a></li>
+						<li><a href="/blog/apps">Apps</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
+
 	<div class="footer-bottom">
-		<div class="container">
+		<div class="footer-container">
 			<p>&copy; {today.getFullYear()} Aprende Trading. Todos los derechos reservados.</p>
 		</div>
 	</div>
 </footer>
 
 <style>
-	footer {
-		background: var(--header-bg);
-		color: var(--white);
-		margin-top: 0;
+	/* MH Magazine Footer Style */
+	.site-footer {
+		background: var(--footer-bg);
+		color: #fff;
+		font-size: 13px;
 	}
 
-	.container {
-		max-width: var(--max-width);
+	.footer-container {
+		max-width: 1080px;
 		margin: 0 auto;
-		padding: 0 20px;
+		padding: 0;
 	}
 
-	.footer-main {
-		padding: 35px 0;
+	.footer-widgets {
+		padding: 25px 25px 0;
 	}
 
 	.footer-grid {
 		display: grid;
-		grid-template-columns: 2fr 1fr 1fr;
-		gap: 40px;
+		grid-template-columns: 1.5fr 1fr 1fr 1fr;
+		gap: 25px;
 	}
 
-	.footer-about p {
-		color: var(--gray-light);
-		font-size: 0.9rem;
+	.footer-widget {
+		margin-bottom: 25px;
+		overflow: hidden;
+	}
+
+	.footer-widget h4 {
+		font-size: 14px;
+		font-weight: 700;
+		color: #fff;
+		text-transform: uppercase;
+		margin: 0 0 20px 0;
+		padding-bottom: 5px;
+		border-bottom: 3px solid var(--primary);
+	}
+
+	.footer-widget p {
 		line-height: 1.6;
 		margin: 0;
+		color: #f7f7f7;
 	}
 
-	h4 {
-		color: var(--primary);
-		font-size: 0.9rem;
-		margin-bottom: 12px;
-		text-transform: uppercase;
-		letter-spacing: 0.5px;
-	}
-
-	.footer-links ul {
+	.footer-widget ul {
 		list-style: none;
 		margin: 0;
 		padding: 0;
 	}
 
-	.footer-links li {
-		margin-bottom: 6px;
+	.footer-widget li {
+		padding: 5px 0;
+		border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
 	}
 
-	.footer-links a {
-		color: var(--gray-light);
-		font-size: 0.9rem;
-		transition: color 0.2s ease;
+	.footer-widget li:last-child {
+		border-bottom: none;
 	}
 
-	.footer-links a:hover {
-		color: var(--primary);
+	.footer-widget a {
+		color: #f7f7f7;
+		transition: 0.25s ease-out;
 	}
 
+	.footer-widget a:hover {
+		color: #f7f7f7;
+	}
+
+	/* Copyright - MH Magazine Style */
 	.footer-bottom {
-		background: var(--header-dark);
-		padding: 12px 0;
+		padding: 10px 25px;
+		border-top: 3px solid rgba(255, 255, 255, 0.3);
+		background: var(--footer-bg);
 		text-align: center;
 	}
 
 	.footer-bottom p {
 		margin: 0;
-		font-size: 0.8rem;
-		color: var(--gray-light);
+		color: #999;
+		font-size: 12px;
 	}
 
-	@media (max-width: 768px) {
+	.footer-bottom a {
+		color: #fff;
+	}
+
+	@media (max-width: 900px) {
+		.footer-grid {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.footer-widgets {
+			padding: 15px;
+		}
+
 		.footer-grid {
 			grid-template-columns: 1fr;
 			gap: 25px;
 		}
 
-		.footer-main {
-			padding: 25px 0;
+		.footer-bottom {
+			padding: 10px 15px;
 		}
 	}
 </style>

@@ -35,7 +35,7 @@ Las preguntas más frecuentes sobre este asunto se pueden encontrar en el [sitio
 
 Si no se cumple ninguno de los criterios anteriores, un trader recibirá una clasificación de trader diario sin patrón. Si un trader no realiza ninguna operación durante 60 días consecutivos, la cuenta se modificará a una cuenta de trader sin patrón.
 
-![Resultado de imagen para Day traders](https://www.thebalance.com/thmb/-Ll5yKFVKa1sfMcml-2DO4LDQeo=/2121x1414/filters:fill(auto,1)/GettyImages-651455230-59b6e0a803f4020010c91fdb.jpg)
+![Resultado de imagen para Day traders](/images/2019/03/Trader-Experto-700x433.jpg)
 
 ## ¿Por qué ‘’Con patrón’’ vs ‘’Sin patrón’’ importa?
 
@@ -65,7 +65,7 @@ Por ejemplo, se espera que el S&P 500 regrese alrededor del 7% por año en térm
 
 No obstante, cuando se utiliza correctamente, el margen puede ser bueno y ayuda a elevar los rendimientos esperados hasta un nivel de riesgo con el que te sientas cómodo. El trading con márgenes también puede ser más seguro que el trading de efectivo solo cuando incentiva a un trader a tomar una estrategia de riesgo bajo a moderado (sabiendo que el apalancamiento ayudará a aumentar las ganancias obtenidas) en lugar de una estrategia de alto riesgo para compensar, como tomando grandes posiciones concentradas en valores de alto riesgo.
 
-![Resultado de imagen para trading money](https://fxmedia.s3.amazonaws.com/featured_images/5919ae35672671494855221.jpeg)
+![Resultado de imagen para trading money](/images/2019/02/dinero-en-efectivo-700x393.jpg)
 
 ## Consideraciones Finales
 

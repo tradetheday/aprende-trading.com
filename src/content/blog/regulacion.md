@@ -72,7 +72,7 @@ El punto general es que a menudo existe una discrepancia en la fiabilidad y el a
 
 ![](/images/2019/01/Trading-Automatico-700x380.png)
 
-Los últimos años han visto un aumento sustancial en el [trading automatizado](http://aprende-trading.com/tutorial-de-los-mejores-software-automaticos-para-trading-diario/) y de alta frecuencia. De hecho, hasta el 70% de las operaciones se realizan a través de estos sistemas algorítmicos. Sin embargo, la naturaleza compleja y de alta velocidad de los sistemas automatizados crea problemas para los reguladores. Por ejemplo, los operadores algorítmicos se responsabilizaron por el "desplome repentino" de 2010 que causó que el Dow Jones cayera en un 7% en solo unos minutos.
+Los últimos años han visto un aumento sustancial en el [trading automatizado](/blog/tutorial-de-los-mejores-software-automaticos-para-trading-diario) y de alta frecuencia. De hecho, hasta el 70% de las operaciones se realizan a través de estos sistemas algorítmicos. Sin embargo, la naturaleza compleja y de alta velocidad de los sistemas automatizados crea problemas para los reguladores. Por ejemplo, los operadores algorítmicos se responsabilizaron por el "desplome repentino" de 2010 que causó que el Dow Jones cayera en un 7% en solo unos minutos.
 
 Como era de esperar, se han realizado importantes movimientos para introducir regulaciones comerciales automatizadas de alta frecuencia. De hecho, en 2015, la CTFC de EE. UU. Aprobó por unanimidad las propuestas, conocidas como "trading automatizado regulado". Estas reglas debían incluir controles de riesgo, medidas de transparencia y otras salvaguardas.
 
@@ -113,7 +113,7 @@ Organismos Reguladores de Otros Países
 
 ![Forex Trading Mercados De Divisas](/images/2018/10/forex-trading-mercados-de-divisas-700x438.jpg)
 
-[Forex](http://aprende-trading.com/forex/) es uno de los mercados más grandes. De hecho, el volumen de trading diario supera los $ 5,3 billones. Esto es significativamente más que los mercados de acciones y futuros, por ejemplo. No es de extrañar entonces que las regulaciones de compraventa de divisas en la India, el Reino Unido, los Estados Unidos y Canadá estén en aumento. De hecho, los países y organismos de todo el mundo están continuamente tratando de supervisar y regular de manera efectiva el poderoso mercado de divisas.
+[Forex](/blog/forex) es uno de los mercados más grandes. De hecho, el volumen de trading diario supera los $ 5,3 billones. Esto es significativamente más que los mercados de acciones y futuros, por ejemplo. No es de extrañar entonces que las regulaciones de compraventa de divisas en la India, el Reino Unido, los Estados Unidos y Canadá estén en aumento. De hecho, los países y organismos de todo el mundo están continuamente tratando de supervisar y regular de manera efectiva el poderoso mercado de divisas.
 
 Por ejemplo, Japón es uno de los mercados minoristas de divisas más activos del mundo. Ahí está la Autoridad de Servicios Financieros (FSA) que regula todos los mercados, incluidos los FX. El cuerpo ha sido proactivo, reduciendo los límites de apalancamiento máximo disponibles para los traders.
 
@@ -137,6 +137,6 @@ También hay otra seria desventaja. Si usted es ciudadano de los EE.UU, muchos b
 
 ## Conclusiones
 
-En general, existen regulaciones para proteger a los traders. Entonces, ya sea que esté operando con criptomonedas o especulando con acciones, elegir de una lista de [brokers](http://aprende-trading.com/brokers/) regulados puede ser una decisión sensata. Así que asegúrese de verificar las credenciales de un broker, las regulaciones de la cuenta, las políticas y la reputación antes de entregar cualquier capital.
+En general, existen regulaciones para proteger a los traders. Entonces, ya sea que esté operando con criptomonedas o especulando con acciones, elegir de una lista de [brokers](/blog/brokers) regulados puede ser una decisión sensata. Así que asegúrese de verificar las credenciales de un broker, las regulaciones de la cuenta, las políticas y la reputación antes de entregar cualquier capital.
 
 ![](/images/2019/02/regulaciones-del-trading-1-700x372.jpg)

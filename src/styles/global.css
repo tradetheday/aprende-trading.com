@@ -1,50 +1,43 @@
+/* Fonts - Open Sans for MH Magazine */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
 /*
-  Aprende Trading - Based on Original MH Magazine Theme
-  Dark header with teal accents
+  Aprende Trading - MH Magazine Theme
+  Dark header with blue accents (customized from default red)
 */
 
 :root {
-	/* Colors - matching original theme */
-	--primary: #00a8a8;
-	--primary-dark: #008f8f;
-	--primary-light: #00bfbf;
+	/* Colors - matching live site */
+	--primary: #4c80e9;
+	--primary-dark: #3a6cd4;
+	--primary-light: #6b9aef;
 
-	--header-bg: #1a2332;
-	--header-dark: #141b27;
-	--nav-bg: #232f3e;
+	/* Header/Footer - dark navy */
+	--header-bg: #30363a;
+	--header-dark: #25292d;
+	--nav-bg: #30363a;
+	--footer-bg: #30363a;
 
-	--black: #1a1a1a;
-	--gray-dark: #333333;
+	/* Grayscale */
+	--black: #000000;
+	--gray-dark: #2a2a2a;
 	--gray: #666666;
-	--gray-light: #999999;
-	--gray-lighter: #e5e5e5;
+	--gray-light: #979797;
+	--gray-lighter: #ebebeb;
 	--gray-bg: #f5f5f5;
+	--body-bg: #f7f7f7;
 	--white: #ffffff;
 
-	/* Sizing */
-	--max-width: 1100px;
-	--content-width: 720px;
-	--radius: 3px;
+	/* Sizing - MH Magazine exact values */
+	--max-width: 1080px;
+	--content-width: 65.83%;
+	--sidebar-width: 31.66%;
+	--gutter: 2.5%;
+	--radius: 0;
 
-	/* Shadows */
-	--shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	/* Shadows - MH Magazine */
+	--shadow: 0 0 10px rgba(50, 50, 50, 0.17);
 	--shadow-hover: 0 3px 10px rgba(0, 0, 0, 0.15);
-}
-
-/* Fonts */
-@font-face {
-	font-family: "Atkinson";
-	src: url("/fonts/atkinson-regular.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: "Atkinson";
-	src: url("/fonts/atkinson-bold.woff") format("woff");
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
 }
 
 /* Reset & Base */
@@ -53,42 +46,108 @@
 }
 
 html {
-	scroll-behavior: smooth;
+	font-size: 100%;
+	-ms-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
 }
 
 body {
-	font-family: "Atkinson", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	margin: 0;
 	padding: 0;
-	background: var(--gray-bg);
-	color: var(--gray-dark);
-	font-size: 16px;
-	line-height: 1.7;
+	background: var(--body-bg);
+	color: var(--black);
+	font-size: 14px;
+	line-height: 1.6;
+	word-wrap: break-word;
 }
 
-/* Main Container */
+/* MH Container System */
+.mh-container {
+	width: 100%;
+	max-width: var(--max-width);
+	margin: 0 auto;
+	position: relative;
+}
+
+.mh-container-outer {
+	margin: 25px auto;
+	box-shadow: var(--shadow);
+}
+
+.mh-wrapper {
+	padding: 25px;
+	background: var(--white);
+}
+
+/* Main Container - Legacy support */
 main {
 	width: 100%;
 	max-width: var(--max-width);
 	margin: 0 auto;
-	padding: 25px 20px;
+	padding: 25px;
 	background: var(--white);
 	box-shadow: var(--shadow);
 }
 
-/* Typography */
+/* MH Grid System */
+.mh-row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*='mh-col-'] {
+	float: left;
+	margin-left: var(--gutter);
+}
+
+.mh-row [class*='mh-col-']:first-child {
+	margin-left: 0;
+}
+
+.mh-col-1-1 { width: 100%; }
+.mh-col-1-2 { width: 48.75%; }
+.mh-col-1-3 { width: 31.66%; }
+.mh-col-2-3 { width: 65.83%; }
+.mh-col-1-4 { width: 23.12%; }
+.mh-col-3-4 { width: 74.37%; }
+
+/* Content + Sidebar Layout */
+.mh-content {
+	width: var(--content-width);
+	float: left;
+	margin-right: var(--gutter);
+}
+
+.mh-sidebar {
+	width: var(--sidebar-width);
+	float: left;
+}
+
+.clearfix::after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+
+/* Typography - MH Magazine */
 h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	margin: 0 0 0.5rem 0;
 	color: var(--black);
 	line-height: 1.3;
 	font-weight: 700;
 }
 
-h1 { font-size: 1.75rem; }
-h2 { font-size: 1.4rem; }
-h3 { font-size: 1.2rem; }
-h4 { font-size: 1.1rem; }
-h5 { font-size: 1rem; }
+h1 { font-size: 32px; font-size: 2rem; }
+h2 { font-size: 24px; font-size: 1.5rem; }
+h3 { font-size: 20px; font-size: 1.25rem; }
+h4 { font-size: 18px; font-size: 1.125rem; }
+h5 { font-size: 16px; font-size: 1rem; }
+h6 { font-size: 14px; font-size: 0.875rem; }
 
 strong, b {
 	font-weight: 700;
@@ -98,15 +157,169 @@ p {
 	margin-bottom: 1em;
 }
 
-/* Links */
+/* Links - MH Magazine */
 a {
-	color: var(--black);
+	color: #000;
 	text-decoration: none;
-	transition: color 0.2s ease;
+	transition: 0.25s ease-out;
 }
 
 a:hover {
 	color: var(--primary);
+}
+
+/* ============================================
+   ENTRY CONTENT - Article Body Styling
+   ============================================ */
+
+.entry-content {
+	font-size: 14px;
+	line-height: 1.7;
+	color: #000;
+}
+
+/* Entry content links */
+.entry-content a {
+	font-weight: 600;
+	color: var(--primary);
+}
+
+.entry-content a:hover {
+	color: var(--primary);
+	text-decoration: underline;
+}
+
+/* Entry content headings */
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+.entry-content h1:first-child,
+.entry-content h2:first-child,
+.entry-content h3:first-child,
+.entry-content h4:first-child {
+	margin-top: 0;
+}
+
+.entry-content h2 {
+	font-size: 22px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.entry-content h3 {
+	font-size: 18px;
+}
+
+.entry-content h4 {
+	font-size: 16px;
+}
+
+/* Entry content paragraphs */
+.entry-content p {
+	margin: 0 0 1.2em 0;
+}
+
+/* Entry content images */
+.entry-content img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 20px 0;
+}
+
+.entry-content p img {
+	margin: 0;
+}
+
+/* Entry content lists */
+.entry-content ul,
+.entry-content ol {
+	margin: 0 0 1.5em 0;
+	padding-left: 2em;
+}
+
+.entry-content li {
+	margin-bottom: 0.5em;
+	line-height: 1.6;
+}
+
+.entry-content li ul,
+.entry-content li ol {
+	margin-top: 0.5em;
+	margin-bottom: 0;
+}
+
+/* Entry content blockquotes */
+.entry-content blockquote {
+	margin: 1.5em 0;
+	padding: 15px 20px 15px 20px;
+	border-left: 5px solid var(--primary);
+	background: #f9f9f9;
+	font-style: italic;
+	color: #555;
+}
+
+.entry-content blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* Entry content tables */
+.entry-content table {
+	width: 100%;
+	margin: 1.5em 0;
+	border-collapse: collapse;
+}
+
+.entry-content th,
+.entry-content td {
+	padding: 12px 15px;
+	text-align: left;
+	border: 1px solid #ddd;
+}
+
+.entry-content th {
+	background: #f5f5f5;
+	font-weight: 700;
+}
+
+.entry-content tr:nth-child(even) {
+	background: #fafafa;
+}
+
+/* Entry content code */
+.entry-content code {
+	background: #f5f5f5;
+	padding: 2px 6px;
+	border-radius: 3px;
+	font-size: 0.9em;
+}
+
+.entry-content pre {
+	background: #f5f5f5;
+	padding: 15px 20px;
+	overflow-x: auto;
+	margin: 1.5em 0;
+	border-radius: 3px;
+}
+
+.entry-content pre code {
+	background: transparent;
+	padding: 0;
+}
+
+/* Entry content horizontal rules */
+.entry-content hr {
+	border: none;
+	height: 1px;
+	background: #ebebeb;
+	margin: 2em 0;
 }
 
 /* Images */
@@ -134,13 +347,16 @@ pre > code {
 	all: unset;
 }
 
-/* Blockquote */
+/* Blockquote - MH Magazine */
 blockquote {
-	border-left: 4px solid var(--primary);
-	padding: 0 0 0 20px;
-	margin: 1.5em 0;
+	display: block;
+	font-size: 15px;
+	line-height: 1.6;
 	font-style: italic;
-	color: var(--gray);
+	color: #666;
+	padding: 5px 0 5px 15px;
+	border-left: 5px solid var(--primary);
+	margin: 0 0 20px 0;
 }
 
 /* Lists */
@@ -195,47 +411,196 @@ input:focus, textarea:focus {
 	border-color: var(--primary);
 }
 
-/* Buttons */
-.btn {
+/* ============================================
+   BUTTONS - Global Utility Classes
+   Matching WordPress [su_button] shortcode
+   ============================================ */
+
+/* Base Button */
+.btn,
+input[type="submit"] {
 	display: inline-block;
-	padding: 10px 20px;
+	padding: 12px 24px;
 	background: var(--primary);
-	color: var(--white);
+	color: #fff;
 	font-weight: 700;
-	font-size: 0.9rem;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
 	border: none;
-	border-radius: var(--radius);
+	border-radius: 4px;
 	cursor: pointer;
-	transition: background 0.2s ease;
+	transition: all 0.25s ease-out;
+	line-height: 1.4;
+}
+
+.btn:hover,
+input[type="submit"]:hover {
+	background: var(--primary-dark);
+	color: #fff;
+	transform: translateY(-1px);
+	box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Button Sizes */
+.btn-xs { padding: 6px 12px; font-size: 11px; }
+.btn-sm { padding: 8px 16px; font-size: 12px; }
+.btn-md { padding: 12px 24px; font-size: 14px; }
+.btn-lg { padding: 16px 32px; font-size: 16px; }
+.btn-xl { padding: 20px 40px; font-size: 18px; }
+
+/* Button Colors */
+.btn-primary { background: #4C80E9; color: #fff; }
+.btn-primary:hover { background: #3a6cd4; color: #fff; }
+
+.btn-secondary { background: #6c757d; color: #fff; }
+.btn-secondary:hover { background: #545b62; color: #fff; }
+
+.btn-success { background: #28a745; color: #fff; }
+.btn-success:hover { background: #1e7e34; color: #fff; }
+
+.btn-danger { background: #dc3545; color: #fff; }
+.btn-danger:hover { background: #bd2130; color: #fff; }
+
+.btn-warning { background: #ffc107; color: #333; }
+.btn-warning:hover { background: #d39e00; color: #333; }
+
+.btn-info { background: #17a2b8; color: #fff; }
+.btn-info:hover { background: #117a8b; color: #fff; }
+
+.btn-dark { background: #343a40; color: #fff; }
+.btn-dark:hover { background: #23272b; color: #fff; }
+
+.btn-light { background: #f8f9fa; color: #333; }
+.btn-light:hover { background: #e2e6ea; color: #333; }
+
+/* Outline Buttons */
+.btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
+.btn-outline:hover { background: var(--primary); color: #fff; }
+
+.btn-outline-primary { background: transparent; border: 2px solid #4C80E9; color: #4C80E9; }
+.btn-outline-primary:hover { background: #4C80E9; color: #fff; }
+
+.btn-outline-success { background: transparent; border: 2px solid #28a745; color: #28a745; }
+.btn-outline-success:hover { background: #28a745; color: #fff; }
+
+.btn-outline-danger { background: transparent; border: 2px solid #dc3545; color: #dc3545; }
+.btn-outline-danger:hover { background: #dc3545; color: #fff; }
+
+.btn-outline-dark { background: transparent; border: 2px solid #343a40; color: #343a40; }
+.btn-outline-dark:hover { background: #343a40; color: #fff; }
+
+/* Button Widths */
+.btn-wide { padding-left: 40px; padding-right: 40px; }
+.btn-block { display: block; width: 100%; }
+
+/* Button Alignment */
+.btn-center { display: block; margin-left: auto; margin-right: auto; width: fit-content; }
+
+/* Button with Icons */
+.btn-icon { display: inline-flex; align-items: center; gap: 8px; }
+.btn-icon svg, .btn-icon i { font-size: 1.1em; }
+
+/* Button Group */
+.btn-group { display: flex; gap: 10px; flex-wrap: wrap; }
+.btn-group-center { justify-content: center; }
+.btn-group-vertical { flex-direction: column; }
+
+/* CTA Buttons (larger, more prominent) */
+.cta-btn {
+	display: block;
+	padding: 16px 32px;
+	background: var(--primary);
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: all 0.25s ease;
+}
+
+.cta-btn:hover {
+	background: var(--primary-dark);
+	color: #fff;
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(76, 128, 233, 0.3);
+}
+
+.cta-btn-secondary {
+	background: #fff;
+	color: var(--primary);
+	border: 2px solid var(--primary);
+}
+
+.cta-btn-secondary:hover {
+	background: var(--primary);
+	color: #fff;
+}
+
+/* Broker-specific buttons */
+.btn-broker {
+	display: inline-block;
+	padding: 8px 16px;
+	font-size: 12px;
+	font-weight: 600;
+	border-radius: 3px;
 	text-decoration: none;
 }
 
-.btn:hover {
-	background: var(--primary-dark);
-	color: var(--white);
-}
+.btn-review { background: #4C80E9; color: #fff; }
+.btn-review:hover { background: #3a6cd4; color: #fff; }
 
-/* Section Title - Magazine style */
-.section-title {
-	font-size: 0.9rem;
+.btn-open-account { background: #28a745; color: #fff; }
+.btn-open-account:hover { background: #1e7e34; color: #fff; }
+
+.btn-demo { background: #6c757d; color: #fff; }
+.btn-demo:hover { background: #545b62; color: #fff; }
+
+/* Section Title - MH Magazine style */
+.section-title,
+.mh-section-title {
+	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: var(--white);
 	background: var(--primary);
-	padding: 6px 12px;
-	margin-bottom: 15px;
+	padding: 8px 12px;
+	margin-bottom: 20px;
 	display: inline-block;
 }
 
-/* Widget Title */
-.widget-title {
-	font-size: 0.85rem;
+/* Widget Title - MH Magazine Layout 1 (default) */
+.widget-title,
+.mh-widget-title {
+	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: var(--black);
-	padding-bottom: 8px;
-	margin-bottom: 12px;
-	border-bottom: 2px solid var(--primary);
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-bottom: 3px solid var(--primary);
+}
+
+/* Widget Layout Variants */
+.mh-widget-layout2 .mh-widget-title {
+	color: var(--white);
+	background: var(--primary);
+	padding: 8px 12px;
+	border-bottom: none;
+}
+
+.mh-widget-layout3 .mh-widget-title {
+	padding: 10px 15px;
+	background: var(--gray-bg);
+	border-left: 10px solid var(--primary);
+	border-bottom: none;
+}
+
+.mh-widget-layout7 .mh-widget-title {
+	padding: 10px;
+	border: 2px solid var(--gray-lighter);
+	border-bottom: 2px solid var(--gray-lighter);
 }
 
 /* Card style */
@@ -265,14 +630,96 @@ input:focus, textarea:focus {
 	white-space: nowrap;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-	body {
-		font-size: 15px;
+/* Post Meta - MH Magazine */
+.mh-meta,
+.entry-meta {
+	font-size: 13px;
+	color: var(--gray-light);
+}
+
+.mh-meta a,
+.entry-meta a {
+	color: var(--gray-light);
+	font-weight: 400;
+}
+
+.mh-meta a:hover,
+.entry-meta a:hover {
+	color: var(--primary);
+}
+
+/* Entry Tags - MH Magazine */
+.entry-tags {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.entry-tags li {
+	display: inline-block;
+	margin: 0 5px 5px 0;
+}
+
+.entry-tags li a {
+	display: block;
+	font-size: 12px;
+	color: var(--white);
+	background: var(--gray-dark);
+	padding: 5px 10px;
+	text-transform: uppercase;
+	transition: 0.25s ease-out;
+}
+
+.entry-tags li a:hover {
+	background: var(--primary);
+	color: var(--white);
+}
+
+/* Pagination - MH Magazine */
+.page-numbers {
+	display: inline-block;
+	font-weight: 700;
+	color: var(--black);
+	padding: 10px 15px;
+	background: var(--gray-bg);
+	transition: 0.25s ease-out;
+}
+
+.page-numbers:hover,
+.page-numbers.current {
+	color: var(--white);
+	background: var(--primary);
+}
+
+/* Responsive - MH Magazine */
+@media (max-width: 900px) {
+	.mh-content,
+	.mh-sidebar {
+		width: 100%;
+		float: none;
+		margin: 0 0 25px 0;
 	}
 
+	[class*='mh-col-'] {
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		font-size: 13px;
+	}
+
+	.mh-wrapper,
 	main {
 		padding: 15px;
+	}
+
+	.mh-container-outer {
+		margin: 0;
+		box-shadow: none;
 	}
 
 	h1 { font-size: 1.5rem; }

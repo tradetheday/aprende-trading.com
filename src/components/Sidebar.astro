@@ -1,0 +1,73 @@
+---
+import RecentPosts from './widgets/RecentPosts.astro';
+import Categories from './widgets/Categories.astro';
+import Widget from './widgets/Widget.astro';
+import BrokerTable from './widgets/BrokerTable.astro';
+---
+
+<aside class="mh-sidebar">
+	<!-- Broker Comparison Table -->
+	<BrokerTable />
+
+	<!-- About Widget -->
+	<Widget title="Sobre Aprende Trading" layout={1}>
+		<p class="about-text">
+			Tu guía completa para aprender trading diario en español.
+			Descubre estrategias, brokers confiables, análisis técnico
+			y todo lo que necesitas para comenzar a operar en los mercados financieros.
+		</p>
+	</Widget>
+
+	<!-- Recent Posts -->
+	<RecentPosts count={5} />
+
+	<!-- Categories -->
+	<Categories />
+
+	<!-- Popular Topics Widget -->
+	<Widget title="Temas Populares" layout={3}>
+		<div class="tag-cloud">
+			<a href="/blog/forex">Forex</a>
+			<a href="/blog/cfd-trading">CFD</a>
+			<a href="/blog/criptomonedas">Bitcoin</a>
+			<a href="/blog/metatrader5">MetaTrader</a>
+			<a href="/blog/day-trading">Day Trading</a>
+			<a href="/blog/swing-trading">Swing Trading</a>
+			<a href="/blog/cuentas-demo">Cuentas Demo</a>
+			<a href="/blog/analisis-tecnico">Análisis</a>
+		</div>
+	</Widget>
+</aside>
+
+<style>
+	.mh-sidebar {
+		width: 100%;
+	}
+
+	.about-text {
+		font-size: 13px;
+		line-height: 1.7;
+		color: var(--gray);
+		margin: 0;
+	}
+
+	.tag-cloud {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+
+	.tag-cloud a {
+		display: inline-block;
+		font-size: 12px;
+		color: var(--black);
+		background: var(--gray-bg);
+		padding: 5px 12px;
+		transition: 0.25s ease-out;
+	}
+
+	.tag-cloud a:hover {
+		background: var(--primary);
+		color: var(--white);
+	}
+</style>

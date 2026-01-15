@@ -44,9 +44,9 @@ Si, al final del día, Waitrose termina a 330 p, eso es cuatro puntos más alto 
 
 ¿Por qué un número cada vez mayor de personas busca ganarse la vida apostando? Por varias razones muy buenas, las cuales se describirán a continuación.
 
-- Libre de impuestos: Todas las ganancias derivadas de las transacciones de transacciones diarias son libres de [impuestos](http://aprende-trading.com/impuestos/). Si bien la especulación sobre los movimientos de precios a través de la compra y venta de acciones lo abrirá a obligaciones tributarias potencialmente importantes, las apuestas de propagación están libres de cualquier impuesto, incluidas las ganancias de capital y el impuesto de timbre.
+- Libre de impuestos: Todas las ganancias derivadas de las transacciones de transacciones diarias son libres de [impuestos](/blog/impuestos). Si bien la especulación sobre los movimientos de precios a través de la compra y venta de acciones lo abrirá a obligaciones tributarias potencialmente importantes, las apuestas de propagación están libres de cualquier impuesto, incluidas las ganancias de capital y el impuesto de timbre.
 - Capital mínimo requerido: Para un gran desembolso, se necesita mucho menos capital que realizando transacciones con instrumentos tradicionales. Volviendo al ejemplo anterior de Waitrose, necesitarías decenas de miles de libras para lograr la misma exposición.
-- Regulación: Las apuestas al margen están regulada en muchos países, incluidos Francia, Alemania y el Reino Unido. Esto le otorga ciertos derechos y protege su dinero de una variedad de situaciones. Sin mencionar que la [regulación](http://aprende-trading.com/regulacion/) lo mantiene a salvo de las estafas de apuestas propagadas.
+- Regulación: Las apuestas al margen están regulada en muchos países, incluidos Francia, Alemania y el Reino Unido. Esto le otorga ciertos derechos y protege su dinero de una variedad de situaciones. Sin mencionar que la [regulación](/blog/regulacion) lo mantiene a salvo de las estafas de apuestas propagadas.
 - Acceso: Las apuestas al margen le brindan acceso a numerosos mercados globales. Desde acciones y criptomonedas hasta acciones y tasas de interés. También tiene la posibilidad de realizar transacciones las 24 horas del día, por lo que puede ajustar las apuestas de acuerdo con su estilo de vida.
 - Sin Comisiones: Los costos de transacciones diarias pueden acumularse rápidamente si realiza una gran cantidad de transacciones. Sin embargo, estas apuestas por lo general vienen sin comisiones. En cambio, los costos están incluidos en el diferencial.
 - Apalancamiento: Muchos brokers ofrecen operaciones apalancadas. Esto le permite solicitar capital para aumentar el tamaño de su posición. Esto podría aumentar significativamente su potencial de ganancias. El inconveniente es que también puede magnificar pérdidas. Por lo tanto, las apuestas de margen sin apalancamiento se consideran mucho más seguras para muchos.
@@ -111,7 +111,7 @@ Su broker será la puerta de entrada al mercado. Facilitarán sus operaciones y 
 - Herramientas y recursos: ¿Obtiene acceso a herramientas y gráficos de negociación gratuitos y fáciles de usar, como los indicadores de volumen? Los materiales de investigación y las noticias también serán útiles. Algunos brokers de apuestas propagadas ofrecen transacciones en MT4, por ejemplo, que son confiables y están llenas de características útiles.
 - Ofertas de bonos: ¿El Broker ofrece bonos de depósito y de apertura de cuenta? ¿Ofrecen otras promociones, tales como costos de tenencia reducidos? Vale la pena considerar los bonos de bienvenida.
 
-Para obtener más orientación y una comparación de brokers, consulte nuestra [página de brokers](http://aprende-trading.com/brokers/). 
+Para obtener más orientación y una comparación de brokers, consulte nuestra [página de brokers](/blog/brokers). 
 
 ![corredores de transacciones diarias](/images/2018/12/brokers-700x432.png)
 
@@ -152,7 +152,7 @@ Digamos que Ralph ha tomado la posición de recibir £ 10 por cada apuesta ganad
 
 Una estrategia efectiva, por lo tanto, significa más que una alta tasa de ganancias. Requiere un sistema que equilibre sus niveles de ganancias y pérdidas con su tasa de ganancia promedio para mantenerse constantemente en el negro.
 
-Para obtener más orientación y estrategias para compartir, consulte nuestra [página de estrategias](http://aprende-trading.com/estrategia/).
+Para obtener más orientación y estrategias para compartir, consulte nuestra [página de estrategias](/blog/estrategia).
 
 Ya sea que esté considerando apostar en divisas o en cualquier otro mercado, puede usar lo anterior como una guía efectiva para principiantes para crear su estrategia a seguir.
 
@@ -184,7 +184,7 @@ Apuestas a Margen 101: Seguir las noticias. Los mercados están cambiando consta
 
 Cuentas de Prueba
 
-Una cuenta de práctica o [cuenta demo](http://aprende-trading.com/cuentas-demo/) de apuesta a margen es la forma ideal de familiarizarse con los conceptos básicos. Puede identificar errores, perfeccionar su estrategia y familiarizarse con el entorno comercial.
+Una cuenta de práctica o [cuenta demo](/blog/cuentas-demo) de apuesta a margen es la forma ideal de familiarizarse con los conceptos básicos. Puede identificar errores, perfeccionar su estrategia y familiarizarse con el entorno comercial.
 
 También es una manera fantástica de probar primero a su agente y plataforma. La mayoría de los grandes brokers ahora ofrecen este servicio, sin costo alguno. Su cuenta se financia con dinero simulado, por lo que no tiene que arriesgar capital real hasta que se sienta cómodo. ¿Qué tienes que perder usando una cuenta demo primero?
 
@@ -226,7 +226,7 @@ Entonces, haga su tarea y averigüe si se le cobrarán impuestos sobre sus ganan
 
 También vale la pena señalar que la evasión de impuestos puede traer consigo graves consecuencias. Las reglas impositivas de algunos sistemas imponen multas considerables, mientras que otros podrían mandarlo directamente a la cárcel.
 
-Para más información, consulte nuestra [página de impuestos](http://aprende-trading.com/impuestos/).
+Para más información, consulte nuestra [página de impuestos](/blog/impuestos).
 
 ## Historias de Éxito
 

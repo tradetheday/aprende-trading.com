@@ -1,0 +1,54 @@
+---
+interface Props {
+	title: string;
+	layout?: 1 | 2 | 3 | 7;
+}
+
+const { title, layout = 1 } = Astro.props;
+---
+
+<div class={`mh-widget mh-widget-layout${layout}`}>
+	<h4 class="mh-widget-title">{title}</h4>
+	<div class="mh-widget-content">
+		<slot />
+	</div>
+</div>
+
+<style>
+	.mh-widget {
+		margin-bottom: 25px;
+	}
+
+	.mh-widget-title {
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: var(--black);
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+		border-bottom: 3px solid var(--primary);
+	}
+
+	/* Layout 2 - Full background */
+	.mh-widget-layout2 .mh-widget-title {
+		color: var(--white);
+		background: var(--primary);
+		padding: 8px 12px;
+		border-bottom: none;
+	}
+
+	/* Layout 3 - Left border */
+	.mh-widget-layout3 .mh-widget-title {
+		padding: 10px 15px;
+		background: var(--gray-bg);
+		border-left: 10px solid var(--primary);
+		border-bottom: none;
+	}
+
+	/* Layout 7 - Bordered box */
+	.mh-widget-layout7 .mh-widget-title {
+		padding: 10px;
+		border: 2px solid var(--gray-lighter);
+		text-align: center;
+	}
+</style>

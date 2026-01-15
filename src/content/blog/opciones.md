@@ -54,7 +54,7 @@ El activo subyacente
 
 Por lo general, encontrarás que la mayoría de las opciones se basan en acciones de compañías que cotizan en bolsa, por ejemplo, Twitter y Amazon. Sin embargo, hay un número creciente de opciones basadas en inversiones subyacentes alternativas. Estas incluyen opciones de transacciones diarias en índices bursátiles, divisas, materias primas y fideicomisos de inversión inmobiliaria (REIT).
 
-![Imagen relacionada](https://www.merca2.es/wp-content/uploads/2018/02/amazon-twitter.jpg)
+![Imagen relacionada](/images/2019/03/Facebook-700x467.jpg)
 
 Opciones de acciones (stocks)
 
@@ -82,7 +82,7 @@ Hay una serie de razones por las que puedes hacer un buen dinero con el trading 
 
 El trading diario de opciones es multifacético y trae consigo un gran potencial de ganancias. La mejor parte, la accesibilidad. Puedes comenzar tu trading diario con opciones desde cualquier parte del mundo. Todo lo que necesitas es una conexión a internet.
 
-![Resultado de imagen para trading de opciones](https://upload.wikimedia.org/wikipedia/commons/3/3e/Opciones_Binarias.jpg)
+![Resultado de imagen para trading de opciones](/images/2019/02/opciones-binarias-700x394.jpg)
 
 ## Inconvenientes
 
@@ -123,7 +123,7 @@ Tu gráfico requerirá los mejores indicadores para las opciones de trading. Est
 
 Encontrarás que el trading de patrones con opciones requiere mucho trabajo y práctica. Necesitarás eliminar cualquier pliegue e intentar una serie de gráficos diferentes hasta que encuentres uno que muestre una imagen clara con números.
 
-![Resultado de imagen para Indicador de relaciÃ³n Put - Call](https://invertiryespecular.com/wp-content/uploads/2019/01/2-enero-call-put-sp500.png)
+![Resultado de imagen para Indicador de relación Put - Call](/images/2019/03/Grafico-Trading-700x287.png)
 
 Tiempo
 
@@ -166,7 +166,7 @@ Uno de los mejores consejos es sumergirse en los recursos educativos que te rode
 - Blogs
 - Podcasts
 
-![Resultado de imagen para trading books](https://www.tradingwithrayner.com/wp-content/uploads/2017/03/best-trading-books.jpg)
+![Resultado de imagen para trading books](/images/2019/03/libros-trading-700x298.jpg)
 
 Cuentas Demo
 

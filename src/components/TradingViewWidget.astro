@@ -1,0 +1,218 @@
+---
+interface Props {
+  type?: 'market-overview' | 'ticker-tape' | 'mini-chart' | 'technical-analysis' | 'economic-calendar' | 'forex-cross-rates' | 'advanced-chart';
+  symbols?: string[];
+  symbol?: string;
+  currencies?: string[];
+  width?: number | string;
+  height?: number;
+  locale?: string;
+  importanceFilter?: string;
+}
+
+const {
+  type = 'market-overview',
+  symbols = ['FX:EURUSD', 'FX:GBPUSD', 'FX:USDJPY', 'FX:USDCHF', 'FX:AUDUSD', 'FX:USDCAD'],
+  symbol = 'FX:EURUSD',
+  currencies = ['EUR', 'USD', 'JPY', 'GBP', 'CHF', 'AUD', 'CAD', 'NZD', 'CNY'],
+  width = '100%',
+  height = 450,
+  locale = 'es',
+  importanceFilter = '-1,0,1'
+} = Astro.props;
+
+const widgetId = `tradingview-${type}-${Math.random().toString(36).substr(2, 9)}`;
+---
+
+{type === 'market-overview' && (
+  <div class="tradingview-widget-container" id={widgetId}>
+    <div class="tradingview-widget-container__widget"></div>
+    <script is:inline define:vars={{ widgetId, symbols, width, height, locale }}>
+      (function() {
+        const container = document.getElementById(widgetId);
+        if (!container) return;
+
+        const script = document.createElement('script');
+        script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js';
+        script.async = true;
+        script.innerHTML = JSON.stringify({
+          "colorTheme": "light",
+          "dateRange": "12M",
+          "showChart": true,
+          "locale": locale,
+          "width": width,
+          "height": height,
+          "largeChartUrl": "",
+          "isTransparent": false,
+          "showSymbolLogo": true,
+          "showFloatingTooltip": false,
+          "plotLineColorGrowing": "rgba(76, 128, 233, 1)",
+          "plotLineColorFalling": "rgba(220, 53, 69, 1)",
+          "gridLineColor": "rgba(240, 243, 250, 0)",
+          "scaleFontColor": "rgba(106, 109, 120, 1)",
+          "belowLineFillColorGrowing": "rgba(76, 128, 233, 0.12)",
+          "belowLineFillColorFalling": "rgba(220, 53, 69, 0.12)",
+          "belowLineFillColorGrowingBottom": "rgba(76, 128, 233, 0)",
+          "belowLineFillColorFallingBottom": "rgba(220, 53, 69, 0)",
+          "symbolActiveColor": "rgba(76, 128, 233, 0.12)",
+          "tabs": [
+            {
+              "title": "Forex",
+              "symbols": symbols.map(s => ({ "s": s })),
+              "originalTitle": "Forex"
+            }
+          ]
+        });
+        container.querySelector('.tradingview-widget-container__widget').appendChild(script);
+      })();
+    </script>
+  </div>
+)}
+
+{type === 'ticker-tape' && (
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script is:inline type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {
+        "symbols": [
+          {"proName": "FX:EURUSD", "title": "EUR/USD"},
+          {"proName": "FX:GBPUSD", "title": "GBP/USD"},
+          {"proName": "BITSTAMP:BTCUSD", "title": "Bitcoin"},
+          {"proName": "BITSTAMP:ETHUSD", "title": "Ethereum"}
+        ],
+        "showSymbolLogo": true,
+        "colorTheme": "light",
+        "isTransparent": false,
+        "displayMode": "adaptive",
+        "locale": "es"
+      }
+    </script>
+  </div>
+)}
+
+{type === 'mini-chart' && (
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script is:inline define:vars={{ symbols, width, height, locale }}>
+      (function() {
+        const script = document.createElement('script');
+        script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js';
+        script.async = true;
+        script.innerHTML = JSON.stringify({
+          "symbol": symbols[0] || "FX:EURUSD",
+          "width": width,
+          "height": height,
+          "locale": locale,
+          "dateRange": "12M",
+          "colorTheme": "light",
+          "isTransparent": false,
+          "autosize": false,
+          "largeChartUrl": ""
+        });
+        document.currentScript.parentElement.querySelector('.tradingview-widget-container__widget').appendChild(script);
+      })();
+    </script>
+  </div>
+)}
+
+{type === 'technical-analysis' && (
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script is:inline define:vars={{ symbols, width, height, locale }}>
+      (function() {
+        const script = document.createElement('script');
+        script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js';
+        script.async = true;
+        script.innerHTML = JSON.stringify({
+          "interval": "1D",
+          "width": width,
+          "isTransparent": false,
+          "height": height,
+          "symbol": symbols[0] || "FX:EURUSD",
+          "showIntervalTabs": true,
+          "locale": locale,
+          "colorTheme": "light"
+        });
+        document.currentScript.parentElement.querySelector('.tradingview-widget-container__widget').appendChild(script);
+      })();
+    </script>
+  </div>
+)}
+
+{type === 'economic-calendar' && (
+  <div class="tradingview-widget-container" style={`height: ${height}px;`}>
+    <div class="tradingview-widget-container__widget" style="height: 100%;"></div>
+    <script is:inline define:vars={{ width, height, locale, importanceFilter }}>
+      (function() {
+        const script = document.createElement('script');
+        script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-events.js';
+        script.async = true;
+        script.innerHTML = JSON.stringify({
+          "colorTheme": "light",
+          "isTransparent": false,
+          "width": width,
+          "height": height,
+          "locale": locale,
+          "importanceFilter": importanceFilter,
+          "countryFilter": "ar,br,ca,cn,de,eu,fr,gb,jp,mx,us"
+        });
+        document.currentScript.parentElement.querySelector('.tradingview-widget-container__widget').appendChild(script);
+      })();
+    </script>
+  </div>
+)}
+
+{type === 'forex-cross-rates' && (
+  <div class="tradingview-widget-container" style={`height: ${height}px;`}>
+    <div class="tradingview-widget-container__widget" style="height: 100%;"></div>
+    <script is:inline define:vars={{ width, height, locale, currencies }}>
+      (function() {
+        const script = document.createElement('script');
+        script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js';
+        script.async = true;
+        script.innerHTML = JSON.stringify({
+          "width": width,
+          "height": height,
+          "currencies": currencies,
+          "isTransparent": false,
+          "colorTheme": "light",
+          "locale": locale
+        });
+        document.currentScript.parentElement.querySelector('.tradingview-widget-container__widget').appendChild(script);
+      })();
+    </script>
+  </div>
+)}
+
+{type === 'advanced-chart' && (
+  <div class="tradingview-widget-container" style={`height: ${height}px;`}>
+    <div class="tradingview-widget-container__widget" style="height: 100%; width: 100%;"></div>
+    <script is:inline define:vars={{ symbol, width, height, locale }}>
+      (function() {
+        const script = document.createElement('script');
+        script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
+        script.async = true;
+        script.innerHTML = JSON.stringify({
+          "autosize": true,
+          "symbol": symbol,
+          "interval": "D",
+          "timezone": "Etc/UTC",
+          "theme": "light",
+          "style": "1",
+          "locale": locale,
+          "allow_symbol_change": true,
+          "calendar": false,
+          "support_host": "https://www.tradingview.com"
+        });
+        document.currentScript.parentElement.querySelector('.tradingview-widget-container__widget').appendChild(script);
+      })();
+    </script>
+  </div>
+)}
+
+<style>
+  .tradingview-widget-container {
+    width: 100%;
+    margin: 20px 0;
+  }
+</style>

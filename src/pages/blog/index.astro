@@ -2,170 +2,263 @@
 import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
-import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import PostCard from '../../components/PostCard.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+
+// Helper to extract first image from markdown content
+function getFirstImage(body: string): string | null {
+	// Match markdown image: ![alt](/images/path) - local images first
+	const localMdMatch = body.match(/!\[.*?\]\((\/images\/[^)]+)\)/);
+	if (localMdMatch) return localMdMatch[1];
+
+	// Match markdown image: ![alt](https://...) - external images
+	const externalMdMatch = body.match(/!\[.*?\]\((https?:\/\/[^)]+)\)/);
+	if (externalMdMatch) return externalMdMatch[1];
+
+	// Match HTML img: <img src="/images/..." /> - local
+	const localHtmlMatch = body.match(/<img[^>]+src=["'](\/images\/[^"']+)["']/);
+	if (localHtmlMatch) return localHtmlMatch[1];
+
+	// Match HTML img: <img src="https://..." /> - external
+	const externalHtmlMatch = body.match(/<img[^>]+src=["'](https?:\/\/[^"']+)["']/);
+	if (externalHtmlMatch) return externalHtmlMatch[1];
+
+	return null;
+}
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+
+// Add extracted images to posts
+const postsWithImages = posts.map(post => ({
+	...post,
+	extractedImage: getFirstImage(post.body || '')
+}));
+
+const featuredPost = postsWithImages[0];
+const remainingPosts = postsWithImages.slice(1);
 ---
 
 <!doctype html>
 <html lang="es">
 	<head>
-		<BaseHead title={`Articulos | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+		<BaseHead title={`Artículos | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
 		<Header />
-		<main>
-			<div class="page-header">
-				<h1 class="section-title">Todos los Articulos</h1>
-				<p class="page-description">Encuentra guias, estrategias y recursos para mejorar tu trading</p>
-			</div>
 
-			<div class="posts-list">
-				{posts.map((post, index) => (
-					<article class={`post-item ${index === 0 ? 'featured' : ''}`}>
-						<a href={`/blog/${post.id}/`}>
-							{index === 0 && <span class="featured-label">Mas Reciente</span>}
-							<h2>{post.data.title}</h2>
-							<div class="post-meta">
-								<span class="post-date">
-									<FormattedDate date={post.data.pubDate} />
-								</span>
-							</div>
-							{post.data.description && (
-								<p class="post-excerpt">{post.data.description}</p>
+		<div class="mh-container-outer">
+			<div class="mh-container">
+				<main class="mh-wrapper">
+					<!-- Page Header -->
+					<div class="mh-page-header">
+						<h1 class="mh-page-title">Todos los Artículos</h1>
+						<p class="mh-page-description">Encuentra guías, estrategias y recursos para mejorar tu trading</p>
+					</div>
+
+					<!-- Main Content Area -->
+					<div class="mh-main-area mh-row">
+						<!-- Content Column -->
+						<div class="mh-content">
+							<!-- Featured Post -->
+							{featuredPost && (
+								<article class="mh-featured-article">
+									{(featuredPost.data.heroImage || featuredPost.extractedImage) && (
+										<a href={`/blog/${featuredPost.id}/`} class="mh-article-thumb">
+											<img src={featuredPost.data.heroImage?.src || featuredPost.extractedImage} alt={featuredPost.data.title} />
+										</a>
+									)}
+									<div class="mh-article-content">
+										<span class="mh-article-label">Más Reciente</span>
+										<h2 class="mh-article-title">
+											<a href={`/blog/${featuredPost.id}/`}>{featuredPost.data.title}</a>
+										</h2>
+										<div class="mh-article-meta">
+											{featuredPost.data.pubDate.toLocaleDateString('es-ES', {
+												year: 'numeric',
+												month: 'long',
+												day: 'numeric'
+											})}
+										</div>
+										{featuredPost.data.description && (
+											<p class="mh-article-excerpt">{featuredPost.data.description}</p>
+										)}
+										<a href={`/blog/${featuredPost.id}/`} class="mh-read-more">Leer artículo →</a>
+									</div>
+								</article>
 							)}
-							<span class="read-more">Leer articulo &rarr;</span>
-						</a>
-					</article>
-				))}
+
+							<!-- Posts Grid -->
+							<div class="mh-posts-grid">
+								{remainingPosts.map((post) => (
+									<PostCard
+										title={post.data.title}
+										description={post.data.description}
+										pubDate={post.data.pubDate}
+										heroImage={post.data.heroImage}
+										extractedImage={post.extractedImage}
+										url={`/blog/${post.id}/`}
+										size="medium"
+									/>
+								))}
+							</div>
+						</div>
+
+						<!-- Sidebar -->
+						<div class="mh-sidebar-wrap">
+							<Sidebar />
+						</div>
+					</div>
+				</main>
 			</div>
-		</main>
+		</div>
+
 		<Footer />
 	</body>
 </html>
 
 <style>
-	.page-header {
+	/* Page Header */
+	.mh-page-header {
 		margin-bottom: 25px;
-	}
-
-	.section-title {
-		font-size: 0.9rem;
-		font-weight: 700;
-		text-transform: uppercase;
-		color: var(--white);
-		background: var(--primary);
-		padding: 6px 12px;
-		margin-bottom: 12px;
-		display: inline-block;
-	}
-
-	.page-description {
-		color: var(--gray);
-		font-size: 0.95rem;
-		margin: 0;
-	}
-
-	.posts-list {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.post-item {
-		padding: 20px 0;
+		padding-bottom: 20px;
 		border-bottom: 1px solid var(--gray-lighter);
 	}
 
-	.post-item:first-child {
-		padding-top: 0;
+	.mh-page-title {
+		font-size: 28px;
+		margin: 0 0 10px 0;
 	}
 
-	.post-item a {
+	.mh-page-description {
+		color: var(--gray);
+		font-size: 14px;
+		margin: 0;
+	}
+
+	/* Main Area Layout */
+	.mh-main-area {
+		display: flex;
+		gap: var(--gutter);
+	}
+
+	.mh-content {
+		flex: 1;
+		min-width: 0;
+	}
+
+	.mh-sidebar-wrap {
+		width: var(--sidebar-width);
+		flex-shrink: 0;
+	}
+
+	/* Featured Article */
+	.mh-featured-article {
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid var(--gray-lighter);
+	}
+
+	.mh-article-thumb {
 		display: block;
-		text-decoration: none;
+		overflow: hidden;
+		margin-bottom: 20px;
 	}
 
-	.post-item.featured {
-		background: var(--gray-bg);
-		padding: 20px;
-		margin-bottom: 10px;
-		border-bottom: none;
-		border-left: 4px solid var(--primary);
+	.mh-article-thumb img {
+		width: 100%;
+		height: auto;
+		transition: 0.25s ease-out;
 	}
 
-	.featured-label {
+	.mh-article-thumb:hover img {
+		transform: scale(1.02);
+	}
+
+	.mh-article-label {
 		display: inline-block;
 		background: var(--primary);
 		color: var(--white);
-		font-size: 0.65rem;
+		font-size: 11px;
 		font-weight: 700;
 		text-transform: uppercase;
-		padding: 2px 6px;
-		margin-bottom: 10px;
+		padding: 5px 10px;
+		margin-bottom: 15px;
 	}
 
-	.post-item h2 {
-		font-size: 1.15rem;
+	.mh-article-title {
+		font-size: 24px;
+		line-height: 1.3;
+		margin: 0 0 10px 0;
+	}
+
+	.mh-article-title a {
 		color: var(--black);
-		margin-bottom: 6px;
-		line-height: 1.4;
-		transition: color 0.2s ease;
+		transition: 0.25s ease-out;
 	}
 
-	.post-item.featured h2 {
-		font-size: 1.35rem;
-	}
-
-	.post-item a:hover h2 {
+	.mh-article-title a:hover {
 		color: var(--primary);
 	}
 
-	.post-meta {
-		margin-bottom: 6px;
-	}
-
-	.post-date {
-		font-size: 0.8rem;
+	.mh-article-meta {
+		font-size: 13px;
 		color: var(--gray-light);
+		margin-bottom: 15px;
 	}
 
-	.post-excerpt {
-		font-size: 0.9rem;
+	.mh-article-excerpt {
+		font-size: 14px;
+		line-height: 1.7;
 		color: var(--gray);
-		margin-bottom: 10px;
-		line-height: 1.6;
-		display: -webkit-box;
-		-webkit-line-clamp: 2;
-		-webkit-box-orient: vertical;
-		overflow: hidden;
+		margin: 0 0 15px 0;
 	}
 
-	.read-more {
+	.mh-read-more {
 		display: inline-block;
-		font-size: 0.85rem;
-		font-weight: 600;
+		font-size: 12px;
+		font-weight: 700;
+		text-transform: uppercase;
 		color: var(--primary);
+		transition: 0.25s ease-out;
 	}
 
-	.post-item a:hover .read-more {
-		text-decoration: underline;
+	.mh-read-more:hover {
+		color: var(--black);
 	}
 
-	@media (max-width: 768px) {
-		.post-item.featured {
-			padding: 15px;
+	/* Posts Grid */
+	.mh-posts-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 25px;
+	}
+
+	/* Responsive */
+	@media (max-width: 900px) {
+		.mh-main-area {
+			flex-direction: column;
 		}
 
-		.post-item h2 {
-			font-size: 1rem;
+		.mh-sidebar-wrap {
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.mh-posts-grid {
+			grid-template-columns: 1fr;
 		}
 
-		.post-item.featured h2 {
-			font-size: 1.15rem;
+		.mh-page-title {
+			font-size: 22px;
+		}
+
+		.mh-article-title {
+			font-size: 20px;
 		}
 	}
 </style>

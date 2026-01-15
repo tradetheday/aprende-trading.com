@@ -15,7 +15,7 @@ El impuesto sobre el trading en el Reino Unido es diferente al de India, Irlanda
 
 ¿Libre de impuestos?
 
-En el Reino Unido, los [CFD](http://aprende-trading.com/cfd-trading/) y [Forex](http://aprende-trading.com/por-que-elegir-forex/) se clasifican como "especulativas". Como no se posee ningún activo subyacente, estos derivados escapan del Impuesto sobre las ganancias de capital y HMRC considera que los ingresos derivados de esta especulación están libres de impuestos. Es posible que las personas que se clasifican a sí mismas como "trader” para ganarse la vida, deban pagar el impuesto a las ganancias, pero en general, las ganancias no están sujetas a impuestos.
+En el Reino Unido, los [CFD](/blog/cfd-trading) y [Forex](/blog/forex) se clasifican como "especulativas". Como no se posee ningún activo subyacente, estos derivados escapan del Impuesto sobre las ganancias de capital y HMRC considera que los ingresos derivados de esta especulación están libres de impuestos. Es posible que las personas que se clasifican a sí mismas como "trader” para ganarse la vida, deban pagar el impuesto a las ganancias, pero en general, las ganancias no están sujetas a impuestos.
 
 ## Terminología de Impuestos
 
@@ -137,7 +137,7 @@ Software
 
 El final del año fiscal se acerca rápidamente. De repente, tienes cientos de transacciones que el fiscal quiere ver en cuentas individuales. No solo pueden querer saber su ganancia o pérdida en cada venta, sino que también exigirán una descripción de la seguridad, la fecha de compra, el costo, el producto de las ventas y la fecha de venta. Esa cantidad de papeleo es un serio dolor de cabeza.
 
-Ahí es donde el software de impuestos y las calculadoras entran en juego. Puedes transferir todos los datos requeridos de tu [bróker](http://aprende-trading.com/brokers/) en línea al software de preparación de impuestos de su trader diario.
+Ahí es donde el software de impuestos y las calculadoras entran en juego. Puedes transferir todos los datos requeridos de tu [bróker](/blog/brokers) en línea al software de preparación de impuestos de su trader diario.
 
 Si deseas estar listo para el final del año fiscal, entonces obtén un software de impuestos, como Turbotax. Es una manera sin complicaciones de mantenerte al tanto de tus obligaciones fiscales.
 

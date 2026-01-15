@@ -13,7 +13,7 @@ Antes de comenzar a operar en los mercados financieros, tendrás que decidir dó
 
 ![Trading Diario: Mercados. ¿Cuales son los mejores?](/images/2019/02/mercado-de-valores-700x394.jpg)
 
-El [mercado de acciones](http://aprende-trading.com/acciones/) sigue siendo uno de los tipos más populares de mercados en línea para los traders diarios. Sencillamente, compras y vende acciones de una empresa.
+El [mercado de acciones](/blog/mercados) sigue siendo uno de los tipos más populares de mercados en línea para los traders diarios. Sencillamente, compras y vende acciones de una empresa.
 
 El atractivo es obvio, un vehículo comercial sencillo y la oportunidad de beneficiarse de algunas de las compañías más famosas del mundo, desde Amazon y Google hasta Shell y BP.
 
@@ -34,7 +34,7 @@ A pesar de las numerosas oportunidades y el comercio con las estadísticas del m
 
 Por lo tanto, comerciar en el mercado de valores puede no ser la opción correcta para los principiantes con un capital limitado. En tu lugar, puede ser mejor que dirijas su atención a uno de los diferentes mercados a continuación.
 
-Sin embargo, si deseas obtener más información sobre el trading diario en el mercado bursátil, consulta [nuestra página de acciones](http://aprende-trading.com/acciones/).
+Sin embargo, si deseas obtener más información sobre el trading diario en el mercado bursátil, consulta [nuestra página de acciones](/blog/mercados).
 
 ## Mercados de Futuros
 
@@ -60,13 +60,13 @@ Sin embargo, antes de decidir el día en que el mercado de futuros es para ti, h
 
 En general, si deseas comenzar a comerciar en los mercados de petróleo, energía y materias primas, entonces los futuros pueden resultar atractivos. Dicho esto, aún necesitará una cantidad razonable de capital y estar preparado para posiblemente limitar su enfoque a solo uno o dos contratos de futuros en particular.
 
-Para obtener más orientación, incluida la estrategia y los mejores consejos, consulta [nuestra página de futuros](http://aprende-trading.com/futuros/).
+Para obtener más orientación, incluida la estrategia y los mejores consejos, consulta [nuestra página de futuros](/blog/futuros).
 
 ## Mercados de Divisas
 
 ![Trading Diario: Mercados. ¿Cuales son los mejores?](/images/2019/02/mercado-de-divisas-700x423.gif)
 
-La popularidad del trading de los [mercados de divisas](http://aprende-trading.com/forex/) ha crecido significativamente en los últimos años. Ahora es el mercado más grande del mundo. Decide profundizar en el espacio de Forex e intentarás obtener un beneficio de las fluctuaciones de los precios en los tipos de cambio. Comprarás y venderás monedas cuando creas que se moverán hacia arriba o hacia abajo en relación con otras monedas.
+La popularidad del trading de los [mercados de divisas](/blog/forex) ha crecido significativamente en los últimos años. Ahora es el mercado más grande del mundo. Decide profundizar en el espacio de Forex e intentarás obtener un beneficio de las fluctuaciones de los precios en los tipos de cambio. Comprarás y venderás monedas cuando creas que se moverán hacia arriba o hacia abajo en relación con otras monedas.
 
 Las divisas siempre se negocian en pares. Pero a pesar de una serie de opciones, solo algunas poseen la liquidez y otras características que necesitas para generar ganancias diarias.
 
@@ -86,13 +86,13 @@ Sin embargo, los mercados de divisas vienen con ciertos inconvenientes:
 
 Hoy en día el mercado de divisas es el mercado más accesible. Promete bajas barreras de entrada, comercio fuera del horario del mercado de EE. UU., además de una inversión inicial mínima. También puedes beneficiarte de estrategias, técnicas, blogs, foros, videos y comentarios gratuitos simplemente dirigiéndose en línea.
 
-Para obtener más información sobre los trading diario en los mercados de divisas, consulta [nuestra página de Forex](http://aprende-trading.com/forex/).
+Para obtener más información sobre los trading diario en los mercados de divisas, consulta [nuestra página de Forex](/blog/forex).
 
 ## Mercados de Criptomonedas
 
 ![Trading de Criptomonedas](/images/2019/01/Trading-de-Criptomonedas-700x431.jpg)
 
-El mercado de trading diario es muy diferente de hace una década. Ahora hay una serie de mercados para los [traders de criptomoneda](http://aprende-trading.com/criptomonedas/). Pero mientras que aún no se han completado las normas, regulaciones y evaluaciones exhaustivas de los riesgos, la popularidad del trading diario de la criptomoneda sin duda está en aumento.
+El mercado de trading diario es muy diferente de hace una década. Ahora hay una serie de mercados para los [traders de criptomoneda](/blog/criptomonedas). Pero mientras que aún no se han completado las normas, regulaciones y evaluaciones exhaustivas de los riesgos, la popularidad del trading diario de la criptomoneda sin duda está en aumento.
 
 Estas monedas alternativas de Internet prometen altos niveles de volatilidad, lo que las hace ideales para los traders diarios. Hubo un tiempo en que los bitcoins se intercambiaban por centavos por dólar. Ahora, sin embargo, cada moneda se cotiza a miles de dólares.
 
@@ -117,13 +117,13 @@ Pero con mercados bien establecidos, como las acciones, ¿por qué deberías com
 
 Si estás interesado en la tecnología y tienes apetito riesgoso, entonces los mercados de la criptomoneda pueden ser para ti.
 
-Para obtener orientación sobre gráficos, patrones, estrategia y corredores, consulta [nuestra página de criptomonedas](http://aprende-trading.com/criptomonedas/).
+Para obtener orientación sobre gráficos, patrones, estrategia y corredores, consulta [nuestra página de criptomonedas](/blog/criptomonedas).
 
 ## Mercado de Opciones
 
 ![Trading Diario: Mercados. ¿Cuales son los mejores?](/images/2019/02/mercado-de-opciones-700x394.png)
 
-Muchas plataformas ahora ofrecen trading en [mercados de opciones](http://aprende-trading.com/opciones/). Una opción es un derivado financiero directo. El contrato te otorga el derecho de comprar o vender un activo durante o dentro de una fecha predeterminada (fecha de ejercicio). Como vendedor, tienes la obligación legal de cumplir con los términos de la transacción. Por lo general, serán para vender o comprar, o si el comprador elige "ejercer" la opción antes de la fecha de vencimiento.
+Muchas plataformas ahora ofrecen trading en [mercados de opciones](/blog/opciones). Una opción es un derivado financiero directo. El contrato te otorga el derecho de comprar o vender un activo durante o dentro de una fecha predeterminada (fecha de ejercicio). Como vendedor, tienes la obligación legal de cumplir con los términos de la transacción. Por lo general, serán para vender o comprar, o si el comprador elige "ejercer" la opción antes de la fecha de vencimiento.
 
 La ventaja del trading de opciones es que no tiene que poseer el activo subyacente, que puede ser mucho más caro que una acción, por ejemplo.
 
@@ -147,25 +147,25 @@ Acciones
 - S&P 500
 - Petroléo Crudo
 
-Para obtener más información sobre cómo comenzar el día en el mercado de opciones, consulta [nuestra página de opciones](http://aprende-trading.com/opciones/).
+Para obtener más información sobre cómo comenzar el día en el mercado de opciones, consulta [nuestra página de opciones](/blog/opciones).
 
 ## Opciones Binarias
 
 ![Trading Diario: Mercados. ¿Cuales son los mejores?](/images/2019/02/opciones-binarias-trading.jpg)
 
-Otro mercado interesante viene en forma de [opciones binarias](http://aprende-trading.com/opciones-binarias/). Su trabajo es decidir si el activo subyacente terminará por encima o por debajo de un precio en particular en un momento determinado.
+Otro mercado interesante viene en forma de [opciones binarias](/blog/opciones-binarias). Su trabajo es decidir si el activo subyacente terminará por encima o por debajo de un precio en particular en un momento determinado.
 
 Estos derivados directos ahora se pueden negociar en prácticamente cualquier instrumento o mercado. Por ejemplo, puedes intercambiar opciones binarias en valores de productos básicos, como petróleo crudo y aluminio. Alternativamente, si deseas tomar una posición en acciones de fama mundial, puedes obtener opciones binarias en Google, Tesla y BP. Incluso los mercados de divisas y las criptomonedas están en el menú de opciones binarias.
 
 Ellos apelan porque son un comercio de todo o nada. Podrás saber cuánto ganarás o perderás antes de realizar el intercambio. Si deseas un mercado e instrumento sencillo, entonces vale la pena explorar las opciones binarias.
 
-Para obtener más información, incluida la estrategia, los brókers y los consejos más importantes, consulta [nuestra página de opciones binarias](http://aprende-trading.com/opciones-binarias/).
+Para obtener más información, incluida la estrategia, los brókers y los consejos más importantes, consulta [nuestra página de opciones binarias](/blog/opciones-binarias).
 
 ## Mercados CFD
 
 ![Trading Diario: Mercados. ¿Cuales son los mejores?](/images/2018/10/cfd-trading-700x361.jpg)
 
-A pesar de ser menos conocido en la lista de mercados comerciales, los [contratos por diferencias](http://aprende-trading.com/cfd-trading/) (CFD) son una propuesta interesante.
+A pesar de ser menos conocido en la lista de mercados comerciales, los [contratos por diferencias](/blog/cfd-trading) (CFD) son una propuesta interesante.
 
 La definición sencilla: un CFD te permite comprar y vender al alza y caída de un instrumento en particular. Donde ingresó y salió de una transacción es el contrato real por la diferencia. Este producto basado en derivados se basa en un activo subyacente y su contrato es con tu bróker.
 
@@ -175,7 +175,7 @@ Pero con tantos mercados comerciales e internacionales e instrumentos financiero
 - Apalancamiento: Esto podría ayudarte a capitalizar las oportunidades y aumentar las ganancias. Sin embargo, también existe el riesgo de un aumento de las pérdidas, por lo que se debe tener cuidado al utilizar el apalancamiento.
 - Flexibilidad: Los CFD a menudo no tienen fecha de caducidad, prima ni comisión (depende de su agente). Sin embargo, en el lado negativo, a menudo pagarás una mayor oferta / demanda que en el mercado físico.
 
-Para obtener más información sobre cómo funciona la inversión en los mercados con CFD, consulta [nuestra página de CFD](http://aprende-trading.com/cfd-trading/).
+Para obtener más información sobre cómo funciona la inversión en los mercados con CFD, consulta [nuestra página de CFD](/blog/cfd-trading).
 
 Palabras Finales
 

@@ -1,0 +1,219 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import TradingViewWidget from '../../components/TradingViewWidget.astro';
+
+const title = "Calendario Económico";
+const description = "Calendario económico en tiempo real con los eventos más importantes del mercado financiero mundial.";
+const pubDate = new Date("2018-10-25 01:02:00");
+
+const formattedDate = pubDate.toLocaleDateString('es-ES', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric'
+});
+---
+
+<html lang="es">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+
+	<body>
+		<Header />
+
+		<div class="mh-container-outer">
+			<div class="mh-container">
+				<main class="mh-wrapper">
+					<!-- Main Content Area -->
+					<div class="mh-main-area mh-row">
+						<!-- Content Column -->
+						<div class="mh-content">
+							<article class="mh-article">
+								<!-- Article Header -->
+								<header class="mh-entry-header">
+									<h1 class="mh-entry-title">{title}</h1>
+									<div class="mh-entry-meta">
+										<span class="mh-meta-date">{formattedDate}</span>
+									</div>
+								</header>
+
+								<!-- Article Content -->
+								<div class="mh-entry-content">
+									<p>Nuestro calendario económico muestra los próximos eventos en todo el mundo. Use el calendario de divisas para ver qué eventos podrían cambiar sutilmente o sacudir sustancialmente los mercados financieros. En el calendario, los artículos están clasificados en orden de importancia: "bajo", "medio" y "alto."</p>
+
+									<!-- TradingView Economic Calendar Widget -->
+									<TradingViewWidget
+										type="economic-calendar"
+										width="100%"
+										height={600}
+										locale="es"
+										importanceFilter="-1,0,1"
+									/>
+
+									<h2>¿Cómo usar el Calendario Económico?</h2>
+									<p>El calendario económico es una herramienta esencial para cualquier trader. Los eventos económicos pueden causar volatilidad significativa en los mercados financieros, especialmente en el mercado de divisas (Forex).</p>
+
+									<h3>Tipos de eventos</h3>
+									<ul>
+										<li><strong>Alta importancia (rojo):</strong> Eventos que pueden mover significativamente los mercados, como decisiones de tasas de interés, datos de empleo (NFP), PIB.</li>
+										<li><strong>Media importancia (naranja):</strong> Eventos que pueden causar movimientos moderados, como datos de manufactura, ventas minoristas.</li>
+										<li><strong>Baja importancia (amarillo):</strong> Eventos menores que generalmente tienen poco impacto en los mercados.</li>
+									</ul>
+
+									<h3>Consejos para traders</h3>
+									<ul>
+										<li>Evite abrir posiciones grandes justo antes de eventos de alta importancia.</li>
+										<li>Considere cerrar posiciones o ajustar stop-loss antes de noticias importantes.</li>
+										<li>Preste atención a la diferencia entre el dato real y el esperado - la volatilidad surge de las sorpresas.</li>
+										<li>Algunos traders prefieren esperar que pase la volatilidad inicial antes de entrar al mercado.</li>
+									</ul>
+								</div>
+
+								<!-- Article Footer -->
+								<footer class="mh-entry-footer">
+									<a href="/blog" class="mh-back-link">← Volver a Artículos</a>
+								</footer>
+							</article>
+						</div>
+
+						<!-- Sidebar -->
+						<div class="mh-sidebar-wrap">
+							<Sidebar />
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	/* Main Area Layout */
+	.mh-main-area {
+		display: flex;
+		gap: var(--gutter);
+	}
+
+	.mh-content {
+		flex: 1;
+		min-width: 0;
+	}
+
+	.mh-sidebar-wrap {
+		width: var(--sidebar-width);
+		flex-shrink: 0;
+	}
+
+	/* Article */
+	.mh-article {
+		background: var(--white);
+	}
+
+	/* Entry Header */
+	.mh-entry-header {
+		margin-bottom: 25px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid var(--gray-lighter);
+	}
+
+	.mh-entry-title {
+		font-size: 28px;
+		line-height: 1.3;
+		margin: 0 0 15px 0;
+		color: var(--black);
+	}
+
+	.mh-entry-meta {
+		font-size: 13px;
+		color: var(--gray-light);
+		margin-bottom: 15px;
+	}
+
+	/* Entry Content */
+	.mh-entry-content {
+		margin-bottom: 25px;
+	}
+
+	.mh-entry-content h2 {
+		font-size: 22px;
+		margin-top: 30px;
+		margin-bottom: 15px;
+		padding-bottom: 10px;
+		border-bottom: 3px solid var(--primary);
+		color: var(--black);
+	}
+
+	.mh-entry-content h3 {
+		font-size: 18px;
+		margin-top: 25px;
+		margin-bottom: 12px;
+		color: var(--black);
+	}
+
+	.mh-entry-content p {
+		line-height: 1.7;
+		margin-bottom: 20px;
+		color: var(--black);
+	}
+
+	.mh-entry-content ul {
+		margin: 20px 0 20px 40px;
+		line-height: 1.7;
+	}
+
+	.mh-entry-content li {
+		margin-bottom: 8px;
+	}
+
+	/* Entry Footer */
+	.mh-entry-footer {
+		padding-top: 25px;
+		border-top: 1px solid var(--gray-lighter);
+	}
+
+	.mh-back-link {
+		display: inline-block;
+		font-weight: 700;
+		font-size: 13px;
+		color: var(--primary);
+		text-transform: uppercase;
+	}
+
+	.mh-back-link:hover {
+		color: var(--black);
+	}
+
+	/* Responsive */
+	@media (max-width: 900px) {
+		.mh-main-area {
+			flex-direction: column;
+		}
+
+		.mh-sidebar-wrap {
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.mh-entry-title {
+			font-size: 22px;
+		}
+
+		.mh-entry-content h2 {
+			font-size: 18px;
+		}
+
+		.mh-entry-content h3 {
+			font-size: 16px;
+		}
+
+		.mh-entry-content ul {
+			margin-left: 20px;
+		}
+	}
+</style>

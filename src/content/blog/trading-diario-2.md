@@ -14,7 +14,7 @@ With instant communication, an event on the other side of the world can quickly 
 
 Therefore, one of the best kept secrets of daily transactions is [Financial Juice](https://www.financialjuice.com/) . Once you have registered for a free user account, you can listen to the news live and direct. You should keep up to date with events that can affect your market directly and effortlessly. All this makes knowledge one of the best daily trading secrets to keep in mind.
 
-![7 secrets to a successful daily trading](https://www.financialjuice.com/assets/images/2019/01/Trade-The-News-700x270.jpg)
+![7 secrets to a successful daily trading](/images/2019/01/Trade-The-News-700x270.jpg)
 
 On the other hand, if you are looking for additional comments and opinions, you may want to consider other options currently available:
 
@@ -50,7 +50,7 @@ Having your technical analysis is essential to improve your trading activity and
 
 While the standard graphics obtained from your broker will serve you for a while, eSignal is the place to go when you're ready to update. It has the ability to draw and write custom formulas. Once the custom scripts have been installed, they can be used as indicators for investments and for drawing support / resistance lines. eSignal also works smoothly, allowing you to load graphics on numerous monitors without any delay.
 
-![7 secrets to a successful daily trading](https://i.ytimg.com/vi/TvoyxALSgM0/maxresdefault.jpg)
+![7 secrets to a successful daily trading](/images/2019/03/Trading-Metatrader-5-700x273.jpg)
 
 In addition, financial media and social integration functions allow you to instantly connect to information and experienced traders. Bouncing ideas from other traders can be an effective way to perfect an advanced daily scalping strategy, for example.
 
@@ -65,7 +65,7 @@ To obtain a benefit from price fluctuations rather than knowledge, practice is r
 
 In fact, one of the best secrets of daily success is first to execute prospective strategies through a simulator account. Financed with virtual money, you can identify failures and improve your technique until you generate consistent profits. Then you can apply it to a real account. These simulation accounts, by themselves, are not one of the best daily trading secrets; The secret is to use the [Oanda](https://www.oanda.com/lang/es/) practice account .
 
-![7 secrets to a successful daily trading](https://cdn.shopify.com/s/files/1/0259/1595/products/oanda_desktop1_1024x1024.PNG?v=1523904620)
+![7 secrets to a successful daily trading](/images/2019/03/Aplicacion-Plus500-700x451.png)
 
 Registration is fast and hassle free. It comes without fees and can be used for unlimited time. This ensures that you do not have to risk your own capital until you feel safe. You can also choose between the popular *MetaTrader 4* platform or your own platform. In addition, you can access your demo account through a mobile application.
 
@@ -123,7 +123,7 @@ Once you have an effective and constant strategy, automation can be used to impr
 
 In the world of automation, [AlgoTrader](https://www.algotrader.com/) is one of the best kept secrets. It was designed by industry experts and gives you maximum control of automated, high-speed, fact-based systems.
 
-![7 secrets to a successful daily trading](https://d1dv79tg02z9as.cloudfront.net/wp-content/uploads/2015/09/AlgoTrader.HTML5_.png)
+![7 secrets to a successful daily trading](/images/2019/03/MT5-700x315.png)
 
 The system is exceptionally fast, processes up to 500,000 events per second. The open source architecture also allows substantial customization. Third-party libraries can be integrated and integrated features help reduce costs, increasing your profit margin.
 

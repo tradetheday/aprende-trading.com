@@ -1,0 +1,118 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import TradingViewWidget from '../../components/TradingViewWidget.astro';
+
+const title = "Mercados de Divisas";
+const description = "Tabla de tipos de cambio cruzados de las principales divisas del mundo en tiempo real.";
+const pubDate = new Date("2018-10-25 00:58:53");
+
+const formattedDate = pubDate.toLocaleDateString('es-ES', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric'
+});
+---
+
+<html lang="es">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+
+	<body>
+		<Header />
+
+		<div class="mh-container-outer">
+			<div class="mh-container">
+				<main class="mh-wrapper">
+					<div class="mh-main-area mh-row">
+						<div class="mh-content">
+							<article class="mh-article">
+								<header class="mh-entry-header">
+									<h1 class="mh-entry-title">{title}</h1>
+									<div class="mh-entry-meta">
+										<span class="mh-meta-date">{formattedDate}</span>
+									</div>
+								</header>
+
+								<div class="mh-entry-content">
+									<p>La tabla de tipos de cambio cruzados muestra los precios en tiempo real de las principales divisas del mundo. Utilice esta herramienta para comparar rápidamente los valores relativos entre diferentes monedas.</p>
+
+									<!-- TradingView Forex Cross Rates Widget -->
+									<TradingViewWidget
+										type="forex-cross-rates"
+										width="100%"
+										height={500}
+										currencies={['EUR', 'USD', 'JPY', 'GBP', 'CHF', 'AUD', 'CAD', 'NZD', 'CNY']}
+										locale="es"
+									/>
+
+									<h2>¿Cómo leer la tabla de tipos cruzados?</h2>
+									<p>La tabla de tipos de cambio cruzados muestra el valor de una moneda en términos de otra. Para leer la tabla:</p>
+									<ul>
+										<li>Encuentre la moneda base en la columna izquierda</li>
+										<li>Busque la moneda de cotización en la fila superior</li>
+										<li>El número en la intersección es cuántas unidades de la moneda de cotización equivalen a una unidad de la moneda base</li>
+									</ul>
+
+									<h2>Principales pares de divisas</h2>
+									<p>Los pares de divisas más negociados incluyen:</p>
+									<ul>
+										<li><strong>EUR/USD</strong> - Euro vs Dólar estadounidense (el par más negociado)</li>
+										<li><strong>USD/JPY</strong> - Dólar vs Yen japonés</li>
+										<li><strong>GBP/USD</strong> - Libra esterlina vs Dólar</li>
+										<li><strong>USD/CHF</strong> - Dólar vs Franco suizo</li>
+										<li><strong>AUD/USD</strong> - Dólar australiano vs Dólar estadounidense</li>
+										<li><strong>USD/CAD</strong> - Dólar vs Dólar canadiense</li>
+									</ul>
+
+									<h2>Factores que afectan los tipos de cambio</h2>
+									<p>Los tipos de cambio fluctúan constantemente debido a varios factores:</p>
+									<ul>
+										<li><strong>Tasas de interés:</strong> Las decisiones de los bancos centrales sobre tasas de interés tienen un impacto significativo</li>
+										<li><strong>Datos económicos:</strong> PIB, empleo, inflación y otros indicadores</li>
+										<li><strong>Eventos geopolíticos:</strong> Elecciones, conflictos, acuerdos comerciales</li>
+										<li><strong>Sentimiento del mercado:</strong> La percepción de los inversores sobre el riesgo</li>
+									</ul>
+
+									<p>Para más información sobre el mercado de divisas, visite nuestra <a href="/blog/forex">guía completa de Forex</a>.</p>
+								</div>
+
+								<footer class="mh-entry-footer">
+									<a href="/blog" class="mh-back-link">← Volver a Artículos</a>
+								</footer>
+							</article>
+						</div>
+
+						<div class="mh-sidebar-wrap">
+							<Sidebar />
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.mh-main-area { display: flex; gap: var(--gutter); }
+	.mh-content { flex: 1; min-width: 0; }
+	.mh-sidebar-wrap { width: var(--sidebar-width); flex-shrink: 0; }
+	.mh-article { background: var(--white); }
+	.mh-entry-header { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid var(--gray-lighter); }
+	.mh-entry-title { font-size: 28px; line-height: 1.3; margin: 0 0 15px 0; color: var(--black); }
+	.mh-entry-meta { font-size: 13px; color: var(--gray-light); }
+	.mh-entry-content { margin-bottom: 25px; }
+	.mh-entry-content h2 { font-size: 22px; margin-top: 30px; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 3px solid var(--primary); color: var(--black); }
+	.mh-entry-content p { line-height: 1.7; margin-bottom: 15px; }
+	.mh-entry-content ul { margin: 15px 0 15px 30px; }
+	.mh-entry-content li { margin-bottom: 8px; line-height: 1.6; }
+	.mh-entry-content a { color: var(--primary); font-weight: 600; }
+	.mh-entry-footer { padding-top: 25px; border-top: 1px solid var(--gray-lighter); }
+	.mh-back-link { font-weight: 700; font-size: 13px; color: var(--primary); text-transform: uppercase; }
+	@media (max-width: 900px) { .mh-main-area { flex-direction: column; } .mh-sidebar-wrap { width: 100%; } }
+</style>

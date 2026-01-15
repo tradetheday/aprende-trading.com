@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 40">
+  <rect width="130" height="40" fill="#fff"/>
+  <circle cx="15" cy="20" r="10" fill="#f5a623"/>
+  <text x="32" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">easy</text>
+  <text x="65" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#f5a623">Markets</text>
+  <text x="75" y="35" font-family="Arial, sans-serif" font-size="7" fill="#999" text-anchor="middle">Simply Honest.</text>
+</svg>

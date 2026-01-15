@@ -137,7 +137,7 @@ Esta es una de las inversiones más importantes que harás. La mayoría de los t
 - Atención al cliente: Si tienes un problema, necesitarás un remedio rápido. Cada segundo podría costarte dinero. Por lo tanto, chequea las revisiones para asegurarte de que ofrecen un servicio al cliente confiable y rápido. Algunos brókers ofrecerán soporte 24/7, a través de llamadas y chat en línea, en varios idiomas. Además, deberían poder brindarte información sobre las horas de trading diario futuross, incluido el día de los presidentes, más las horas de negociación de futuros del Día de Año Nuevo y del Día del Trabajo.
 - Software comercial - ¿Qué tan buena es la plataforma comercial que se ofrece? ¿Ofrecen todos los gráficos y herramientas técnicas que necesita para realizar tu análisis? ¿Tendrás que pagar por características adicionales? Además, ¿el software permite velocidades de ejecución rápidas y una navegación sencilla?
 
-Antes de seleccionar un corredor, deberás hacer una investigación detallada, revisar revisiones y comparar características. Para una guía más detallada, lee [nuestra página de brókers](http://aprende-trading.com/brokers/).
+Antes de seleccionar un corredor, deberás hacer una investigación detallada, revisar revisiones y comparar características. Para una guía más detallada, lee [nuestra página de brókers](/blog/brokers).
 
 Escogiendo un futuro
 
@@ -220,7 +220,7 @@ El scalping requiere un alto volumen de operaciones, pero si tienes tiempo, podr
 
 Como puedes ver, existe un potencial de beneficios significativo con los futuros. Sin embargo, las estrategias de futuros de petróleo de día no pueden tener éxito cuando se usan con los futuros de Russell 2000, por ejemplo. Entonces, la clave es ser paciente y encontrar la estrategia adecuada para complementar tu estilo y mercado de negociación.
 
-Para una guía más detallada sobre estrategias efectivas de trading diario, revisa [nuestra página de estrategias](http://aprende-trading.com/desde-traders-principiantes-a-expertos-la-estrategia-es-la-clave/).
+Para una guía más detallada sobre estrategias efectivas de trading diario, revisa [nuestra página de estrategias](/blog/estrategia).
 
 ## Consejos
 
@@ -229,10 +229,10 @@ Convertir una ganancia constante requerirá numerosos factores que se unen. Nece
 - Siempre ten un plan, tienes que estar bien preparado. El enfoque de prueba y error verá rápidamente que el saldo de tu cuenta llega a cero. Prueba tu estrategia contra el mercado hasta que lo hayas convertido en tu propia forma de arte.
 - Mantener la disciplina: Demasiados traders fracasan porque no pueden mantener sus emociones bajo control. Si has vuelto a probar tu plan, sabes que tendrá éxito, así que no te entregues al miedo ni a la codicia. Deje que las matemáticas te guíen y permanezcan disciplinados.
 - Sé cauteloso con el margen: Si bien los márgenes comerciales globales de trading diario futuross pueden ayudar a maximizar las ganancias, no te dejes llevar demasiado lejos. Mantén tu riesgo bajo y tu margen mínimo, y nunca deberías perder tanto.
-- Practica primero: Ya sea que operes con futuros de plata de productos básicos o futuros sobre índices, una cuenta de práctica es un lugar fantástico para familiarizarse con los mercados y desarrollar una estrategia. Además, los simuladores de trading diario futuross se financian con dinero virtual, por lo que no tienes que arriesgar capital real hasta que te sientas seguro. Revisa nuestra [página de cuentas demo](http://aprende-trading.com/trading-diario-las-mejores-cuentas-demo-y-simuladores/) para más información.
+- Practica primero: Ya sea que operes con futuros de plata de productos básicos o futuros sobre índices, una cuenta de práctica es un lugar fantástico para familiarizarse con los mercados y desarrollar una estrategia. Además, los simuladores de trading diario futuross se financian con dinero virtual, por lo que no tienes que arriesgar capital real hasta que te sientas seguro. Revisa nuestra [página de cuentas demo](/blog/cuentas-demo) para más información.
 - Noticias: Tu instrumento podría subir o bajar de precio como reacción a los anuncios de noticias. Por lo tanto, debes tener tu oído en el suelo para cualquier cosa que pueda afectar tus posiciones. Algunas fuentes confiables incluyen Yahoo Finance, CNBC y Business Insider.
 
-Para una guía más detallada, revisa [nuestra página de consejos](http://aprende-trading.com/trading-diario-consejos-nuestros-10-mejores-consejos-para-traders-diarios/).
+Para una guía más detallada, revisa [nuestra página de consejos](/blog/consejos).
 
 ## Educación
 
@@ -243,7 +243,7 @@ Los traders más exitosos nunca dejan de aprender. Los mercados cambian y tú ca
 - Libros: Obtén estrategias detalladas, historias y consejos de algunos de los traders más exitosos del mundo. 
 - Blogs: Mantente al día con las tendencias del mercado a medida que los traders imparten su perspectiva en los blogs en línea. Son simplemente un lugar fantástico para obtener consejos sobre el trading diario en futuros ingeniosos.
 - Cursos / Tutoriales: Aprende análisis técnicos y nuevas estrategias de traders exitosos. Además, a menudo recibirás consejos sobre las señales de trading diario de futuros y los mejores indicadores para la configuración de tu gráfico.
-- Videos: Los [videos de Trading de Futuros](http://aprende-trading.com/los-mejores-canales-de-youtube-de-trading-diario/) de petróleo te permiten seguir a los expertos mientras intercambian y obtienen trucos útiles.
+- Videos: Los [videos de Trading de Futuros](/blog/youtube) de petróleo te permiten seguir a los expertos mientras intercambian y obtienen trucos útiles.
 - PDF: Son ideales mientras el trading se realiza, lo que te permite obtener las configuraciones de gráficos correctas y aplicar estrategias en tiempo real. Por ejemplo, considera el día de David Bennett sobre el trading de futuros de granos en PDF.
 - Salas comerciales: Las salas de chat comerciales de Trading de Futuros en vivo son fuentes de información brillantes. Puedes seguir a otros a medida que operan, haciéndoles preguntas y beneficiándote de los mejores consejos. Vale la pena explorar cualquiera de las 5 mejores salas de trading de futuros de Google.
 

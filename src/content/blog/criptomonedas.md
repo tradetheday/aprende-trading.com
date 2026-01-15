@@ -57,7 +57,7 @@ Si desea poseer la criptomoneda real, en lugar de especular sobre el precio, deb
 
 ## Estrategia
 
-Una vez que haya elegido su bróker, se haya familiarizado con su plataforma y haya financiado su cuenta, es hora de comenzar a operar. Necesitará utilizar una [estrategia efectiva](http://aprende-trading.com/desde-traders-principiantes-a-expertos-la-estrategia-es-la-clave/) en línea con un sistema de administración de dinero eficiente para obtener ganancias. A continuación se muestra un ejemplo de una estrategia de criptomoneda sencilla.
+Una vez que haya elegido su bróker, se haya familiarizado con su plataforma y haya financiado su cuenta, es hora de comenzar a operar. Necesitará utilizar una [estrategia efectiva](/blog/estrategia) en línea con un sistema de administración de dinero eficiente para obtener ganancias. A continuación se muestra un ejemplo de una estrategia de criptomoneda sencilla.
 
 Swing Trading
 
@@ -75,7 +75,7 @@ Incluso con el agente, el software, el capital y la estrategia adecuados, hay un
 - Por otro lado, si una gran empresa anuncia que incorporará el uso de una moneda en su negocio, los precios pueden subir rápidamente. Si está al tanto de cualquier noticia y puede reaccionar rápidamente, tendrá una ventaja sobre el resto del mercado.
 - Análisis Técnico:Analizar gráficos de precios históricos para identificar patrones de cuenta. La historia tiene el hábito de repetirse, por lo que sí puede seguir un patrón puede predecir futuros movimientos de precios, lo que le dará la ventaja que necesita para obtener una ganancia diaria. 
 - Métricas del Estudio:Este es uno de los consejos de criptomoneda más importantes. Al observar el número de carteras frente al número de carteras activas y el volumen de transacciones actual, puede intentar asignar un valor actual a una moneda específica. A continuación, puede tomar decisiones informadas basadas en el precio de mercado de hoy. Cuanto más precisas sean sus predicciones, mayores serán sus posibilidades de obtener ganancias.
-- Trading de Margen:Si anticipa un cambio de precio particular, el [trading de margen](http://aprende-trading.com/trading-diario-con-margen/) le permitirá pedir dinero prestado para aumentar su beneficio potencial si su predicción se materializa. Los intercambios tienen diferentes requisitos de margen y ofrecen tasas variables, por lo que es recomendable hacer la tarea primero. *Bitfinex* y *Huobi* son dos de las plataformas de margen más populares.
+- Trading de Margen:Si anticipa un cambio de precio particular, el [trading de margen](/blog/margen) le permitirá pedir dinero prestado para aumentar su beneficio potencial si su predicción se materializa. Los intercambios tienen diferentes requisitos de margen y ofrecen tasas variables, por lo que es recomendable hacer la tarea primero. *Bitfinex* y *Huobi* son dos de las plataformas de margen más populares.
 - 
 
 ## Reglas e Impuestos

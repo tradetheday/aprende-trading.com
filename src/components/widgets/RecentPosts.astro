@@ -1,0 +1,133 @@
+---
+import { getCollection } from 'astro:content';
+import Widget from './Widget.astro';
+
+interface Props {
+	count?: number;
+	title?: string;
+}
+
+const { count = 5, title = "Artículos Recientes" } = Astro.props;
+
+// Helper to extract first image from markdown content
+function getFirstImage(body: string): string | null {
+	// Match markdown image: ![alt](/images/path) - local images first
+	const localMdMatch = body.match(/!\[.*?\]\((\/images\/[^)]+)\)/);
+	if (localMdMatch) return localMdMatch[1];
+
+	// Match markdown image: ![alt](https://...) - external images
+	const externalMdMatch = body.match(/!\[.*?\]\((https?:\/\/[^)]+)\)/);
+	if (externalMdMatch) return externalMdMatch[1];
+
+	// Match HTML img: <img src="/images/..." /> - local
+	const localHtmlMatch = body.match(/<img[^>]+src=["'](\/images\/[^"']+)["']/);
+	if (localHtmlMatch) return localHtmlMatch[1];
+
+	// Match HTML img: <img src="https://..." /> - external
+	const externalHtmlMatch = body.match(/<img[^>]+src=["'](https?:\/\/[^"']+)["']/);
+	if (externalHtmlMatch) return externalHtmlMatch[1];
+
+	return null;
+}
+
+const posts = (await getCollection('blog'))
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+	.slice(0, count)
+	.map(post => ({
+		...post,
+		extractedImage: getFirstImage(post.body || '')
+	}));
+---
+
+<Widget title={title}>
+	<ul class="mh-posts-list">
+		{posts.map((post) => {
+			const imageSrc = post.data.heroImage?.src || post.extractedImage;
+			return (
+			<li class="mh-posts-list-item">
+				{imageSrc && (
+					<a href={`/blog/${post.id}/`} class="mh-posts-list-thumb">
+						<img src={imageSrc} alt={post.data.title} />
+					</a>
+				)}
+				<div class="mh-posts-list-content">
+					<a href={`/blog/${post.id}/`} class="mh-posts-list-title">
+						{post.data.title}
+					</a>
+					<span class="mh-posts-list-date">
+						{post.data.pubDate.toLocaleDateString('es-ES', {
+							year: 'numeric',
+							month: 'short',
+							day: 'numeric'
+						})}
+					</span>
+				</div>
+			</li>
+			);
+		})}
+	</ul>
+</Widget>
+
+<style>
+	.mh-posts-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.mh-posts-list-item {
+		display: flex;
+		gap: 15px;
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+		border-bottom: 1px solid var(--gray-lighter);
+	}
+
+	.mh-posts-list-item:last-child {
+		padding-bottom: 0;
+		margin-bottom: 0;
+		border-bottom: none;
+	}
+
+	.mh-posts-list-thumb {
+		flex-shrink: 0;
+		width: 80px;
+		height: 60px;
+		overflow: hidden;
+	}
+
+	.mh-posts-list-thumb img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: 0.25s ease-out;
+	}
+
+	.mh-posts-list-thumb:hover img {
+		transform: scale(1.05);
+	}
+
+	.mh-posts-list-content {
+		flex: 1;
+		min-width: 0;
+	}
+
+	.mh-posts-list-title {
+		display: block;
+		font-size: 13px;
+		font-weight: 700;
+		line-height: 1.4;
+		color: var(--black);
+		margin-bottom: 5px;
+		transition: 0.25s ease-out;
+	}
+
+	.mh-posts-list-title:hover {
+		color: var(--primary);
+	}
+
+	.mh-posts-list-date {
+		font-size: 11px;
+		color: var(--gray-light);
+	}
+</style>

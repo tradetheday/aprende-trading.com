@@ -25,7 +25,7 @@ A continuación se presentan 3 de los mejores libros para principiantes:
 
 Escrito por un trader y educador, el libro da una dirección clara de la industria. Obtendrá una descripción detallada de la gestión de riesgos, análisis técnicos y cómo configurar un plan de negociación. Las ediciones recientes han sido renombradas como “*A Beginner’s Guide To Short Term Trading*”. 
 
-El libro también es una herramienta de aprendizaje fantástica porque está lleno de cuestionarios y listas de verificación. El autor también repasa toda la [terminología básica](http://aprende-trading.com/glosario/), mientras que de alguna manera logra mantenerte involucrado. Es ideal para el trader diario porque distingue entre el trading (a corto o largo plazo), los beneficios, los riesgos y los conceptos en los que necesita concentrarse.
+El libro también es una herramienta de aprendizaje fantástica porque está lleno de cuestionarios y listas de verificación. El autor también repasa toda la [terminología básica](/blog/glosario), mientras que de alguna manera logra mantenerte involucrado. Es ideal para el trader diario porque distingue entre el trading (a corto o largo plazo), los beneficios, los riesgos y los conceptos en los que necesita concentrarse.
 
 2. Start Day Trading Now: Una rápida y fácil introducción en ganar dinero mientras manejas tus riesgos - Micheal Sincere
 
@@ -107,7 +107,7 @@ Si está buscando libros de forex y opciones ampliamente reconocidas, esto no le
 
 ![Day Trading Grain Futures David Bennet Trading Diario - Los Mejores Libros de Trading](/images/2019/03/Day-Trading-Grain-Futures-David-Bennet.jpg)
 
-Si está buscando libros de futuros específicos, entonces esto merece un vistazo. No hay palabras molestas, le ofrece consejos prácticos sobre cómo negociar futuros de manera efectiva. En primer lugar, leerá por qué el autor prefiere el Trading Diario y por qué el [mercado de futuros](http://aprende-trading.com/futuros/) específicamente. Entonces obtendrá estrategias claras, basadas en conceptos de comercio atemporales, que no dependen de indicadores altamente técnicos y complejos. También puede aplicar las filosofías y estrategias que se encuentran aquí a cualquier número de mercados diarios. 
+Si está buscando libros de futuros específicos, entonces esto merece un vistazo. No hay palabras molestas, le ofrece consejos prácticos sobre cómo negociar futuros de manera efectiva. En primer lugar, leerá por qué el autor prefiere el Trading Diario y por qué el [mercado de futuros](/blog/futuros) específicamente. Entonces obtendrá estrategias claras, basadas en conceptos de comercio atemporales, que no dependen de indicadores altamente técnicos y complejos. También puede aplicar las filosofías y estrategias que se encuentran aquí a cualquier número de mercados diarios. 
 
 ## 
 

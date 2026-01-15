@@ -21,7 +21,7 @@ En el caso de las divisas, acciones, opciones binarias, futuros, materias primas
 
 ## ¿Es la compra de acciones Halal?
 
-En general se acepta que la compra de [acciones](http://aprende-trading.com/acciones/) no es haram. Esto se debe a que simplemente posee un porcentaje en un negocio. Sin embargo, debes asegurarte de que la compañía en cuestión no opera de una manera no islámica. Empresas como Guinness (alcohol) y Ladbrokes (juegos de azar), por ejemplo, no estarían permitidas.
+En general se acepta que la compra de [acciones](/blog/mercados) no es haram. Esto se debe a que simplemente posee un porcentaje en un negocio. Sin embargo, debes asegurarte de que la compañía en cuestión no opera de una manera no islámica. Empresas como Guinness (alcohol) y Ladbrokes (juegos de azar), por ejemplo, no estarían permitidas.
 
 Puedes dividir las empresas desde una perspectiva islámica en tres categorías:
 
@@ -55,7 +55,7 @@ En su mayor parte, el sentido común es tu mejor arma. Evita las compañías fue
 
 ![](/images/2019/02/Trading-Forex-Islamico-700x467.jpg)
 
-El [trading de forex](http://aprende-trading.com/por-que-elegir-forex/) es cada vez más accesible y el potencial de dinero rápido atrae a más traders cada día. En la superficie, esto parece una de las oportunidades de inversión halal, ya que simplemente estás comprando y vendiendo dinero. Sin embargo, profundiza un poco más y puede que te preguntes si el comercio de divisas es realmente haram.
+El [trading de forex](/blog/forex) es cada vez más accesible y el potencial de dinero rápido atrae a más traders cada día. En la superficie, esto parece una de las oportunidades de inversión halal, ya que simplemente estás comprando y vendiendo dinero. Sin embargo, profundiza un poco más y puede que te preguntes si el comercio de divisas es realmente haram.
 
 Si tuvieras que comprar £ 4,000 por $ 2,5000 y venderlo seis meses después, cuando la libra se aprecia contra el dólar, entonces esta es una transacción halal. Pero en realidad siguen existiendo varios problemas.
 
@@ -99,7 +99,7 @@ Aunque sabemos que el juego es estrictamente haram, puedes encontrar brókers fo
 
 ## ¿Es Halal el Trading de Opciones Binarias?
 
-A diferencia de otras formas de negociación, las [opciones binarias](http://aprende-trading.com/trading-diario-opciones-binarias/) ofrecen opciones más directas que muchos otros instrumentos. La opción pagará una cantidad fija de compensación si la opción se vence en el dinero o no pagará nada si la opción se vence fuera del dinero.
+A diferencia de otras formas de negociación, las [opciones binarias](/blog/opciones-binarias) ofrecen opciones más directas que muchos otros instrumentos. La opción pagará una cantidad fija de compensación si la opción se vence en el dinero o no pagará nada si la opción se vence fuera del dinero.
 
 Si el trader tiene poco conocimiento de cómo comerciar, intercambiar binarios sería una forma de juego, y no halal.
 

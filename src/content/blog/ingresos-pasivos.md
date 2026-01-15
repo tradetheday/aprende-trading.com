@@ -17,7 +17,7 @@ Sin embargo, mientras que lo anterior se ajusta a la definición popular de ingr
 
 Trading Activo
 
-La gente a menudo pregunta si el [trading de acciones](http://aprende-trading.com/acciones/) es un ingreso pasivo. Sin embargo, la respuesta dependerá de su enfoque individual. Los traders activos invertirán una cantidad considerable de tiempo y esfuerzo en obtener una ganancia. De hecho, su actividad en trading a menudo será su enfoque principal.
+La gente a menudo pregunta si el [trading de acciones](/blog/mercados) es un ingreso pasivo. Sin embargo, la respuesta dependerá de su enfoque individual. Los traders activos invertirán una cantidad considerable de tiempo y esfuerzo en obtener una ganancia. De hecho, su actividad en trading a menudo será su enfoque principal.
 
 ![](/images/2019/02/Trading-Diario-4-700x315.png)
 
@@ -25,7 +25,7 @@ Trading Pasivo
 
 Mientras que, si estás buscando generar un ingreso pasivo del día, probablemente no tengas la intención de pasar todo el día en tu computadora monitoreando los mercados y haciendo transacciones. A diferencia de los traders activos, tu ingreso pasivo se ajustará a tu estilo de vida, en lugar de dictarlo.
 
-Por lo tanto, si deseas generar ingresos pasivos con [opciones](http://aprende-trading.com/opciones/) o el trading de [criptomonedas](http://aprende-trading.com/criptomonedas/), por ejemplo, es posible que desees entregar tu capital a un bróker de confianza, un sistema automatizado o invertir a través del trading de copias.
+Por lo tanto, si deseas generar ingresos pasivos con [opciones](/blog/opciones) o el trading de [criptomonedas](/blog/criptomonedas), por ejemplo, es posible que desees entregar tu capital a un bróker de confianza, un sistema automatizado o invertir a través del trading de copias.
 
 ## Pros y Contras de los Ingresos Pasivos
 
@@ -39,15 +39,15 @@ Además, el trading pasivo a veces puede resultar en un flujo de ganancias más 
 
 Automatización
 
-Para facilitar el trading diario de ingresos pasivos, algunos utilizan la [automatización](http://aprende-trading.com/tutorial-de-los-mejores-software-automaticos-para-trading-diario/). Usados ​​correctamente, los sistemas automatizados pueden permitirte generar ganancias sustanciales. Esto se debe a que solo hay un cierto número de operaciones que puedes realizar manualmente cada día. Mientras que un algoritmo sofisticado puede ingresar y salir automáticamente de las posiciones tan pronto como se cumplan los criterios predeterminados.
+Para facilitar el trading diario de ingresos pasivos, algunos utilizan la [automatización](/blog/tutorial-de-los-mejores-software-automaticos-para-trading-diario). Usados ​​correctamente, los sistemas automatizados pueden permitirte generar ganancias sustanciales. Esto se debe a que solo hay un cierto número de operaciones que puedes realizar manualmente cada día. Mientras que un algoritmo sofisticado puede ingresar y salir automáticamente de las posiciones tan pronto como se cumplan los criterios predeterminados.
 
-También te permiten operar en varios [mercados](http://aprende-trading.com/mercados/) a la vez. De hecho, una vez que hayas programado sus criterios, puedes generar ingresos pasivos mientras duermes.
+También te permiten operar en varios [mercados](/blog/mercados) a la vez. De hecho, una vez que hayas programado sus criterios, puedes generar ingresos pasivos mientras duermes.
 
 Algunos pueden dudar comprensiblemente la eficacia de estos sistemas. Sin embargo, aproximadamente el 75% de todas las operaciones realizadas en la bolsa de valores de Nueva York y el NASDAQ ahora se originan a partir de estos algoritmos, lo que demuestra sus capacidades.
 
 Software
 
-Antes de que puedas comenzar a desarrollar un ingreso pasivo a través del trading de acciones automatizado, por ejemplo, tendrás que encontrar el software adecuado. Haz tu investigación y chequea las criticas antes de invertir en cualquiera. De hecho, para orientación y ejemplos, lee nuestra [página de software](http://aprende-trading.com/software/).
+Antes de que puedas comenzar a desarrollar un ingreso pasivo a través del trading de acciones automatizado, por ejemplo, tendrás que encontrar el software adecuado. Haz tu investigación y chequea las criticas antes de invertir en cualquiera. De hecho, para orientación y ejemplos, lee nuestra [página de software](/blog/software).
 
 Una vez que hayas decidido un software, deberás desarrollar una estrategia efectiva. Crear una lista de verificación de tus parámetros de transacciones diarias suele ser un buen lugar para comenzar. Es posible que desees considerar lo siguiente:
 
@@ -62,7 +62,7 @@ Una vez que hayas desarrollado una estrategia, deberás tener el algoritmo escri
 
 Back-Testing
 
-Antes de que puedas utilizar un sistema automatizado para generar un ingreso pasivo con bitcoin, por ejemplo, también deberás realizar una prueba retrospectiva de su [estrategia](http://aprende-trading.com/estrategia/). Esto te permite probar su sistema antes de arriesgar cualquier capital. Simplemente ejecuta tu software con datos de precios históricos para obtener un indicador de qué tan bien se desempeña. A continuación, puedes identificar y solucionar cualquier problema.
+Antes de que puedas utilizar un sistema automatizado para generar un ingreso pasivo con bitcoin, por ejemplo, también deberás realizar una prueba retrospectiva de su [estrategia](/blog/estrategia). Esto te permite probar su sistema antes de arriesgar cualquier capital. Simplemente ejecuta tu software con datos de precios históricos para obtener un indicador de qué tan bien se desempeña. A continuación, puedes identificar y solucionar cualquier problema.
 
 La simulación de Monte Carlo es una herramienta útil para probar. Esto prueba repetidamente los pasos de tu algoritmo e ingresa datos aleatorios en sus parámetros. Esto te permitirá pronosticar qué tan bien va a funcionar tu nuevo sistema.
 
@@ -103,7 +103,7 @@ Estas definiciones varían en cierto rango a medida que se mueven entre diferent
 
 Muchos países consideran que los ingresos pasivos son gravables como los ingresos no pasivos. Sin embargo, también se puede tratar de manera diferente. Por ejemplo, en los EE. UU., El IRS permite que las pérdidas pasivas se cancelen solo contra las ganancias pasivas. Por lo tanto, cuando las pérdidas superan los ingresos de las actividades comerciales pasivas, el resto de la pérdida puede trasladarse al siguiente año tributario, siempre que exista algún ingreso pasivo contra el cual pagar.
 
-Para obtener más información sobre cómo los impuestos pueden afectar sus ganancias diarias, consulta nuestra [página de impuestos](http://aprende-trading.com/impuestos/).
+Para obtener más información sobre cómo los impuestos pueden afectar sus ganancias diarias, consulta nuestra [página de impuestos](/blog/impuestos).
 
 ## Palabras Finales
 

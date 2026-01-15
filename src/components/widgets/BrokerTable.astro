@@ -1,0 +1,205 @@
+---
+import Widget from './Widget.astro';
+
+interface Broker {
+	name: string;
+	logo: string;
+	minDeposit: string;
+	reviewUrl: string;
+	signupUrl: string;
+}
+
+interface Props {
+	brokers?: Broker[];
+}
+
+const defaultBrokers: Broker[] = [
+	{
+		name: 'XM',
+		logo: '/images/brokers/xm-logo.jpg',
+		minDeposit: '$5 USD',
+		reviewUrl: '/blog/brokers#xm',
+		signupUrl: 'https://www.xm.com'
+	},
+	{
+		name: 'eToro',
+		logo: '/images/brokers/etoro-logo.svg',
+		minDeposit: '$50 USD',
+		reviewUrl: '/blog/brokers#etoro',
+		signupUrl: 'https://www.etoro.com'
+	},
+	{
+		name: 'AvaTrade',
+		logo: '/images/brokers/avatrade-logo.svg',
+		minDeposit: '$100 USD',
+		reviewUrl: '/blog/brokers#avatrade',
+		signupUrl: 'https://www.avatrade.com'
+	},
+	{
+		name: 'AxiTrader',
+		logo: '/images/brokers/axitrader-logo.svg',
+		minDeposit: '$1 USD',
+		reviewUrl: '/blog/brokers#axitrader',
+		signupUrl: 'https://www.axi.com'
+	},
+	{
+		name: 'easyMarkets',
+		logo: '/images/brokers/easymarkets-logo.svg',
+		minDeposit: '$100 USD',
+		reviewUrl: '/blog/brokers#easymarkets',
+		signupUrl: 'https://www.easymarkets.com'
+	}
+];
+
+const { brokers = defaultBrokers } = Astro.props;
+---
+
+<div class="broker-table-widget">
+	<table class="broker-table">
+		<thead>
+			<tr>
+				<th class="col-broker">Broker</th>
+				<th class="col-deposit">Depósito Mínimo ($)</th>
+				<th class="col-actions">Reseña</th>
+			</tr>
+		</thead>
+		<tbody>
+			{brokers.map((broker) => (
+				<tr>
+					<td class="col-broker">
+						<img src={broker.logo} alt={broker.name} class="broker-logo" />
+					</td>
+					<td class="col-deposit">{broker.minDeposit}</td>
+					<td class="col-actions">
+						<a href={broker.reviewUrl} class="btn-review">Reseña</a>
+						<a href={broker.signupUrl} class="btn-signup" target="_blank" rel="noopener noreferrer">Abrir Cuenta</a>
+					</td>
+				</tr>
+			))}
+		</tbody>
+	</table>
+	<a href="/blog/brokers" class="btn-broker-list">Lista de Brokers</a>
+</div>
+
+<style>
+	.broker-table-widget {
+		background: var(--white);
+		margin-bottom: 30px;
+	}
+
+	.broker-table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: 13px;
+	}
+
+	.broker-table thead {
+		background: #3d4f5f;
+		color: var(--white);
+	}
+
+	.broker-table th {
+		padding: 10px 8px;
+		font-weight: 600;
+		font-size: 12px;
+		text-align: center;
+	}
+
+	.broker-table td {
+		padding: 12px 8px;
+		border-bottom: 1px solid var(--gray-lighter);
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	.broker-table tbody tr:last-child td {
+		border-bottom: none;
+	}
+
+	.col-broker {
+		width: 40%;
+	}
+
+	.col-deposit {
+		width: 30%;
+	}
+
+	.col-actions {
+		width: 30%;
+	}
+
+	.broker-logo {
+		max-width: 100px;
+		max-height: 35px;
+		width: auto;
+		height: auto;
+		object-fit: contain;
+	}
+
+	.col-actions {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+		align-items: center;
+	}
+
+	.broker-table td.col-actions {
+		display: table-cell;
+	}
+
+	.broker-table td.col-actions a {
+		display: block;
+		margin: 2px 0;
+	}
+
+	.btn-review,
+	.btn-signup {
+		display: inline-block;
+		padding: 6px 12px;
+		font-size: 11px;
+		font-weight: 600;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 3px;
+		min-width: 85px;
+	}
+
+	.btn-review {
+		background: #3d4f5f;
+		color: var(--white);
+	}
+
+	.btn-review:hover {
+		background: #2d3d4a;
+	}
+
+	.btn-signup {
+		background: transparent;
+		color: #4caf50;
+		border: 1px solid #4caf50;
+	}
+
+	.btn-signup:hover {
+		background: #4caf50;
+		color: var(--white);
+	}
+
+	.btn-broker-list {
+		display: block;
+		width: 100%;
+		padding: 12px 20px;
+		background: #3d4f5f;
+		color: var(--white);
+		text-align: center;
+		font-weight: 600;
+		font-size: 14px;
+		text-decoration: none;
+		border-radius: 25px;
+		margin-top: 15px;
+		transition: background 0.25s ease;
+	}
+
+	.btn-broker-list:hover {
+		background: #2d3d4a;
+	}
+</style>

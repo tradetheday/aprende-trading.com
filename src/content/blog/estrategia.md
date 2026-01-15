@@ -32,7 +32,7 @@ Ya sea que estés buscando estrategias automáticas de trading diario o táctica
 - Volatilidad: Esto te indica tu rango potencial de ganancias. Cuanto mayor sea la volatilidad, mayor será la ganancia o pérdida que puedas obtener. El mercado de la criptomoneda es un ejemplo bien conocido por su alta volatilidad.
 - Volumen: Esta medición te indicará cuántas veces se ha negociado el stock / activo dentro de un período de tiempo determinado. Para los traders diarios, esto se conoce mejor como "volumen de transacciones diario promedio". Un volumen alto te dice que hay un interés significativo en el activo o la seguridad. Un aumento en el volumen es a menudo un indicador de que un salto de precio, ya sea hacia arriba o hacia abajo, se acerca rápidamente.
 
-![Day trading strategy](https://www.daytrading.com/wp-content/uploads/2017/11/Day-trading-strategy.png)
+![Day trading strategy](/images/2019/02/Estrategia-de-trading-700x441.gif)
 
 ## 5 Estrategias de Trading Diario
 
@@ -52,7 +52,7 @@ Planea tus Salidas
 
 Utiliza el rendimiento reciente del activo para establecer un precio razonable. El uso de patrones de gráficos hará que este proceso sea aún más preciso. Puedes calcular el promedio de los cambios de precios recientes para crear un objetivo. Si la oscilación de precios promedio ha sido de 3 puntos en las últimas oscilaciones de precios, este sería un objetivo razonable. Una vez que hayas alcanzado ese objetivo, puedes salir de la operación y disfrutar de las ganancias.
 
-![Popular breakout trading strategy](https://www.daytrading.com/wp-content/uploads/2017/11/Breakout-strategy-min.png)
+![Popular breakout trading strategy](/images/2019/03/Grafico-Trading-700x287.png)
 
 2. Scalping
 
@@ -60,7 +60,7 @@ Una de las estrategias más populares es el Scalping. Es particularmente popular
 
 Debes estar atento a los instrumentos volátiles, atractiva liquidez y caliente en el momento oportuno. No puedes esperar al mercado, cierra las operaciones perdedoras lo antes posible.
 
-![Popular scalping trading strategy](https://www.daytrading.com/wp-content/uploads/2017/11/Scalping.png)
+![Popular scalping trading strategy](/images/2019/02/Trading-de-Brechas-700x319.png)
 
 3. Momentum
 
@@ -70,7 +70,7 @@ Alternativamente, puede atenuar la caída de precios. De esta manera, alrededor 
 
 Esta estrategia es simple y efectiva si se usa correctamente. Sin embargo, debes asegurarte de conocer las próximas noticias y anuncios de ganancias. Solo unos segundos en cada operación marcará la diferencia en sus ganancias de fin de día.
 
-![Momentum day trading strategies on chart](https://www.daytrading.com/wp-content/uploads/2017/11/Momentum-min.png)
+![Momentum day trading strategies on chart](/images/2019/03/EMA-trading-700x434.png)
 
 4. Reversal
 
@@ -80,7 +80,7 @@ Esta estrategia desafía la lógica básica, ya que tu objetivo es operar contra
 
 La estrategia de "Daily Pivot" se considera un caso único de trading inversa, ya que se centra en la compra y venta de los retrocesos / retroceso bajos y altos diarios.
 
-![Reversal day trading strategies on a chart](https://www.daytrading.com/wp-content/uploads/2017/11/Reversal-min.png)
+![Reversal day trading strategies on a chart](/images/2019/02/Gráfico-Heiken-Ashi-700x217.png)
 
 5. Usando Pivot Points
 
@@ -108,7 +108,7 @@ El segundo nivel de soporte y resistencia se calcula de la siguiente manera:
 
 Aplicación
 
-Cuando se aplica al [mercado FX](http://aprende-trading.com/por-que-elegir-forex/), por ejemplo, encontrarás que el rango de trading para la sesión a menudo tiene lugar entre el Pivot Point y los primeros niveles de soporte y resistencia. Esto se debe a que un gran número de traders juegan este rango.
+Cuando se aplica al [mercado FX](/blog/forex), por ejemplo, encontrarás que el rango de trading para la sesión a menudo tiene lugar entre el Pivot Point y los primeros niveles de soporte y resistencia. Esto se debe a que un gran número de traders juegan este rango.
 
 También vale la pena señalar, que este es uno de los sistemas y métodos que también se pueden aplicar a los índices. Por ejemplo, puede ayudar a formar una estrategia comercial efectiva de S&P.
 
@@ -122,11 +122,11 @@ Por ejemplo, el precio de una acción se mueve en £0.05 por minuto, por lo que 
 
 Una estrategia popular es establecer dos stop-loss. En primer lugar, coloca una orden física de stop-loss a un nivel de precio específico. Esta será la mayor cantidad de capital que puedes permitirte perder. En segundo lugar, crea un stop-loss mental. Coloca esto en el punto en que se violan tus criterios de entrada. Entonces, si la operación da un giro inesperado, haz una salida rápida.
 
-![Imagen relacionada](https://www.euribor.com.es/wp-content/uploads/2018/10/crash.gif)
+![Imagen relacionada](/images/2019/03/Perdidas-de-Capital-700x312.jpg)
 
 ## Estrategias de Forex Trading
 
-Las estrategias de Forex son riesgosas por naturaleza ya que necesitas acumular tus ganancias en un corto periodo de tiempo. Puedes aplicar cualquiera de las estrategias anteriores al mercado de divisas, o puedes ver nuestra página de [Forex](http://aprende-trading.com/por-que-elegir-forex/) para ver ejemplos de estrategias detalladas.
+Las estrategias de Forex son riesgosas por naturaleza ya que necesitas acumular tus ganancias en un corto periodo de tiempo. Puedes aplicar cualquiera de las estrategias anteriores al mercado de divisas, o puedes ver nuestra página de [Forex](/blog/forex) para ver ejemplos de estrategias detalladas.
 
 ## Estrategias de Trading de Criptomoneda
 
@@ -148,13 +148,13 @@ Esta es una de las estrategias de promedios móviles que genera una señal de co
 
 Por lo tanto, podrás abrir una posición cuando la línea de promedio móvil se cruce en una dirección y cerrar la posición cuando se cruce en la dirección opuesta.
 
-¿Cómo puedes establecer que definitivamente hay una tendencia? Sabrás que la tendencia está en curso si la barra de precios se mantiene por encima o por debajo de la línea de 100 períodos.Para obtener más información sobre estrategias de acciones, consulta nuestra [página de acciones](http://aprende-trading.com/acciones/).
+¿Cómo puedes establecer que definitivamente hay una tendencia? Sabrás que la tendencia está en curso si la barra de precios se mantiene por encima o por debajo de la línea de 100 períodos.Para obtener más información sobre estrategias de acciones, consulta nuestra [página de acciones](/blog/mercados).
 
 ## Estrategias de CFD
 
 El desarrollo de una estrategia de trading diario es eficaz pero puede ser complicado. Sin embargo, deberías optar por un instrumento como un CFD y tu trabajo podrá ser algo más fácil.
 
-Los CFDs se preocupan por la diferencia entre dónde se ingresa y se sale de una operación. Los últimos años han visto crecer su popularidad. Esto se debe a que puede obtener ganancias cuando el activo subyacente se mueve en relación con la posición tomada, sin tener que poseer el activo subyacente.Para conocer los consejos y estrategias para el día de CFD, consulta nuestra [página de CFD](http://aprende-trading.com/cfd-trading/). 
+Los CFDs se preocupan por la diferencia entre dónde se ingresa y se sale de una operación. Los últimos años han visto crecer su popularidad. Esto se debe a que puede obtener ganancias cuando el activo subyacente se mueve en relación con la posición tomada, sin tener que poseer el activo subyacente.Para conocer los consejos y estrategias para el día de CFD, consulta nuestra [página de CFD](/blog/cfd-trading). 
 
 ## Diferencias Regionales
 
