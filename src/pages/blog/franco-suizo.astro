@@ -1,0 +1,170 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import TradingViewWidget from '../../components/TradingViewWidget.astro';
+
+const title = "Franco Suizo (CHF) - Guía de Trading";
+const description = "Todo sobre el Franco Suizo (CHF), el refugio seguro por excelencia. Aprende a operar pares con CHF, análisis técnico y estrategias de trading.";
+const pubDate = new Date("2024-01-15");
+
+const formattedDate = pubDate.toLocaleDateString('es-ES', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric'
+});
+---
+
+<html lang="es">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+
+	<body>
+		<Header />
+
+		<div class="mh-container-outer">
+			<div class="mh-container">
+				<main class="mh-wrapper">
+					<div class="mh-main-area mh-row">
+						<div class="mh-content">
+							<article class="mh-article">
+								<header class="mh-entry-header">
+									<h1 class="mh-entry-title">{title}</h1>
+									<div class="mh-entry-meta">
+										<span class="mh-meta-date">{formattedDate}</span>
+									</div>
+								</header>
+
+								<div class="mh-entry-content">
+									<h3>¿Qué es el Franco Suizo?</h3>
+									<p>El Franco Suizo (CHF) es la moneda oficial de Suiza y Liechtenstein. Es reconocido mundialmente como el "refugio seguro" por excelencia, gracias a la estabilidad política, económica y el secreto bancario suizo.</p>
+
+									<p>El Banco Nacional Suizo (SNB) gestiona la política monetaria. El símbolo es CHF (Confederatio Helvetica Franc), reflejando el nombre latino de Suiza.</p>
+
+									<h3>Pares Principales con CHF</h3>
+
+									<TradingViewWidget
+										type="market-overview"
+										width="100%"
+										height={450}
+										symbols={['FX:USDCHF', 'FX:EURCHF', 'FX:GBPCHF', 'FX:CHFJPY', 'FX:AUDCHF', 'FX:CADCHF']}
+										locale="es"
+									/>
+
+									<h4>Pares Mayores</h4>
+									<ul>
+										<li><strong>USD/CHF:</strong> Conocido como "Swissie", uno de los pares más estables.</li>
+										<li><strong>EUR/CHF:</strong> Históricamente mantenido en rangos por el SNB.</li>
+										<li><strong>GBP/CHF:</strong> Combina volatilidad británica con estabilidad suiza.</li>
+										<li><strong>CHF/JPY:</strong> Dos refugios seguros, interesante durante crisis.</li>
+									</ul>
+
+									<h4>El Franco como Refugio Seguro</h4>
+									<p>El CHF es considerado refugio seguro por varias razones:</p>
+									<ul>
+										<li>Neutralidad política de Suiza</li>
+										<li>Economía diversificada y estable</li>
+										<li>Sistema bancario robusto</li>
+										<li>Baja deuda pública</li>
+										<li>Superávit comercial consistente</li>
+									</ul>
+
+									<h3>Factores que Influyen en el CHF</h3>
+									<ul>
+										<li><strong>Política del SNB:</strong> Intervenciones para evitar apreciación excesiva.</li>
+										<li><strong>Sentimiento Global:</strong> Se fortalece durante crisis y aversión al riesgo.</li>
+										<li><strong>Diferencial EUR/CHF:</strong> Relación estrecha con la economía europea.</li>
+										<li><strong>Precio del Oro:</strong> Suiza tiene grandes reservas de oro.</li>
+									</ul>
+
+									<h3>Análisis Técnico USD/CHF</h3>
+
+									<TradingViewWidget
+										type="advanced-chart"
+										symbol="FX:USDCHF"
+										width="100%"
+										height={500}
+										locale="es"
+									/>
+
+									<h3>El "Flash Crash" de 2015</h3>
+									<p>En enero de 2015, el SNB eliminó sorpresivamente el piso de 1.20 en EUR/CHF, causando:</p>
+									<ul>
+										<li>El CHF se apreció casi 30% en minutos</li>
+										<li>Varios brokers quebraron</li>
+										<li>Pérdidas masivas para traders</li>
+										<li>Lección sobre riesgo de intervención de bancos centrales</li>
+									</ul>
+
+									<h3>Horarios de Trading</h3>
+									<p>Los mejores momentos para operar pares con CHF:</p>
+									<ul>
+										<li><strong>Sesión Europea:</strong> 07:00 - 17:00 GMT</li>
+										<li><strong>Apertura de Zúrich:</strong> 07:00 - 08:00 GMT</li>
+										<li><strong>Anuncios del SNB:</strong> Reuniones trimestrales</li>
+									</ul>
+
+									<h3>Características del Trading con CHF</h3>
+									<ul>
+										<li><strong>Baja Volatilidad:</strong> Generalmente más estable que otras monedas.</li>
+										<li><strong>Correlación Negativa:</strong> Con el sentimiento de riesgo global.</li>
+										<li><strong>Riesgo de Intervención:</strong> El SNB puede intervenir sin previo aviso.</li>
+										<li><strong>Tasas Negativas:</strong> Suiza tiene tasas de interés negativas.</li>
+									</ul>
+
+									<h3>Estrategias de Trading con CHF</h3>
+									<ul>
+										<li><strong>Trading de Rangos EUR/CHF:</strong> Históricamente opera en rangos definidos.</li>
+										<li><strong>Hedging:</strong> Usar CHF para proteger portafolios durante incertidumbre.</li>
+										<li><strong>Correlación con Oro:</strong> Operar basándose en movimientos del oro.</li>
+									</ul>
+
+									<h3>Riesgos Específicos</h3>
+									<ul>
+										<li>Intervenciones sorpresa del SNB</li>
+										<li>Spreads pueden ampliarse durante crisis</li>
+										<li>Tasas negativas afectan carry trades</li>
+										<li>Baja volatilidad puede reducir oportunidades</li>
+									</ul>
+								</div>
+
+								<footer class="mh-entry-footer">
+									<a href="/blog" class="mh-back-link">← Volver a Artículos</a>
+								</footer>
+							</article>
+						</div>
+
+						<div class="mh-sidebar-wrap">
+							<Sidebar />
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.mh-main-area { display: flex; gap: var(--gutter); }
+	.mh-content { flex: 1; min-width: 0; }
+	.mh-sidebar-wrap { width: var(--sidebar-width); flex-shrink: 0; }
+	.mh-article { background: var(--white); }
+	.mh-entry-header { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid var(--gray-lighter); }
+	.mh-entry-title { font-size: 28px; line-height: 1.3; margin: 0 0 15px 0; color: var(--black); }
+	.mh-entry-meta { font-size: 13px; color: var(--gray-light); }
+	.mh-entry-content { margin-bottom: 25px; }
+	.mh-entry-content h3 { font-size: 20px; margin-top: 30px; margin-bottom: 15px; color: var(--black); }
+	.mh-entry-content h4 { font-size: 16px; margin-top: 20px; margin-bottom: 10px; color: var(--black); }
+	.mh-entry-content p { line-height: 1.7; margin-bottom: 15px; }
+	.mh-entry-content ul { margin: 15px 0 15px 30px; }
+	.mh-entry-content li { margin-bottom: 8px; line-height: 1.6; }
+	.mh-entry-content img { max-width: 100%; height: auto; margin: 20px 0; }
+	.mh-entry-content a { color: var(--primary); font-weight: 600; }
+	.mh-entry-footer { padding-top: 25px; border-top: 1px solid var(--gray-lighter); }
+	.mh-back-link { font-weight: 700; font-size: 13px; color: var(--primary); text-transform: uppercase; }
+	@media (max-width: 900px) { .mh-main-area { flex-direction: column; } .mh-sidebar-wrap { width: 100%; } }
+</style>

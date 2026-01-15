@@ -1,0 +1,161 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import TradingViewWidget from '../../components/TradingViewWidget.astro';
+
+const title = "Yen Japonés (JPY) - Guía de Trading";
+const description = "Todo sobre el Yen Japonés (JPY), la tercera moneda más negociada del mundo. Aprende a operar pares con JPY, análisis técnico y estrategias de trading.";
+const pubDate = new Date("2024-01-15");
+
+const formattedDate = pubDate.toLocaleDateString('es-ES', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric'
+});
+---
+
+<html lang="es">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+
+	<body>
+		<Header />
+
+		<div class="mh-container-outer">
+			<div class="mh-container">
+				<main class="mh-wrapper">
+					<div class="mh-main-area mh-row">
+						<div class="mh-content">
+							<article class="mh-article">
+								<header class="mh-entry-header">
+									<h1 class="mh-entry-title">{title}</h1>
+									<div class="mh-entry-meta">
+										<span class="mh-meta-date">{formattedDate}</span>
+									</div>
+								</header>
+
+								<div class="mh-entry-content">
+									<h3>¿Qué es el Yen Japonés?</h3>
+									<p>El Yen Japonés (JPY) es la moneda oficial de Japón y la tercera moneda más negociada en el mercado Forex. Es conocido como una moneda "refugio seguro" debido a la estabilidad económica y política de Japón.</p>
+
+									<p>El Banco de Japón (BoJ) gestiona la política monetaria del yen. El símbolo (¥) es reconocido mundialmente, y el código ISO es JPY.</p>
+
+									<h3>Pares Principales con JPY</h3>
+
+									<TradingViewWidget
+										type="market-overview"
+										width="100%"
+										height={450}
+										symbols={['FX:USDJPY', 'FX:EURJPY', 'FX:GBPJPY', 'FX:AUDJPY', 'FX:NZDJPY', 'FX:CADJPY']}
+										locale="es"
+									/>
+
+									<h4>Pares Mayores</h4>
+									<ul>
+										<li><strong>USD/JPY:</strong> Conocido como "Gopher", el segundo par más líquido del mundo.</li>
+										<li><strong>EUR/JPY:</strong> Popular para carry trades debido al diferencial de tasas.</li>
+										<li><strong>GBP/JPY:</strong> El "Dragon", famoso por su extrema volatilidad.</li>
+										<li><strong>AUD/JPY:</strong> Correlacionado con el sentimiento de riesgo global.</li>
+									</ul>
+
+									<h4>El Yen como Refugio Seguro</h4>
+									<p>Durante períodos de incertidumbre global, los inversores tienden a comprar yenes, fortaleciendo la moneda. Esto se debe a:</p>
+									<ul>
+										<li>Japón es el mayor acreedor neto del mundo</li>
+										<li>Baja inflación histórica</li>
+										<li>Sistema financiero estable</li>
+										<li>Superávit de cuenta corriente</li>
+									</ul>
+
+									<h3>Factores que Influyen en el JPY</h3>
+									<ul>
+										<li><strong>Política del BoJ:</strong> Control de la curva de rendimientos y tasas negativas.</li>
+										<li><strong>Intervención Cambiaria:</strong> El gobierno japonés puede intervenir en el mercado.</li>
+										<li><strong>Sentimiento de Riesgo:</strong> El yen se fortalece cuando hay aversión al riesgo.</li>
+										<li><strong>Datos Económicos:</strong> Tankan, PIB, balanza comercial e IPC.</li>
+									</ul>
+
+									<h3>Análisis Técnico USD/JPY</h3>
+
+									<TradingViewWidget
+										type="advanced-chart"
+										symbol="FX:USDJPY"
+										width="100%"
+										height={500}
+										locale="es"
+									/>
+
+									<h3>Horarios de Trading</h3>
+									<p>Los mejores momentos para operar pares con JPY:</p>
+									<ul>
+										<li><strong>Sesión de Tokio:</strong> 00:00 - 09:00 GMT</li>
+										<li><strong>Superposición Asia-Europa:</strong> 07:00 - 09:00 GMT</li>
+										<li><strong>Anuncios del BoJ:</strong> Sin horario fijo, pueden sorprender al mercado</li>
+									</ul>
+
+									<h3>Carry Trade con JPY</h3>
+									<p>El yen es popular para estrategias de carry trade debido a sus tasas de interés históricamente bajas:</p>
+									<ul>
+										<li>Los traders piden prestado en yenes (bajo costo)</li>
+										<li>Invierten en monedas con mayor rendimiento (AUD, NZD)</li>
+										<li>Ganan el diferencial de tasas</li>
+										<li>Riesgo: si el yen se fortalece, las pérdidas pueden ser significativas</li>
+									</ul>
+
+									<h3>Características Únicas del JPY</h3>
+									<ul>
+										<li><strong>Sin Centavos:</strong> El yen no tiene subdivisiones en uso común.</li>
+										<li><strong>Alta Liquidez:</strong> Especialmente durante la sesión asiática.</li>
+										<li><strong>Correlación Inversa:</strong> Con índices bursátiles como el Nikkei.</li>
+										<li><strong>Volatilidad Nocturna:</strong> Puede moverse significativamente durante la sesión asiática.</li>
+									</ul>
+
+									<h3>Estrategias de Trading con JPY</h3>
+									<ul>
+										<li><strong>Risk-On/Risk-Off:</strong> Operar basándose en el sentimiento global.</li>
+										<li><strong>Seguimiento de Tendencia USD/JPY:</strong> Tiende a formar tendencias claras.</li>
+										<li><strong>Scalping GBP/JPY:</strong> Para traders experimentados que buscan volatilidad.</li>
+									</ul>
+								</div>
+
+								<footer class="mh-entry-footer">
+									<a href="/blog" class="mh-back-link">← Volver a Artículos</a>
+								</footer>
+							</article>
+						</div>
+
+						<div class="mh-sidebar-wrap">
+							<Sidebar />
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.mh-main-area { display: flex; gap: var(--gutter); }
+	.mh-content { flex: 1; min-width: 0; }
+	.mh-sidebar-wrap { width: var(--sidebar-width); flex-shrink: 0; }
+	.mh-article { background: var(--white); }
+	.mh-entry-header { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid var(--gray-lighter); }
+	.mh-entry-title { font-size: 28px; line-height: 1.3; margin: 0 0 15px 0; color: var(--black); }
+	.mh-entry-meta { font-size: 13px; color: var(--gray-light); }
+	.mh-entry-content { margin-bottom: 25px; }
+	.mh-entry-content h3 { font-size: 20px; margin-top: 30px; margin-bottom: 15px; color: var(--black); }
+	.mh-entry-content h4 { font-size: 16px; margin-top: 20px; margin-bottom: 10px; color: var(--black); }
+	.mh-entry-content p { line-height: 1.7; margin-bottom: 15px; }
+	.mh-entry-content ul { margin: 15px 0 15px 30px; }
+	.mh-entry-content li { margin-bottom: 8px; line-height: 1.6; }
+	.mh-entry-content img { max-width: 100%; height: auto; margin: 20px 0; }
+	.mh-entry-content a { color: var(--primary); font-weight: 600; }
+	.mh-entry-footer { padding-top: 25px; border-top: 1px solid var(--gray-lighter); }
+	.mh-back-link { font-weight: 700; font-size: 13px; color: var(--primary); text-transform: uppercase; }
+	@media (max-width: 900px) { .mh-main-area { flex-direction: column; } .mh-sidebar-wrap { width: 100%; } }
+</style>

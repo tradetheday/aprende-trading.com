@@ -1,0 +1,154 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import TradingViewWidget from '../../components/TradingViewWidget.astro';
+
+const title = "Libra Esterlina (GBP) - Guía de Trading";
+const description = "Todo sobre la Libra Esterlina (GBP), una de las monedas más antiguas del mundo. Aprende a operar pares con GBP, análisis técnico y estrategias de trading.";
+const pubDate = new Date("2024-01-15");
+
+const formattedDate = pubDate.toLocaleDateString('es-ES', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric'
+});
+---
+
+<html lang="es">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+
+	<body>
+		<Header />
+
+		<div class="mh-container-outer">
+			<div class="mh-container">
+				<main class="mh-wrapper">
+					<div class="mh-main-area mh-row">
+						<div class="mh-content">
+							<article class="mh-article">
+								<header class="mh-entry-header">
+									<h1 class="mh-entry-title">{title}</h1>
+									<div class="mh-entry-meta">
+										<span class="mh-meta-date">{formattedDate}</span>
+									</div>
+								</header>
+
+								<div class="mh-entry-content">
+									<h3>¿Qué es la Libra Esterlina?</h3>
+									<p>La Libra Esterlina (GBP) es la moneda oficial del Reino Unido y una de las monedas más antiguas del mundo aún en uso. Es la cuarta moneda más negociada en el mercado de divisas, conocida por su alta volatilidad y liquidez.</p>
+
+									<p>El Banco de Inglaterra (BoE) es responsable de la política monetaria de la libra. El símbolo (£) deriva de la letra latina "L" por Libra, una unidad de peso romana.</p>
+
+									<h3>Pares Principales con GBP</h3>
+
+									<TradingViewWidget
+										type="market-overview"
+										width="100%"
+										height={450}
+										symbols={['FX:GBPUSD', 'FX:GBPJPY', 'FX:EURGBP', 'FX:GBPCHF', 'FX:GBPAUD', 'FX:GBPCAD']}
+										locale="es"
+									/>
+
+									<h4>Pares Mayores</h4>
+									<ul>
+										<li><strong>GBP/USD:</strong> Conocido como "Cable", es uno de los pares más volátiles.</li>
+										<li><strong>EUR/GBP:</strong> Refleja la relación económica entre UK y la Eurozona.</li>
+										<li><strong>GBP/JPY:</strong> Apodado "Dragon", famoso por su extrema volatilidad.</li>
+										<li><strong>GBP/CHF:</strong> Combinación de volatilidad británica y estabilidad suiza.</li>
+									</ul>
+
+									<h4>¿Por qué "Cable"?</h4>
+									<p>El término "Cable" para GBP/USD proviene del cable telegráfico transatlántico del siglo XIX que se usaba para transmitir las cotizaciones entre Londres y Nueva York.</p>
+
+									<h3>Factores que Influyen en la GBP</h3>
+									<ul>
+										<li><strong>Decisiones del BoE:</strong> Las tasas de interés y políticas del Banco de Inglaterra.</li>
+										<li><strong>Datos Económicos UK:</strong> PIB, inflación (CPI), empleo y ventas minoristas.</li>
+										<li><strong>Brexit y Relaciones con UE:</strong> Acuerdos comerciales post-Brexit.</li>
+										<li><strong>Mercado Inmobiliario:</strong> Los precios de vivienda son un indicador importante.</li>
+									</ul>
+
+									<h3>Análisis Técnico GBP/USD</h3>
+
+									<TradingViewWidget
+										type="advanced-chart"
+										symbol="FX:GBPUSD"
+										width="100%"
+										height={500}
+										locale="es"
+									/>
+
+									<h3>Horarios de Trading</h3>
+									<p>Los mejores momentos para operar pares con GBP:</p>
+									<ul>
+										<li><strong>Sesión de Londres:</strong> 08:00 - 17:00 GMT (liquidez máxima)</li>
+										<li><strong>Apertura de Londres:</strong> 08:00 - 10:00 GMT (alta volatilidad)</li>
+										<li><strong>Anuncios del BoE:</strong> Decisiones de tasas y minutas del MPC</li>
+									</ul>
+
+									<h3>Características del Trading con GBP</h3>
+									<ul>
+										<li><strong>Alta Volatilidad:</strong> La libra puede moverse 100+ pips en un día normal.</li>
+										<li><strong>Sensibilidad a Noticias:</strong> Reacciona fuertemente a datos económicos y políticos.</li>
+										<li><strong>Horarios Definidos:</strong> Mayor movimiento durante la sesión de Londres.</li>
+										<li><strong>Correlación con FTSE:</strong> Relación con el índice bursátil británico.</li>
+									</ul>
+
+									<h3>Estrategias de Trading con GBP</h3>
+									<ul>
+										<li><strong>Breakout Trading:</strong> Aprovechar rupturas de niveles clave durante la sesión de Londres.</li>
+										<li><strong>Trading de Noticias:</strong> Operar anuncios del BoE y datos del PMI.</li>
+										<li><strong>Scalping GBP/JPY:</strong> Aprovechar la alta volatilidad para operaciones rápidas.</li>
+									</ul>
+
+									<h3>Riesgos a Considerar</h3>
+									<ul>
+										<li>Alta volatilidad puede generar pérdidas rápidas</li>
+										<li>Sensible a noticias políticas inesperadas</li>
+										<li>Spreads pueden ampliarse durante anuncios importantes</li>
+										<li>GBP/JPY es especialmente arriesgado para principiantes</li>
+									</ul>
+								</div>
+
+								<footer class="mh-entry-footer">
+									<a href="/blog" class="mh-back-link">← Volver a Artículos</a>
+								</footer>
+							</article>
+						</div>
+
+						<div class="mh-sidebar-wrap">
+							<Sidebar />
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.mh-main-area { display: flex; gap: var(--gutter); }
+	.mh-content { flex: 1; min-width: 0; }
+	.mh-sidebar-wrap { width: var(--sidebar-width); flex-shrink: 0; }
+	.mh-article { background: var(--white); }
+	.mh-entry-header { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid var(--gray-lighter); }
+	.mh-entry-title { font-size: 28px; line-height: 1.3; margin: 0 0 15px 0; color: var(--black); }
+	.mh-entry-meta { font-size: 13px; color: var(--gray-light); }
+	.mh-entry-content { margin-bottom: 25px; }
+	.mh-entry-content h3 { font-size: 20px; margin-top: 30px; margin-bottom: 15px; color: var(--black); }
+	.mh-entry-content h4 { font-size: 16px; margin-top: 20px; margin-bottom: 10px; color: var(--black); }
+	.mh-entry-content p { line-height: 1.7; margin-bottom: 15px; }
+	.mh-entry-content ul { margin: 15px 0 15px 30px; }
+	.mh-entry-content li { margin-bottom: 8px; line-height: 1.6; }
+	.mh-entry-content img { max-width: 100%; height: auto; margin: 20px 0; }
+	.mh-entry-content a { color: var(--primary); font-weight: 600; }
+	.mh-entry-footer { padding-top: 25px; border-top: 1px solid var(--gray-lighter); }
+	.mh-back-link { font-weight: 700; font-size: 13px; color: var(--primary); text-transform: uppercase; }
+	@media (max-width: 900px) { .mh-main-area { flex-direction: column; } .mh-sidebar-wrap { width: 100%; } }
+</style>

@@ -1,0 +1,181 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import TradingViewWidget from '../../components/TradingViewWidget.astro';
+
+const title = "Dólar Neozelandés (NZD) - Guía de Trading";
+const description = "Todo sobre el Dólar Neozelandés (NZD), el Kiwi. Aprende a operar pares con NZD, análisis técnico y estrategias de trading.";
+const pubDate = new Date("2024-01-15");
+
+const formattedDate = pubDate.toLocaleDateString('es-ES', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric'
+});
+---
+
+<html lang="es">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+
+	<body>
+		<Header />
+
+		<div class="mh-container-outer">
+			<div class="mh-container">
+				<main class="mh-wrapper">
+					<div class="mh-main-area mh-row">
+						<div class="mh-content">
+							<article class="mh-article">
+								<header class="mh-entry-header">
+									<h1 class="mh-entry-title">{title}</h1>
+									<div class="mh-entry-meta">
+										<span class="mh-meta-date">{formattedDate}</span>
+									</div>
+								</header>
+
+								<div class="mh-entry-content">
+									<h3>¿Qué es el Dólar Neozelandés?</h3>
+									<p>El Dólar Neozelandés (NZD), conocido como "Kiwi" (por el ave nacional de Nueva Zelanda), es la moneda oficial de Nueva Zelanda. Es una de las 10 monedas más negociadas del mundo y popular entre traders por sus tasas de interés históricamente atractivas.</p>
+
+									<p>El Banco de la Reserva de Nueva Zelanda (RBNZ) gestiona la política monetaria. El símbolo es NZ$ o NZD.</p>
+
+									<h3>Pares Principales con NZD</h3>
+
+									<TradingViewWidget
+										type="market-overview"
+										width="100%"
+										height={450}
+										symbols={['FX:NZDUSD', 'FX:EURNZD', 'FX:GBPNZD', 'FX:NZDJPY', 'FX:AUDNZD', 'FX:NZDCAD']}
+										locale="es"
+									/>
+
+									<h4>Pares Principales</h4>
+									<ul>
+										<li><strong>NZD/USD:</strong> El "Kiwi", par más líquido del NZD.</li>
+										<li><strong>EUR/NZD:</strong> Ofrece alta volatilidad y buenos movimientos.</li>
+										<li><strong>GBP/NZD:</strong> Uno de los pares más volátiles del mercado.</li>
+										<li><strong>NZD/JPY:</strong> Popular para carry trades.</li>
+									</ul>
+
+									<h4>AUD/NZD: Rivalidad Trans-Tasman</h4>
+									<p>El par AUD/NZD es popular entre traders que buscan operar las diferencias entre las dos economías de Oceanía.</p>
+
+									<h3>Economía de Nueva Zelanda</h3>
+									<p>La economía neozelandesa se caracteriza por:</p>
+									<ul>
+										<li><strong>Exportaciones Agrícolas:</strong> Lácteos, carne, lana y vino.</li>
+										<li><strong>Turismo:</strong> Sector importante de la economía.</li>
+										<li><strong>Comercio con Asia:</strong> China y Australia son socios clave.</li>
+										<li><strong>Economía Pequeña:</strong> Más sensible a shocks externos.</li>
+									</ul>
+
+									<h3>Correlación con Lácteos</h3>
+									<p>El NZD tiene fuerte correlación con los precios de productos lácteos:</p>
+									<ul>
+										<li>Nueva Zelanda es el mayor exportador de lácteos del mundo</li>
+										<li>Fonterra (cooperativa láctea) es crucial para la economía</li>
+										<li>Los precios de la subasta de lácteos de GDT afectan al NZD</li>
+									</ul>
+
+									<h3>Factores que Influyen en el NZD</h3>
+									<ul>
+										<li><strong>Decisiones del RBNZ:</strong> Tasas de interés y política monetaria.</li>
+										<li><strong>Precios de Lácteos:</strong> Subastas de Global Dairy Trade.</li>
+										<li><strong>Economía de China:</strong> Principal destino de exportaciones.</li>
+										<li><strong>Economía de Australia:</strong> Vecino y socio comercial importante.</li>
+									</ul>
+
+									<h3>Análisis Técnico NZD/USD</h3>
+
+									<TradingViewWidget
+										type="advanced-chart"
+										symbol="FX:NZDUSD"
+										width="100%"
+										height={500}
+										locale="es"
+									/>
+
+									<h3>Horarios de Trading</h3>
+									<p>Los mejores momentos para operar pares con NZD:</p>
+									<ul>
+										<li><strong>Sesión de Wellington:</strong> 21:00 - 06:00 GMT</li>
+										<li><strong>Superposición con Sídney:</strong> 22:00 - 06:00 GMT</li>
+										<li><strong>Anuncios del RBNZ:</strong> Reuniones programadas</li>
+										<li><strong>Subastas GDT:</strong> Cada dos semanas</li>
+									</ul>
+
+									<h3>Carry Trade con NZD</h3>
+									<p>El NZD ha sido históricamente atractivo para carry trades:</p>
+									<ul>
+										<li>Tasas de interés tradicionalmente más altas que JPY, EUR, CHF</li>
+										<li>Los traders piden prestado en monedas de bajo rendimiento</li>
+										<li>Compran NZD para ganar el diferencial</li>
+										<li>Riesgo: volatilidad en tiempos de aversión al riesgo</li>
+									</ul>
+
+									<h3>Características del Trading con NZD</h3>
+									<ul>
+										<li><strong>Alta Volatilidad:</strong> Especialmente en pares cruzados.</li>
+										<li><strong>Moneda de Riesgo:</strong> Se debilita en ambiente risk-off.</li>
+										<li><strong>Liquidez Limitada:</strong> Menor que AUD, mayor spreads.</li>
+										<li><strong>Sensible a Datos Chinos:</strong> Por relación comercial.</li>
+									</ul>
+
+									<h3>Estrategias de Trading con NZD</h3>
+									<ul>
+										<li><strong>Subastas de Lácteos:</strong> Operar basándose en resultados de GDT.</li>
+										<li><strong>Correlación AUD/NZD:</strong> Operar divergencias entre las economías.</li>
+										<li><strong>Carry Trade:</strong> Aprovechar diferenciales de tasas.</li>
+									</ul>
+
+									<h3>Riesgos a Considerar</h3>
+									<ul>
+										<li>Spreads más amplios que pares mayores</li>
+										<li>Sensible a desastres naturales (terremotos)</li>
+										<li>Liquidez reducida durante sesión americana</li>
+										<li>Dependencia de sector agrícola</li>
+									</ul>
+								</div>
+
+								<footer class="mh-entry-footer">
+									<a href="/blog" class="mh-back-link">← Volver a Artículos</a>
+								</footer>
+							</article>
+						</div>
+
+						<div class="mh-sidebar-wrap">
+							<Sidebar />
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.mh-main-area { display: flex; gap: var(--gutter); }
+	.mh-content { flex: 1; min-width: 0; }
+	.mh-sidebar-wrap { width: var(--sidebar-width); flex-shrink: 0; }
+	.mh-article { background: var(--white); }
+	.mh-entry-header { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid var(--gray-lighter); }
+	.mh-entry-title { font-size: 28px; line-height: 1.3; margin: 0 0 15px 0; color: var(--black); }
+	.mh-entry-meta { font-size: 13px; color: var(--gray-light); }
+	.mh-entry-content { margin-bottom: 25px; }
+	.mh-entry-content h3 { font-size: 20px; margin-top: 30px; margin-bottom: 15px; color: var(--black); }
+	.mh-entry-content h4 { font-size: 16px; margin-top: 20px; margin-bottom: 10px; color: var(--black); }
+	.mh-entry-content p { line-height: 1.7; margin-bottom: 15px; }
+	.mh-entry-content ul { margin: 15px 0 15px 30px; }
+	.mh-entry-content li { margin-bottom: 8px; line-height: 1.6; }
+	.mh-entry-content img { max-width: 100%; height: auto; margin: 20px 0; }
+	.mh-entry-content a { color: var(--primary); font-weight: 600; }
+	.mh-entry-footer { padding-top: 25px; border-top: 1px solid var(--gray-lighter); }
+	.mh-back-link { font-weight: 700; font-size: 13px; color: var(--primary); text-transform: uppercase; }
+	@media (max-width: 900px) { .mh-main-area { flex-direction: column; } .mh-sidebar-wrap { width: 100%; } }
+</style>

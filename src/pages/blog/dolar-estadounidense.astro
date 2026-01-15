@@ -1,0 +1,155 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import TradingViewWidget from '../../components/TradingViewWidget.astro';
+
+const title = "Dólar Estadounidense (USD) - Guía de Trading";
+const description = "Todo sobre el Dólar Estadounidense (USD), la moneda de reserva mundial. Aprende a operar pares con USD, análisis técnico y estrategias de trading.";
+const pubDate = new Date("2024-01-15");
+
+const formattedDate = pubDate.toLocaleDateString('es-ES', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric'
+});
+---
+
+<html lang="es">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+
+	<body>
+		<Header />
+
+		<div class="mh-container-outer">
+			<div class="mh-container">
+				<main class="mh-wrapper">
+					<div class="mh-main-area mh-row">
+						<div class="mh-content">
+							<article class="mh-article">
+								<header class="mh-entry-header">
+									<h1 class="mh-entry-title">{title}</h1>
+									<div class="mh-entry-meta">
+										<span class="mh-meta-date">{formattedDate}</span>
+									</div>
+								</header>
+
+								<div class="mh-entry-content">
+									<h3>¿Qué es el Dólar Estadounidense?</h3>
+									<p>El Dólar Estadounidense (USD) es la moneda oficial de los Estados Unidos y la moneda de reserva más importante del mundo. Representa aproximadamente el 60% de las reservas de divisas globales y está involucrado en casi el 90% de todas las transacciones de Forex.</p>
+
+									<p>El símbolo del dólar ($) es reconocido mundialmente, y el código ISO 4217 es USD. La Reserva Federal (Fed) es el banco central responsable de la política monetaria del dólar.</p>
+
+									<h3>Pares Principales con USD</h3>
+
+									<TradingViewWidget
+										type="market-overview"
+										width="100%"
+										height={450}
+										symbols={['FX:EURUSD', 'FX:USDJPY', 'FX:GBPUSD', 'FX:USDCHF', 'FX:AUDUSD', 'FX:USDCAD']}
+										locale="es"
+									/>
+
+									<h4>Pares Mayores</h4>
+									<ul>
+										<li><strong>EUR/USD:</strong> El par más negociado del mundo, representa la relación entre el euro y el dólar.</li>
+										<li><strong>USD/JPY:</strong> Conocido como "Gopher", es el segundo par más líquido.</li>
+										<li><strong>GBP/USD:</strong> Llamado "Cable", históricamente muy volátil.</li>
+										<li><strong>USD/CHF:</strong> El "Swissie", considerado un refugio seguro.</li>
+									</ul>
+
+									<h4>Pares Menores con USD</h4>
+									<ul>
+										<li><strong>AUD/USD:</strong> El "Aussie", correlacionado con materias primas.</li>
+										<li><strong>USD/CAD:</strong> El "Loonie", influenciado por el precio del petróleo.</li>
+										<li><strong>NZD/USD:</strong> El "Kiwi", sensible a productos agrícolas.</li>
+									</ul>
+
+									<h3>Factores que Influyen en el USD</h3>
+									<p>El valor del dólar está influenciado por múltiples factores económicos y políticos:</p>
+
+									<ul>
+										<li><strong>Decisiones de la Fed:</strong> Las tasas de interés y la política monetaria tienen un impacto directo en el valor del dólar.</li>
+										<li><strong>Datos Económicos:</strong> El PIB, empleo (NFP), inflación (CPI) y ventas minoristas mueven el mercado.</li>
+										<li><strong>Política Fiscal:</strong> El déficit presupuestario y la deuda nacional afectan la confianza en el dólar.</li>
+										<li><strong>Geopolítica:</strong> En tiempos de incertidumbre global, el USD actúa como refugio seguro.</li>
+									</ul>
+
+									<h3>Análisis Técnico del Índice Dólar</h3>
+									<p>El Índice del Dólar (DXY) mide el valor del USD frente a una canasta de seis monedas principales:</p>
+
+									<TradingViewWidget
+										type="advanced-chart"
+										symbol="TVC:DXY"
+										width="100%"
+										height={500}
+										locale="es"
+									/>
+
+									<h3>Horarios de Trading</h3>
+									<p>Los mejores momentos para operar pares con USD son:</p>
+									<ul>
+										<li><strong>Sesión de Nueva York:</strong> 13:00 - 22:00 GMT (mayor liquidez)</li>
+										<li><strong>Superposición Londres-Nueva York:</strong> 13:00 - 17:00 GMT (máxima volatilidad)</li>
+										<li><strong>Publicación de datos económicos:</strong> NFP (primer viernes del mes), decisiones FOMC</li>
+									</ul>
+
+									<h3>Estrategias de Trading con USD</h3>
+									<p>Algunas estrategias populares para operar pares con dólar incluyen:</p>
+
+									<ul>
+										<li><strong>Trading de Noticias:</strong> Operar durante anuncios de la Fed y datos económicos importantes.</li>
+										<li><strong>Carry Trade:</strong> Aprovechar diferenciales de tasas de interés entre países.</li>
+										<li><strong>Correlación con Índices:</strong> El USD suele tener correlación inversa con el S&P 500 y el oro.</li>
+									</ul>
+
+									<h3>Ventajas de Operar USD</h3>
+									<ul>
+										<li>Mayor liquidez del mercado</li>
+										<li>Spreads más bajos en pares principales</li>
+										<li>Abundante información y análisis disponible</li>
+										<li>Horarios de trading extendidos</li>
+									</ul>
+								</div>
+
+								<footer class="mh-entry-footer">
+									<a href="/blog" class="mh-back-link">← Volver a Artículos</a>
+								</footer>
+							</article>
+						</div>
+
+						<div class="mh-sidebar-wrap">
+							<Sidebar />
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.mh-main-area { display: flex; gap: var(--gutter); }
+	.mh-content { flex: 1; min-width: 0; }
+	.mh-sidebar-wrap { width: var(--sidebar-width); flex-shrink: 0; }
+	.mh-article { background: var(--white); }
+	.mh-entry-header { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid var(--gray-lighter); }
+	.mh-entry-title { font-size: 28px; line-height: 1.3; margin: 0 0 15px 0; color: var(--black); }
+	.mh-entry-meta { font-size: 13px; color: var(--gray-light); }
+	.mh-entry-content { margin-bottom: 25px; }
+	.mh-entry-content h3 { font-size: 20px; margin-top: 30px; margin-bottom: 15px; color: var(--black); }
+	.mh-entry-content h4 { font-size: 16px; margin-top: 20px; margin-bottom: 10px; color: var(--black); }
+	.mh-entry-content p { line-height: 1.7; margin-bottom: 15px; }
+	.mh-entry-content ul { margin: 15px 0 15px 30px; }
+	.mh-entry-content li { margin-bottom: 8px; line-height: 1.6; }
+	.mh-entry-content img { max-width: 100%; height: auto; margin: 20px 0; }
+	.mh-entry-content a { color: var(--primary); font-weight: 600; }
+	.mh-entry-footer { padding-top: 25px; border-top: 1px solid var(--gray-lighter); }
+	.mh-back-link { font-weight: 700; font-size: 13px; color: var(--primary); text-transform: uppercase; }
+	@media (max-width: 900px) { .mh-main-area { flex-direction: column; } .mh-sidebar-wrap { width: 100%; } }
+</style>

@@ -1,0 +1,172 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import TradingViewWidget from '../../components/TradingViewWidget.astro';
+
+const title = "Dólar Australiano (AUD) - Guía de Trading";
+const description = "Todo sobre el Dólar Australiano (AUD), la moneda de los commodities. Aprende a operar pares con AUD, análisis técnico y estrategias de trading.";
+const pubDate = new Date("2024-01-15");
+
+const formattedDate = pubDate.toLocaleDateString('es-ES', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric'
+});
+---
+
+<html lang="es">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+
+	<body>
+		<Header />
+
+		<div class="mh-container-outer">
+			<div class="mh-container">
+				<main class="mh-wrapper">
+					<div class="mh-main-area mh-row">
+						<div class="mh-content">
+							<article class="mh-article">
+								<header class="mh-entry-header">
+									<h1 class="mh-entry-title">{title}</h1>
+									<div class="mh-entry-meta">
+										<span class="mh-meta-date">{formattedDate}</span>
+									</div>
+								</header>
+
+								<div class="mh-entry-content">
+									<h3>¿Qué es el Dólar Australiano?</h3>
+									<p>El Dólar Australiano (AUD), conocido como "Aussie", es la moneda oficial de Australia y la quinta moneda más negociada en el mercado Forex. Es considerada una moneda de materias primas debido a la dependencia de Australia en exportaciones de recursos naturales.</p>
+
+									<p>El Banco de la Reserva de Australia (RBA) gestiona la política monetaria. El símbolo es A$ o AUD.</p>
+
+									<h3>Pares Principales con AUD</h3>
+
+									<TradingViewWidget
+										type="market-overview"
+										width="100%"
+										height={450}
+										symbols={['FX:AUDUSD', 'FX:EURAUD', 'FX:GBPAUD', 'FX:AUDJPY', 'FX:AUDNZD', 'FX:AUDCAD']}
+										locale="es"
+									/>
+
+									<h4>Pares Principales</h4>
+									<ul>
+										<li><strong>AUD/USD:</strong> El "Aussie", uno de los pares más populares.</li>
+										<li><strong>EUR/AUD:</strong> Popular por su alta volatilidad.</li>
+										<li><strong>GBP/AUD:</strong> Ofrece movimientos significativos.</li>
+										<li><strong>AUD/JPY:</strong> Barómetro del sentimiento de riesgo global.</li>
+									</ul>
+
+									<h4>AUD/NZD: El Par Trans-Tasman</h4>
+									<p>El par AUD/NZD representa la relación entre las dos economías de Oceanía. Históricamente opera en rangos relativamente estables.</p>
+
+									<h3>Correlación con Commodities</h3>
+									<p>El AUD tiene fuerte correlación con los precios de materias primas:</p>
+									<ul>
+										<li><strong>Hierro:</strong> Australia es el mayor exportador mundial.</li>
+										<li><strong>Carbón:</strong> Importante fuente de ingresos por exportación.</li>
+										<li><strong>Oro:</strong> Tercer mayor productor de oro del mundo.</li>
+										<li><strong>Gas Natural:</strong> Creciente sector de GNL.</li>
+									</ul>
+
+									<h3>Relación con China</h3>
+									<p>China es el principal socio comercial de Australia, por lo que:</p>
+									<ul>
+										<li>Datos económicos chinos afectan directamente al AUD</li>
+										<li>La demanda china de minerales impulsa la economía australiana</li>
+										<li>Tensiones comerciales Australia-China impactan el AUD</li>
+									</ul>
+
+									<h3>Factores que Influyen en el AUD</h3>
+									<ul>
+										<li><strong>Decisiones del RBA:</strong> Tasas de interés históricamente altas.</li>
+										<li><strong>Datos de China:</strong> PMI, PIB y producción industrial china.</li>
+										<li><strong>Precios de Commodities:</strong> Especialmente hierro y carbón.</li>
+										<li><strong>Datos de Empleo:</strong> Reportes australianos de empleo.</li>
+									</ul>
+
+									<h3>Análisis Técnico AUD/USD</h3>
+
+									<TradingViewWidget
+										type="advanced-chart"
+										symbol="FX:AUDUSD"
+										width="100%"
+										height={500}
+										locale="es"
+									/>
+
+									<h3>Horarios de Trading</h3>
+									<p>Los mejores momentos para operar pares con AUD:</p>
+									<ul>
+										<li><strong>Sesión de Sídney:</strong> 22:00 - 07:00 GMT</li>
+										<li><strong>Superposición Asia-Pacífico:</strong> 00:00 - 06:00 GMT</li>
+										<li><strong>Anuncios del RBA:</strong> Primeros martes del mes</li>
+									</ul>
+
+									<h3>Carry Trade con AUD</h3>
+									<p>El AUD ha sido históricamente popular para carry trades debido a:</p>
+									<ul>
+										<li>Tasas de interés relativamente altas</li>
+										<li>Economía estable y predecible</li>
+										<li>Los traders piden prestado en JPY o EUR para comprar AUD</li>
+										<li>Ganan el diferencial de tasas</li>
+									</ul>
+
+									<h3>Características del Trading con AUD</h3>
+									<ul>
+										<li><strong>Moneda de Riesgo:</strong> Se fortalece en ambiente risk-on.</li>
+										<li><strong>Volatilidad durante Asia:</strong> Mayor movimiento en sesión asiática.</li>
+										<li><strong>Sensible a Datos Chinos:</strong> Reacciona fuertemente a noticias de China.</li>
+										<li><strong>Estacionalidad:</strong> Puede mostrar patrones en ciertos meses.</li>
+									</ul>
+
+									<h3>Estrategias de Trading con AUD</h3>
+									<ul>
+										<li><strong>Trading con Commodities:</strong> Seguir correlación con hierro y oro.</li>
+										<li><strong>Risk-On/Risk-Off:</strong> Operar basándose en sentimiento global.</li>
+										<li><strong>Datos de China:</strong> Posicionarse antes de anuncios económicos chinos.</li>
+									</ul>
+								</div>
+
+								<footer class="mh-entry-footer">
+									<a href="/blog" class="mh-back-link">← Volver a Artículos</a>
+								</footer>
+							</article>
+						</div>
+
+						<div class="mh-sidebar-wrap">
+							<Sidebar />
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.mh-main-area { display: flex; gap: var(--gutter); }
+	.mh-content { flex: 1; min-width: 0; }
+	.mh-sidebar-wrap { width: var(--sidebar-width); flex-shrink: 0; }
+	.mh-article { background: var(--white); }
+	.mh-entry-header { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid var(--gray-lighter); }
+	.mh-entry-title { font-size: 28px; line-height: 1.3; margin: 0 0 15px 0; color: var(--black); }
+	.mh-entry-meta { font-size: 13px; color: var(--gray-light); }
+	.mh-entry-content { margin-bottom: 25px; }
+	.mh-entry-content h3 { font-size: 20px; margin-top: 30px; margin-bottom: 15px; color: var(--black); }
+	.mh-entry-content h4 { font-size: 16px; margin-top: 20px; margin-bottom: 10px; color: var(--black); }
+	.mh-entry-content p { line-height: 1.7; margin-bottom: 15px; }
+	.mh-entry-content ul { margin: 15px 0 15px 30px; }
+	.mh-entry-content li { margin-bottom: 8px; line-height: 1.6; }
+	.mh-entry-content img { max-width: 100%; height: auto; margin: 20px 0; }
+	.mh-entry-content a { color: var(--primary); font-weight: 600; }
+	.mh-entry-footer { padding-top: 25px; border-top: 1px solid var(--gray-lighter); }
+	.mh-back-link { font-weight: 700; font-size: 13px; color: var(--primary); text-transform: uppercase; }
+	@media (max-width: 900px) { .mh-main-area { flex-direction: column; } .mh-sidebar-wrap { width: 100%; } }
+</style>

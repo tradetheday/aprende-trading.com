@@ -1,0 +1,172 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import TradingViewWidget from '../../components/TradingViewWidget.astro';
+
+const title = "Dólar Canadiense (CAD) - Guía de Trading";
+const description = "Todo sobre el Dólar Canadiense (CAD), la moneda del petróleo. Aprende a operar pares con CAD, análisis técnico y estrategias de trading.";
+const pubDate = new Date("2024-01-15");
+
+const formattedDate = pubDate.toLocaleDateString('es-ES', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric'
+});
+---
+
+<html lang="es">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+
+	<body>
+		<Header />
+
+		<div class="mh-container-outer">
+			<div class="mh-container">
+				<main class="mh-wrapper">
+					<div class="mh-main-area mh-row">
+						<div class="mh-content">
+							<article class="mh-article">
+								<header class="mh-entry-header">
+									<h1 class="mh-entry-title">{title}</h1>
+									<div class="mh-entry-meta">
+										<span class="mh-meta-date">{formattedDate}</span>
+									</div>
+								</header>
+
+								<div class="mh-entry-content">
+									<h3>¿Qué es el Dólar Canadiense?</h3>
+									<p>El Dólar Canadiense (CAD), conocido coloquialmente como "Loonie" (por el ave que aparece en la moneda de un dólar), es la moneda oficial de Canadá. Es la sexta moneda más negociada en el mercado Forex.</p>
+
+									<p>El Banco de Canadá (BoC) gestiona la política monetaria. El símbolo es C$ o CAD, y está fuertemente correlacionado con los precios de las materias primas, especialmente el petróleo.</p>
+
+									<h3>Pares Principales con CAD</h3>
+
+									<TradingViewWidget
+										type="market-overview"
+										width="100%"
+										height={450}
+										symbols={['FX:USDCAD', 'FX:EURCAD', 'FX:GBPCAD', 'FX:CADJPY', 'FX:AUDCAD', 'FX:CADCHF']}
+										locale="es"
+									/>
+
+									<h4>Pares Principales</h4>
+									<ul>
+										<li><strong>USD/CAD:</strong> El "Loonie", uno de los pares más líquidos.</li>
+										<li><strong>EUR/CAD:</strong> Popular por su volatilidad moderada.</li>
+										<li><strong>GBP/CAD:</strong> Ofrece buenas oportunidades de tendencia.</li>
+										<li><strong>CAD/JPY:</strong> Sensible al sentimiento de riesgo global.</li>
+									</ul>
+
+									<h4>¿Por qué "Loonie"?</h4>
+									<p>El apodo "Loonie" proviene del loon (colimbo), un ave acuática que aparece en la moneda canadiense de un dólar. Este término es usado tanto por traders como por canadienses.</p>
+
+									<h3>Correlación con el Petróleo</h3>
+									<p>El CAD tiene una fuerte correlación positiva con el precio del petróleo porque:</p>
+									<ul>
+										<li>Canadá es el 4º mayor productor de petróleo del mundo</li>
+										<li>El petróleo representa una parte significativa de las exportaciones</li>
+										<li>Las arenas bituminosas de Alberta son una fuente importante</li>
+										<li>EE.UU. es el principal comprador del petróleo canadiense</li>
+									</ul>
+
+									<h3>Factores que Influyen en el CAD</h3>
+									<ul>
+										<li><strong>Precio del Petróleo:</strong> Factor más importante para el CAD.</li>
+										<li><strong>Decisiones del BoC:</strong> Tasas de interés y política monetaria.</li>
+										<li><strong>Economía de EE.UU.:</strong> Principal socio comercial de Canadá.</li>
+										<li><strong>Datos de Empleo:</strong> Los reportes de empleo canadienses mueven el mercado.</li>
+									</ul>
+
+									<h3>Análisis Técnico USD/CAD</h3>
+
+									<TradingViewWidget
+										type="advanced-chart"
+										symbol="FX:USDCAD"
+										width="100%"
+										height={500}
+										locale="es"
+									/>
+
+									<h3>Correlación CAD vs Petróleo</h3>
+									<p>Cuando el precio del petróleo sube, típicamente:</p>
+									<ul>
+										<li>El CAD se fortalece (más demanda de dólares canadienses)</li>
+										<li>USD/CAD baja (menos USD necesarios para comprar CAD)</li>
+										<li>Esta correlación puede variar en el corto plazo</li>
+									</ul>
+
+									<h3>Horarios de Trading</h3>
+									<p>Los mejores momentos para operar pares con CAD:</p>
+									<ul>
+										<li><strong>Sesión de Nueva York:</strong> 13:00 - 22:00 GMT</li>
+										<li><strong>Superposición con Toronto:</strong> 13:00 - 17:00 GMT</li>
+										<li><strong>Datos de Empleo:</strong> Primer viernes del mes (junto con NFP de EE.UU.)</li>
+										<li><strong>Anuncios del BoC:</strong> Decisiones de tasas programadas</li>
+									</ul>
+
+									<h3>Características del Trading con CAD</h3>
+									<ul>
+										<li><strong>Volatilidad Media:</strong> Menos volátil que GBP, más que EUR.</li>
+										<li><strong>Sensible a Commodities:</strong> No solo petróleo, también oro y madera.</li>
+										<li><strong>Relación con EE.UU.:</strong> Muy ligado a la economía estadounidense.</li>
+										<li><strong>Estacionalidad:</strong> Puede mostrar patrones estacionales.</li>
+									</ul>
+
+									<h3>Estrategias de Trading con CAD</h3>
+									<ul>
+										<li><strong>Trading con Petróleo:</strong> Seguir la correlación CAD-petróleo.</li>
+										<li><strong>Pairs Trading:</strong> CAD vs AUD (ambos correlacionados con commodities).</li>
+										<li><strong>Noticias de Empleo:</strong> Operar el reporte de empleo mensual.</li>
+									</ul>
+
+									<h3>Riesgos a Considerar</h3>
+									<ul>
+										<li>Volatilidad del petróleo puede causar movimientos bruscos</li>
+										<li>Dependencia de la economía estadounidense</li>
+										<li>Intervención potencial del BoC</li>
+										<li>Cambios en políticas energéticas globales</li>
+									</ul>
+								</div>
+
+								<footer class="mh-entry-footer">
+									<a href="/blog" class="mh-back-link">← Volver a Artículos</a>
+								</footer>
+							</article>
+						</div>
+
+						<div class="mh-sidebar-wrap">
+							<Sidebar />
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.mh-main-area { display: flex; gap: var(--gutter); }
+	.mh-content { flex: 1; min-width: 0; }
+	.mh-sidebar-wrap { width: var(--sidebar-width); flex-shrink: 0; }
+	.mh-article { background: var(--white); }
+	.mh-entry-header { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid var(--gray-lighter); }
+	.mh-entry-title { font-size: 28px; line-height: 1.3; margin: 0 0 15px 0; color: var(--black); }
+	.mh-entry-meta { font-size: 13px; color: var(--gray-light); }
+	.mh-entry-content { margin-bottom: 25px; }
+	.mh-entry-content h3 { font-size: 20px; margin-top: 30px; margin-bottom: 15px; color: var(--black); }
+	.mh-entry-content h4 { font-size: 16px; margin-top: 20px; margin-bottom: 10px; color: var(--black); }
+	.mh-entry-content p { line-height: 1.7; margin-bottom: 15px; }
+	.mh-entry-content ul { margin: 15px 0 15px 30px; }
+	.mh-entry-content li { margin-bottom: 8px; line-height: 1.6; }
+	.mh-entry-content img { max-width: 100%; height: auto; margin: 20px 0; }
+	.mh-entry-content a { color: var(--primary); font-weight: 600; }
+	.mh-entry-footer { padding-top: 25px; border-top: 1px solid var(--gray-lighter); }
+	.mh-back-link { font-weight: 700; font-size: 13px; color: var(--primary); text-transform: uppercase; }
+	@media (max-width: 900px) { .mh-main-area { flex-direction: column; } .mh-sidebar-wrap { width: 100%; } }
+</style>

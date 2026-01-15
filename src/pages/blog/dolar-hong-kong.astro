@@ -1,0 +1,178 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import TradingViewWidget from '../../components/TradingViewWidget.astro';
+
+const title = "Dólar de Hong Kong (HKD) - Guía de Trading";
+const description = "Todo sobre el Dólar de Hong Kong (HKD) y su sistema de tipo de cambio fijo. Aprende a operar pares con HKD, análisis técnico y estrategias de trading.";
+const pubDate = new Date("2024-01-15");
+
+const formattedDate = pubDate.toLocaleDateString('es-ES', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric'
+});
+---
+
+<html lang="es">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+
+	<body>
+		<Header />
+
+		<div class="mh-container-outer">
+			<div class="mh-container">
+				<main class="mh-wrapper">
+					<div class="mh-main-area mh-row">
+						<div class="mh-content">
+							<article class="mh-article">
+								<header class="mh-entry-header">
+									<h1 class="mh-entry-title">{title}</h1>
+									<div class="mh-entry-meta">
+										<span class="mh-meta-date">{formattedDate}</span>
+									</div>
+								</header>
+
+								<div class="mh-entry-content">
+									<h3>¿Qué es el Dólar de Hong Kong?</h3>
+									<p>El Dólar de Hong Kong (HKD) es la moneda oficial de la Región Administrativa Especial de Hong Kong de China. Es una de las monedas más negociadas de Asia y tiene un sistema único de tipo de cambio vinculado al dólar estadounidense.</p>
+
+									<p>La Autoridad Monetaria de Hong Kong (HKMA) gestiona el sistema monetario. El símbolo es HK$ y el código ISO es HKD.</p>
+
+									<h3>El Sistema de Paridad Cambiaria (Currency Peg)</h3>
+									<p>Desde 1983, el HKD está vinculado al USD en una banda de fluctuación:</p>
+									<ul>
+										<li><strong>Banda de Trading:</strong> 7.75 - 7.85 HKD por USD</li>
+										<li><strong>Punto Medio:</strong> Aproximadamente 7.80 HKD/USD</li>
+										<li><strong>Intervención:</strong> HKMA interviene cuando el precio toca los límites</li>
+										<li><strong>Reservas:</strong> Hong Kong mantiene enormes reservas para defender el peg</li>
+									</ul>
+
+									<h3>Pares con HKD</h3>
+
+									<TradingViewWidget
+										type="market-overview"
+										width="100%"
+										height={450}
+										symbols={['FX:USDHKD', 'FX:EURHKD', 'FX:GBPHKD', 'FX:HKDJPY', 'FX:CNHHKD', 'FX:AUDHKD']}
+										locale="es"
+									/>
+
+									<h4>Pares Principales</h4>
+									<ul>
+										<li><strong>USD/HKD:</strong> El par más importante, opera dentro de la banda fija.</li>
+										<li><strong>EUR/HKD:</strong> Refleja la relación euro-dólar más que HKD.</li>
+										<li><strong>CNH/HKD:</strong> Relación entre yuan offshore y HKD.</li>
+										<li><strong>GBP/HKD:</strong> Históricamente importante (legado colonial).</li>
+									</ul>
+
+									<h3>¿Por qué Hong Kong Mantiene el Peg?</h3>
+									<ul>
+										<li><strong>Estabilidad:</strong> Proporciona certeza para negocios internacionales.</li>
+										<li><strong>Centro Financiero:</strong> Facilita el rol de Hong Kong como hub financiero.</li>
+										<li><strong>Confianza:</strong> Atrae inversión extranjera.</li>
+										<li><strong>Historial:</strong> El sistema ha funcionado por más de 40 años.</li>
+									</ul>
+
+									<h3>Factores que Influyen en el HKD</h3>
+									<ul>
+										<li><strong>Política de la Fed:</strong> El HKD sigue la política de tasas de EE.UU.</li>
+										<li><strong>Flujos de Capital:</strong> Entrada/salida de capital afecta la posición en la banda.</li>
+										<li><strong>Economía de China:</strong> Cada vez más importante para Hong Kong.</li>
+										<li><strong>Especulación sobre el Peg:</strong> Ataques especulativos ocasionales.</li>
+									</ul>
+
+									<h3>Análisis Técnico USD/HKD</h3>
+
+									<TradingViewWidget
+										type="advanced-chart"
+										symbol="FX:USDHKD"
+										width="100%"
+										height={500}
+										locale="es"
+									/>
+
+									<h3>Trading dentro de la Banda</h3>
+									<p>El USD/HKD ofrece oportunidades únicas de trading:</p>
+									<ul>
+										<li><strong>Mean Reversion:</strong> El precio tiende a volver al centro de la banda.</li>
+										<li><strong>Límites Claros:</strong> Se conocen los niveles de intervención.</li>
+										<li><strong>Bajo Riesgo de Ruptura:</strong> El peg ha resistido múltiples crisis.</li>
+										<li><strong>Carry Trade:</strong> Diferencial de tasas HKD vs otras monedas.</li>
+									</ul>
+
+									<h3>Horarios de Trading</h3>
+									<p>Los mejores momentos para operar pares con HKD:</p>
+									<ul>
+										<li><strong>Sesión de Hong Kong:</strong> 01:00 - 09:00 GMT</li>
+										<li><strong>Superposición Asia:</strong> 01:00 - 07:00 GMT</li>
+										<li><strong>Anuncios de HKMA:</strong> Pueden mover el mercado</li>
+									</ul>
+
+									<h3>Hong Kong como Centro Financiero</h3>
+									<p>Hong Kong es crucial para las finanzas globales:</p>
+									<ul>
+										<li>Tercer centro financiero más importante del mundo</li>
+										<li>Principal puerta de entrada para inversión en China</li>
+										<li>Mercado de acciones altamente líquido (HKEX)</li>
+										<li>Centro para emisión de bonos en yuan offshore</li>
+									</ul>
+
+									<h3>Riesgos del Trading con HKD</h3>
+									<ul>
+										<li><strong>Rango Limitado:</strong> USD/HKD tiene poca volatilidad.</li>
+										<li><strong>Riesgo de Ruptura del Peg:</strong> Aunque improbable, sería catastrófico.</li>
+										<li><strong>Geopolítica:</strong> Tensiones China-EE.UU. pueden afectar.</li>
+										<li><strong>Spreads:</strong> Pueden ampliarse en momentos de estrés.</li>
+									</ul>
+
+									<h3>Estrategias de Trading con HKD</h3>
+									<ul>
+										<li><strong>Range Trading USD/HKD:</strong> Operar dentro de la banda conocida.</li>
+										<li><strong>Arbitraje de Tasas:</strong> Diferencial HIBOR vs LIBOR.</li>
+										<li><strong>Proxy para USD:</strong> Usar HKD como exposición indirecta al dólar.</li>
+									</ul>
+								</div>
+
+								<footer class="mh-entry-footer">
+									<a href="/blog" class="mh-back-link">← Volver a Artículos</a>
+								</footer>
+							</article>
+						</div>
+
+						<div class="mh-sidebar-wrap">
+							<Sidebar />
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.mh-main-area { display: flex; gap: var(--gutter); }
+	.mh-content { flex: 1; min-width: 0; }
+	.mh-sidebar-wrap { width: var(--sidebar-width); flex-shrink: 0; }
+	.mh-article { background: var(--white); }
+	.mh-entry-header { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid var(--gray-lighter); }
+	.mh-entry-title { font-size: 28px; line-height: 1.3; margin: 0 0 15px 0; color: var(--black); }
+	.mh-entry-meta { font-size: 13px; color: var(--gray-light); }
+	.mh-entry-content { margin-bottom: 25px; }
+	.mh-entry-content h3 { font-size: 20px; margin-top: 30px; margin-bottom: 15px; color: var(--black); }
+	.mh-entry-content h4 { font-size: 16px; margin-top: 20px; margin-bottom: 10px; color: var(--black); }
+	.mh-entry-content p { line-height: 1.7; margin-bottom: 15px; }
+	.mh-entry-content ul { margin: 15px 0 15px 30px; }
+	.mh-entry-content li { margin-bottom: 8px; line-height: 1.6; }
+	.mh-entry-content img { max-width: 100%; height: auto; margin: 20px 0; }
+	.mh-entry-content a { color: var(--primary); font-weight: 600; }
+	.mh-entry-footer { padding-top: 25px; border-top: 1px solid var(--gray-lighter); }
+	.mh-back-link { font-weight: 700; font-size: 13px; color: var(--primary); text-transform: uppercase; }
+	@media (max-width: 900px) { .mh-main-area { flex-direction: column; } .mh-sidebar-wrap { width: 100%; } }
+</style>

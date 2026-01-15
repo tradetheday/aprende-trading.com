@@ -1,0 +1,163 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import TradingViewWidget from '../../components/TradingViewWidget.astro';
+
+const title = "Euro (EUR) - Guía de Trading";
+const description = "Todo sobre el Euro (EUR), la segunda moneda más negociada del mundo. Aprende a operar pares con EUR, análisis técnico y estrategias de trading.";
+const pubDate = new Date("2024-01-15");
+
+const formattedDate = pubDate.toLocaleDateString('es-ES', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric'
+});
+---
+
+<html lang="es">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+
+	<body>
+		<Header />
+
+		<div class="mh-container-outer">
+			<div class="mh-container">
+				<main class="mh-wrapper">
+					<div class="mh-main-area mh-row">
+						<div class="mh-content">
+							<article class="mh-article">
+								<header class="mh-entry-header">
+									<h1 class="mh-entry-title">{title}</h1>
+									<div class="mh-entry-meta">
+										<span class="mh-meta-date">{formattedDate}</span>
+									</div>
+								</header>
+
+								<div class="mh-entry-content">
+									<h3>¿Qué es el Euro?</h3>
+									<p>El Euro (EUR) es la moneda oficial de la Eurozona, utilizada por 20 países de la Unión Europea. Introducido en 1999, se ha convertido en la segunda moneda más negociada del mundo después del dólar estadounidense.</p>
+
+									<p>El Banco Central Europeo (BCE) con sede en Frankfurt, Alemania, es responsable de la política monetaria del euro. El símbolo del euro (€) representa la estabilidad económica europea.</p>
+
+									<h3>Pares Principales con EUR</h3>
+
+									<TradingViewWidget
+										type="market-overview"
+										width="100%"
+										height={450}
+										symbols={['FX:EURUSD', 'FX:EURJPY', 'FX:EURGBP', 'FX:EURCHF', 'FX:EURAUD', 'FX:EURCAD']}
+										locale="es"
+									/>
+
+									<h4>Pares Mayores</h4>
+									<ul>
+										<li><strong>EUR/USD:</strong> El par más líquido del mundo, conocido como "Fiber".</li>
+										<li><strong>EUR/GBP:</strong> Relación entre las dos principales economías europeas.</li>
+										<li><strong>EUR/JPY:</strong> Un par popular para carry trades.</li>
+										<li><strong>EUR/CHF:</strong> Históricamente estable debido a la proximidad geográfica.</li>
+									</ul>
+
+									<h4>Pares Cruzados Populares</h4>
+									<ul>
+										<li><strong>EUR/AUD:</strong> Influenciado por materias primas y diferencial de tasas.</li>
+										<li><strong>EUR/CAD:</strong> Correlacionado inversamente con el petróleo.</li>
+										<li><strong>EUR/NZD:</strong> Ofrece alta volatilidad.</li>
+									</ul>
+
+									<h3>Factores que Influyen en el EUR</h3>
+									<p>El valor del euro está determinado por varios factores económicos y políticos:</p>
+
+									<ul>
+										<li><strong>Decisiones del BCE:</strong> Las tasas de interés y programas de estímulo (QE) impactan directamente al euro.</li>
+										<li><strong>Datos de la Eurozona:</strong> PIB, inflación (HICP), desempleo y PMI manufacturero.</li>
+										<li><strong>Política de Alemania:</strong> Como la economía más grande, los datos alemanes tienen peso significativo.</li>
+										<li><strong>Estabilidad Política:</strong> Elecciones y crisis en países miembros afectan la confianza.</li>
+									</ul>
+
+									<h3>Análisis Técnico EUR/USD</h3>
+									<p>El EUR/USD es el par más analizado del mercado Forex:</p>
+
+									<TradingViewWidget
+										type="advanced-chart"
+										symbol="FX:EURUSD"
+										width="100%"
+										height={500}
+										locale="es"
+									/>
+
+									<h3>Horarios de Trading</h3>
+									<p>Los mejores momentos para operar pares con EUR son:</p>
+									<ul>
+										<li><strong>Sesión de Londres:</strong> 08:00 - 17:00 GMT (máxima liquidez europea)</li>
+										<li><strong>Superposición Londres-Nueva York:</strong> 13:00 - 17:00 GMT</li>
+										<li><strong>Anuncios del BCE:</strong> Generalmente a las 13:45 GMT, seguido de conferencia de prensa</li>
+									</ul>
+
+									<h3>Países de la Eurozona</h3>
+									<p>El euro es la moneda oficial de 20 países:</p>
+									<ul>
+										<li>Alemania, Francia, Italia, España</li>
+										<li>Países Bajos, Bélgica, Austria, Portugal</li>
+										<li>Irlanda, Finlandia, Grecia, Eslovaquia</li>
+										<li>Eslovenia, Letonia, Lituania, Estonia</li>
+										<li>Chipre, Malta, Luxemburgo, Croacia</li>
+									</ul>
+
+									<h3>Estrategias de Trading con EUR</h3>
+									<ul>
+										<li><strong>Trading de Rangos:</strong> EUR/CHF históricamente opera en rangos definidos.</li>
+										<li><strong>Seguimiento de Tendencia:</strong> EUR/USD muestra tendencias claras en marcos temporales mayores.</li>
+										<li><strong>Correlación con DAX:</strong> El euro tiene relación con el índice alemán DAX.</li>
+									</ul>
+
+									<h3>Ventajas de Operar EUR</h3>
+									<ul>
+										<li>Alta liquidez en todos los pares principales</li>
+										<li>Spreads competitivos</li>
+										<li>Amplia cobertura de noticias y análisis</li>
+										<li>Volatilidad predecible durante sesión europea</li>
+									</ul>
+								</div>
+
+								<footer class="mh-entry-footer">
+									<a href="/blog" class="mh-back-link">← Volver a Artículos</a>
+								</footer>
+							</article>
+						</div>
+
+						<div class="mh-sidebar-wrap">
+							<Sidebar />
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.mh-main-area { display: flex; gap: var(--gutter); }
+	.mh-content { flex: 1; min-width: 0; }
+	.mh-sidebar-wrap { width: var(--sidebar-width); flex-shrink: 0; }
+	.mh-article { background: var(--white); }
+	.mh-entry-header { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid var(--gray-lighter); }
+	.mh-entry-title { font-size: 28px; line-height: 1.3; margin: 0 0 15px 0; color: var(--black); }
+	.mh-entry-meta { font-size: 13px; color: var(--gray-light); }
+	.mh-entry-content { margin-bottom: 25px; }
+	.mh-entry-content h3 { font-size: 20px; margin-top: 30px; margin-bottom: 15px; color: var(--black); }
+	.mh-entry-content h4 { font-size: 16px; margin-top: 20px; margin-bottom: 10px; color: var(--black); }
+	.mh-entry-content p { line-height: 1.7; margin-bottom: 15px; }
+	.mh-entry-content ul { margin: 15px 0 15px 30px; }
+	.mh-entry-content li { margin-bottom: 8px; line-height: 1.6; }
+	.mh-entry-content img { max-width: 100%; height: auto; margin: 20px 0; }
+	.mh-entry-content a { color: var(--primary); font-weight: 600; }
+	.mh-entry-footer { padding-top: 25px; border-top: 1px solid var(--gray-lighter); }
+	.mh-back-link { font-weight: 700; font-size: 13px; color: var(--primary); text-transform: uppercase; }
+	@media (max-width: 900px) { .mh-main-area { flex-direction: column; } .mh-sidebar-wrap { width: 100%; } }
+</style>
