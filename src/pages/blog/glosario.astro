@@ -1,0 +1,371 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import Sidebar from '../../components/Sidebar.astro';
+
+const title = "Glosario de Trading - Terminología utilizada en Trading y Finanzas";
+const description = "Diccionario completo de términos de trading y finanzas. Aprende el significado de ADR, Alpha, Beta, CFD, Forex, y cientos de términos más.";
+const pubDate = new Date("2019-02-04");
+
+const formattedDate = pubDate.toLocaleDateString('es-ES', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric'
+});
+
+const glossary = {
+	A: [
+		{ term: "ADR", definition: "Un ADR permite a los inversionistas estadounidenses acceder más fácilmente a la propiedad de empresas públicas extranjeras. También son beneficiosos para las empresas extranjeras, ya que aumentan el interés de los inversionistas." },
+		{ term: "Alpha", definition: "Alpha es una medida del rendimiento de una inversión en relación con un índice de referencia. Un alfa de 1% significa que el retorno de la inversión fue 1% mejor que el índice de referencia." },
+		{ term: "Altman Z-Score", definition: "Diseñado en la década de 1960 por Edward Altman, indica la probabilidad de que una empresa quiebre en los próximos dos años." },
+		{ term: "Amortización", definition: "Tiene dos significados: (1) La práctica de reducir el valor de los activos para reflejar su valor a lo largo del tiempo. (2) El servicio de la deuda en incrementos regulares." },
+		{ term: "Análisis Técnico", definition: "Los analistas técnicos o 'chartistas' intentan predecir los movimientos futuros del precio de la acción al observar movimientos pasados." },
+		{ term: "Anualidad", definition: "Un producto que puede proporcionar un ingreso de por vida, generalmente en la jubilación. Se considera una forma de protegerse contra el riesgo de longevidad." },
+		{ term: "Apalancamiento", definition: "Término estadounidense también conocido como 'engranaje'. Expresa la medida en que una transacción es financiada por deuda de los prestamistas en lugar del capital del inversionista." },
+		{ term: "Arbitraje", definition: "Una técnica que se utiliza para aprovechar las diferencias de precio en activos sustancialmente idénticos en diferentes mercados." },
+		{ term: "Auditor", definition: "Una persona independiente que firma que los estados financieros de una empresa son 'verdaderos y justos' según la legislación pertinente." },
+	],
+	B: [
+		{ term: "Backwardation", definition: "Si el precio en efectivo actual de un activo se desliza por encima del precio para la entrega forward." },
+		{ term: "Balanza de Pagos", definition: "Las cuentas que resumen la posición financiera de un país en relación con otros países." },
+		{ term: "Banco Central", definition: "Institución financiera que gestiona la moneda, la oferta monetaria y las tasas de interés de un país. Ejemplos: Fed (EE.UU.), BCE (Europa), BoE (Reino Unido)." },
+		{ term: "Beta", definition: "Una forma de medir el riesgo relativo de una acción en comparación con el mercado general. Beta de 1 significa que se mueve igual que el mercado." },
+		{ term: "Big Bang", definition: "La desregulación de la Bolsa de Valores de Londres (LSE) que tuvo lugar el 27 de octubre de 1986." },
+		{ term: "Bonos", definition: "Un tipo de instrumento de deuda emitido y vendido por un gobierno, autoridad local o compañía para recaudar dinero. Los inversores reciben intereses llamados 'cupón'." },
+		{ term: "Bonos Basura", definition: "También conocidos como bonos 'alto rendimiento', 'sin grado de inversión' o 'especulativos'. Tienen mayor riesgo pero ofrecen rendimientos más altos." },
+		{ term: "Broker", definition: "Intermediario que ejecuta órdenes de compra y venta de valores en nombre de los clientes, a cambio de una comisión." },
+	],
+	C: [
+		{ term: "CAC-40", definition: "El índice bursátil de referencia de Francia, compuesto por las 40 empresas más grandes de la Bolsa de París." },
+		{ term: "Calificación Crediticia", definition: "La mayoría de los bonos reciben una calificación para indicar al inversor la posibilidad de un incumplimiento. Agencias: S&P, Moody's, Fitch." },
+		{ term: "Carry Trade", definition: "Estrategia que busca ganar dinero aprovechando que las tasas de interés de los bancos centrales mundiales varían considerablemente." },
+		{ term: "CFD (Contrato por Diferencia)", definition: "Un CFD implica apostar sobre el movimiento de los precios de las acciones sin poseer el activo subyacente." },
+		{ term: "Compra Apalancada", definition: "Cuando un grupo inversor adquiere un negocio utilizando principalmente dinero prestado." },
+		{ term: "Contango", definition: "El precio de un activo para entrega en adelante generalmente es superior al precio que pagaría hoy." },
+		{ term: "Correlación", definition: "Se refiere a una relación estadística entre dos eventos o activos. Puede ser positiva, negativa o nula." },
+		{ term: "Costo de Capital", definition: "La tasa de rendimiento anual que un inversionista espera de una empresa a cambio de asumir el riesgo de poseer sus acciones." },
+	],
+	D: [
+		{ term: "DAX", definition: "El índice blue-chip de Alemania, el más cíclico de los principales índices occidentales, con casi el 80% compuesto de industrias económicamente sensibles." },
+		{ term: "Deflación", definition: "La caída generalizada de los precios. Puede ser perjudicial si lleva a los consumidores a postergar compras esperando precios más bajos." },
+		{ term: "Depreciación", definition: "Si compra un activo, se desgasta con el tiempo y eventualmente deberá reemplazarlo. Por lo tanto, se 'deprecia'." },
+		{ term: "Derivado", definition: "Término colectivo para instrumentos financieros cuyo precio se deriva del desempeño de otras inversiones subyacentes." },
+		{ term: "Dilución", definition: "En finanzas, significa que algo se está diluyendo, generalmente las ganancias por acción cuando se emiten nuevas acciones." },
+		{ term: "Diversificación", definition: "El proceso de dividir su riqueza entre diferentes inversiones para evitar depender demasiado de cualquiera." },
+		{ term: "Dividendo", definition: "La parte de las ganancias de una empresa que se distribuye a los accionistas." },
+	],
+	E: [
+		{ term: "EBITDA", definition: "Ganancias antes de intereses, impuestos, depreciación y amortización. Medida de rentabilidad operativa." },
+		{ term: "ETF (Fondo Cotizado)", definition: "Un producto basado en acciones que combina las características de una acción individual con las de un fondo colectivo." },
+		{ term: "Eurobono", definition: "Cualquier bono corporativo o gubernamental internacional denominado en una moneda mantenida fuera de su país de origen." },
+	],
+	F: [
+		{ term: "Fed (Reserva Federal)", definition: "El banco central de los Estados Unidos. Controla la política monetaria y las tasas de interés." },
+		{ term: "Fibonacci", definition: "Algunos analistas utilizan la secuencia de Fibonacci y sus proporciones para intentar pronosticar los movimientos del mercado." },
+		{ term: "Flotación / OPI", definition: "El proceso de lanzamiento de una compañía al mercado de valores por primera vez al invitar al público a suscribir acciones." },
+		{ term: "Flujo de Efectivo", definition: "El movimiento de dinero dentro y fuera de una empresa. Esencial para evaluar la salud financiera." },
+		{ term: "Flujo de Efectivo Libre", definition: "Una medida del efectivo que una empresa ha dejado una vez que ha cumplido con todas sus obligaciones operativas." },
+		{ term: "Forex", definition: "Mercado de divisas donde se intercambian monedas. Es el mercado más líquido del mundo con más de $6 billones negociados diariamente." },
+		{ term: "FTSE 100", definition: "El índice bursátil 'blue-chip' de Gran Bretaña, compuesto por las 100 empresas más grandes de la Bolsa de Londres." },
+		{ term: "Futuros", definition: "Un contrato negociable que compromete a aceptar o hacer entrega de una cantidad acordada de algo a una hora acordada." },
+	],
+	G: [
+		{ term: "Ganancias por Acción (EPS)", definition: "Uno de los mejores medios para determinar el precio de una acción. Muestra la cantidad de ganancias que posee cada accionista." },
+		{ term: "Gearing", definition: "La relación entre la deuda y el capital en una empresa, entre el dinero prestado y el dinero de los accionistas." },
+		{ term: "Gilts", definition: "Valor o acción emitido por el gobierno británico que paga una tasa de interés fija." },
+	],
+	H: [
+		{ term: "Hedge Fund (Fondo de Cobertura)", definition: "Fondo de inversión privado que utiliza estrategias avanzadas como apalancamiento, derivados y posiciones cortas." },
+		{ term: "Horario de Trading", definition: "Los mercados tienen diferentes horarios. NYSE: 9:30-16:00 ET. Forex: 24 horas, 5 días." },
+	],
+	I: [
+		{ term: "Índice", definition: "Existen índices para cada tipo de mercado. Los más conocidos incluyen S&P 500, Dow Jones, FTSE 100, DAX, Nikkei." },
+		{ term: "Inflación", definition: "El aumento general de los precios en una economía. Los bancos centrales suelen tener un objetivo del 2%." },
+		{ term: "Interés Compuesto", definition: "Cuando invierte dinero, gana intereses sobre su capital y sobre los intereses acumulados anteriormente." },
+	],
+	L: [
+		{ term: "LIBOR", definition: "London Interbank Offered Rate. Tasa de referencia a la que los bancos se prestan entre sí." },
+		{ term: "Liquidez", definition: "Se refiere a lo fácil que es comprar o vender una inversión sin afectar significativamente su precio." },
+		{ term: "Long (Posición Larga)", definition: "Comprar un activo esperando que su precio suba." },
+	],
+	M: [
+		{ term: "Margen", definition: "Depósito inicial requerido para abrir una posición apalancada, generalmente un porcentaje del valor total." },
+		{ term: "Market Maker", definition: "Bancos y brokers que se comprometen a intercambiar acciones y bonos, proporcionando liquidez al mercado." },
+		{ term: "Media Móvil", definition: "El promedio de los precios de una acción de los últimos días. Herramienta común de análisis técnico." },
+	],
+	N: [
+		{ term: "NAV (Valor Liquidativo)", definition: "El valor neto de los activos de una empresa o fondo, menos sus pasivos." },
+		{ term: "Nikkei 225", definition: "El principal índice bursátil de Japón, compuesto por las 225 empresas más importantes." },
+	],
+	O: [
+		{ term: "Opción", definition: "El derecho (no obligación) a comprar (call) o vender (put) un activo a un precio fijo antes de una fecha determinada." },
+		{ term: "OTC (Over The Counter)", definition: "Transacciones realizadas directamente entre partes, sin intercambio regulado involucrado." },
+	],
+	P: [
+		{ term: "P/E (Precio/Ganancias)", definition: "Relación entre el precio de la acción y las ganancias por acción. Medida de valoración fundamental." },
+		{ term: "PIB", definition: "Producto Interno Bruto. Medida de la cantidad total de bienes y servicios producidos por un país." },
+		{ term: "Pip", definition: "Punto de interés de precio. El movimiento más pequeño en el precio de un par de divisas, generalmente 0.0001." },
+		{ term: "Política Fiscal", definition: "Medidas que el gobierno toma para influir en la economía mediante presupuesto e impuestos." },
+		{ term: "Política Monetaria", definition: "Control sobre la oferta de dinero y tasas de interés con el objetivo de influir en la economía." },
+	],
+	Q: [
+		{ term: "QE (Flexibilización Cuantitativa)", definition: "La expansión electrónica del balance de un banco central para estimular la economía." },
+	],
+	R: [
+		{ term: "Ratio de Sharpe", definition: "Una manera de determinar cuánto rendimiento se obtiene por cada unidad de riesgo." },
+		{ term: "Recesión", definition: "Caída en el PIB real por dos o más trimestres consecutivos." },
+		{ term: "Rendimiento", definition: "El retorno de una inversión, expresado como porcentaje del capital invertido." },
+		{ term: "Resistencia", definition: "Nivel de precio donde un activo tiende a dejar de subir debido a presión vendedora." },
+		{ term: "ROE (Return on Equity)", definition: "Rendimiento sobre el patrimonio. Mide las ganancias en relación con el capital de los accionistas." },
+	],
+	S: [
+		{ term: "S&P 500", definition: "Índice bursátil de EE.UU. compuesto por las 500 empresas más grandes cotizadas en bolsas estadounidenses." },
+		{ term: "Short (Posición Corta)", definition: "Vender un activo que no posees, esperando comprarlo más barato después." },
+		{ term: "Soporte", definition: "Nivel de precio donde un activo tiende a dejar de bajar debido a demanda de compradores." },
+		{ term: "Spread", definition: "La diferencia entre el precio de compra (ask) y el precio de venta (bid) de un activo." },
+		{ term: "Spread Betting", definition: "Forma de especular sobre movimientos de precios sin poseer el activo subyacente." },
+		{ term: "Stop-Loss", definition: "Instrucción para vender automáticamente si el precio cae a cierto nivel, limitando pérdidas." },
+		{ term: "Swap", definition: "Acuerdo entre dos partes para intercambiar flujos de efectivo o pagos de intereses." },
+	],
+	T: [
+		{ term: "Take Profit", definition: "Orden para cerrar automáticamente una posición cuando alcanza cierto nivel de ganancia." },
+		{ term: "Tendencia", definition: "Dirección general del movimiento del precio de un activo: alcista, bajista o lateral." },
+		{ term: "Trading Diario", definition: "Estrategia de comprar y vender activos dentro del mismo día de negociación." },
+	],
+	V: [
+		{ term: "Valor Intrínseco", definition: "El valor real o fundamental de un activo, basado en análisis de sus fundamentos." },
+		{ term: "VIX (Índice de Volatilidad)", definition: "Mide las expectativas de volatilidad del mercado para los próximos 30 días. Conocido como 'índice del miedo'." },
+		{ term: "Volatilidad", definition: "Las fluctuaciones en el precio de un valor, producto, moneda o índice. Mayor volatilidad = mayor riesgo." },
+		{ term: "Volumen", definition: "El número de acciones o contratos negociados durante un período determinado." },
+	],
+	W: [
+		{ term: "WACC", definition: "Costo promedio ponderado del capital. La tasa de rendimiento que una empresa debe obtener sobre el dinero invertido." },
+		{ term: "Wall Street", definition: "Calle de Nueva York donde se encuentra la Bolsa de Nueva York. Término usado para referirse al sector financiero de EE.UU." },
+	],
+	Y: [
+		{ term: "Yield (Rendimiento)", definition: "El ingreso generado por una inversión, expresado como porcentaje del valor de la inversión." },
+	],
+};
+
+const letters = Object.keys(glossary).sort();
+---
+
+<html lang="es">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+
+	<body>
+		<Header />
+
+		<div class="mh-container-outer">
+			<div class="mh-container">
+				<main class="mh-wrapper">
+					<div class="mh-main-area mh-row">
+						<div class="mh-content">
+							<article class="mh-article glossary-page">
+								<header class="mh-entry-header">
+									<h1 class="mh-entry-title">{title}</h1>
+									<div class="mh-entry-meta">
+										<span class="mh-meta-date">Actualizado: {formattedDate}</span>
+									</div>
+								</header>
+
+								<div class="glossary-intro">
+									<p>Este glosario contiene los términos más importantes del mundo del trading y las finanzas. Utiliza el índice alfabético para navegar rápidamente a la sección que necesitas.</p>
+								</div>
+
+								<nav class="glossary-nav">
+									{letters.map(letter => (
+										<a href={`#letter-${letter}`} class="letter-link">{letter}</a>
+									))}
+								</nav>
+
+								<div class="glossary-content">
+									{letters.map(letter => (
+										<section class="glossary-section" id={`letter-${letter}`}>
+											<h2 class="letter-heading">{letter}</h2>
+											<dl class="terms-list">
+												{glossary[letter].map(item => (
+													<div class="term-item">
+														<dt class="term-name">{item.term}</dt>
+														<dd class="term-definition">{item.definition}</dd>
+													</div>
+												))}
+											</dl>
+										</section>
+									))}
+								</div>
+
+								<footer class="mh-entry-footer">
+									<a href="/blog" class="mh-back-link">← Volver a Artículos</a>
+								</footer>
+							</article>
+						</div>
+
+						<div class="mh-sidebar-wrap">
+							<Sidebar />
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.mh-main-area { display: flex; gap: var(--gutter); }
+	.mh-content { flex: 1; min-width: 0; }
+	.mh-sidebar-wrap { width: var(--sidebar-width); flex-shrink: 0; }
+	.mh-article { background: var(--white); }
+	.mh-entry-header { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid var(--gray-lighter); }
+	.mh-entry-title { font-size: 28px; line-height: 1.3; margin: 0 0 15px 0; color: var(--black); }
+	.mh-entry-meta { font-size: 13px; color: var(--gray-light); }
+	.mh-entry-footer { padding-top: 25px; border-top: 1px solid var(--gray-lighter); margin-top: 40px; }
+	.mh-back-link { font-weight: 700; font-size: 13px; color: var(--primary); text-transform: uppercase; }
+
+	/* Glossary Intro */
+	.glossary-intro {
+		background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+		padding: 20px;
+		border-radius: 8px;
+		margin-bottom: 25px;
+		border-left: 4px solid var(--primary);
+	}
+
+	.glossary-intro p {
+		margin: 0;
+		color: #495057;
+		line-height: 1.6;
+	}
+
+	/* Alphabet Navigation */
+	.glossary-nav {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		margin-bottom: 30px;
+		padding: 15px;
+		background: #fff;
+		border: 1px solid #e9ecef;
+		border-radius: 8px;
+		position: sticky;
+		top: 0;
+		z-index: 10;
+	}
+
+	.letter-link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 36px;
+		height: 36px;
+		background: var(--primary);
+		color: #fff;
+		font-weight: 700;
+		font-size: 14px;
+		text-decoration: none;
+		border-radius: 4px;
+		transition: all 0.2s ease;
+	}
+
+	.letter-link:hover {
+		background: #3a6bc7;
+		transform: translateY(-2px);
+		box-shadow: 0 4px 8px rgba(76, 128, 233, 0.3);
+	}
+
+	/* Glossary Sections */
+	.glossary-section {
+		margin-bottom: 40px;
+		scroll-margin-top: 80px;
+	}
+
+	.letter-heading {
+		font-size: 32px;
+		font-weight: 700;
+		color: var(--primary);
+		margin: 0 0 20px 0;
+		padding-bottom: 10px;
+		border-bottom: 3px solid var(--primary);
+		display: inline-block;
+	}
+
+	/* Terms List */
+	.terms-list {
+		margin: 0;
+		padding: 0;
+	}
+
+	.term-item {
+		background: #fff;
+		border: 1px solid #e9ecef;
+		border-radius: 8px;
+		padding: 20px;
+		margin-bottom: 15px;
+		transition: all 0.2s ease;
+	}
+
+	.term-item:hover {
+		border-color: var(--primary);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	}
+
+	.term-name {
+		font-size: 18px;
+		font-weight: 700;
+		color: #212529;
+		margin: 0 0 10px 0;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.term-name::before {
+		content: "▸";
+		color: var(--primary);
+		font-size: 14px;
+	}
+
+	.term-definition {
+		margin: 0;
+		padding-left: 24px;
+		color: #495057;
+		line-height: 1.7;
+		font-size: 15px;
+	}
+
+	/* Responsive */
+	@media (max-width: 900px) {
+		.mh-main-area { flex-direction: column; }
+		.mh-sidebar-wrap { width: 100%; }
+
+		.glossary-nav {
+			position: relative;
+		}
+
+		.letter-link {
+			width: 32px;
+			height: 32px;
+			font-size: 12px;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.term-item {
+			padding: 15px;
+		}
+
+		.term-name {
+			font-size: 16px;
+		}
+
+		.term-definition {
+			font-size: 14px;
+			padding-left: 20px;
+		}
+	}
+</style>
